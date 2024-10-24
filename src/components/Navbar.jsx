@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar w-full bg-sky-500 flex h-[6.46rem] relative">
+    <div className="navbar w-full bg-sky-500 flex h-[6.46rem] sticky top-0 left-0">
       <Link to="/">
         <img
           src={DuckDonutsLogo}
