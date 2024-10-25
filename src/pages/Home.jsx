@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
 import DuckDonutsLogo from "../assets/images/HomePageImages/DuckDozen.jpg";
+import ChocolateCoveredStrawberry from "../assets/images/HomePageImages/ChocolateCoveredStrawberry.png";
+import MenuDrinks from "../assets/images/HomePageImages/MenuDrinks.png";
+import MenuIceCream from "../assets/images/HomePageImages/MenuIceCream.png";
+import LemonadeRefreshers from "../assets/images/HomePageImages/LemonadeRefreshers.png";
+import MenuSandwiches from "../assets/images/HomePageImages/MenuSandwiches.png";
+import MenuItemCards from "../components/HomePageComponents/MenuItemCards";
 
 const Home = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -10,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="max-w-[2200px] m-auto">
+    <div className="max-w-[2200px] m-auto z-10">
       {/* Warm Delicious Made to Order */}
       {/* h-[6.46rem] */}
       <section
@@ -48,9 +54,15 @@ const Home = () => {
       {/*  */}
       <section
         id="MenuProductTypeFeed"
-        className="bg-blue-300 h-screen flex items-center justify-center"
+        className="flex items-center justify-center py-20 px-5"
       >
-        hello world
+        <div className="max-w-[71.8rem] h-full w-full px-2 grid grid-cols-4 gap-x-4 justify-items-center">
+          <MenuItemCards image={ChocolateCoveredStrawberry} cardTitle={"Fan Favorites"} index={0} />
+          <MenuItemCards image={MenuDrinks} cardTitle={"Coffee, Espresso & More"} index={1}/>
+          <MenuItemCards image={MenuIceCream} cardTitle={"Ice Cream"} index={2}/>
+          <MenuItemCards image={LemonadeRefreshers} cardTitle={"Lemonade & Refreshers"} index={3}/>
+          <MenuItemCards image={MenuSandwiches} cardTitle={"Sandwiches"} index={4}/>
+        </div>
       </section>
       <section
         id="SeasonalContentv1"

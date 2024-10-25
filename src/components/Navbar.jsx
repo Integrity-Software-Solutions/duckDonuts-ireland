@@ -12,12 +12,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar w-full bg-sky-500 flex h-[6.46rem] sticky top-0 left-0">
+    <div className="navbar w-full bg-sky-500 flex h-[6.46rem] sticky top-0 left-0 z-20">
       <Link to="/">
         <img
           src={DuckDonutsLogo}
           alt="Duck Donuts Logo"
-          className="h-[4.7rem] absolute top-4 left-5 lg:left-[5.5rem] lg:h-[4.6rem]"
+          className="h-[4.7rem] absolute top-4 left-5 2xl:left-[5.5rem] lg:h-[4.6rem]"
         />
       </Link>
       <div className="mr-8 h-[4.2rem] flex-1 self-end text-white font-bold">
