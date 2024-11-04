@@ -1,0 +1,157 @@
+{
+    "seasonalFavorites": {
+      "fall": {
+        "donuts": [
+          {
+            "name": "Pumpkin Spice",
+            "description": "Classic fall flavors with pumpkin and cinnamon glaze",
+            "price": 2.50
+          },
+          {
+            "name": "Apple Cider",
+            "description": "Apple cider-flavored donut topped with a hint of cinnamon sugar",
+            "price": 2.75
+          }
+        ],
+        "coffee": [
+          {
+            "name": "Pumpkin Spice Latte",
+            "description": "Espresso with steamed milk and pumpkin spice syrup, topped with whipped cream",
+            "price": 4.50
+          },
+          {
+            "name": "Maple Pecan Latte",
+            "description": "Espresso with steamed milk and maple pecan syrup, topped with whipped cream and pecan bits",
+            "price": 4.75
+          }
+        ],
+        "tea": [
+          {
+            "name": "Spiced Chai",
+            "description": "Black tea with cinnamon, ginger, and cardamom",
+            "price": 3.50
+          },
+          {
+            "name": "Apple Cinnamon Herbal Tea",
+            "description": "A warm, caffeine-free herbal tea with apple and cinnamon",
+            "price": 3.00
+          }
+        ]
+      },
+      "winter": {
+        "donuts": [
+          {
+            "name": "Peppermint Mocha",
+            "description": "Chocolate donut with a hint of peppermint and mocha glaze",
+            "price": 2.85
+          },
+          {
+            "name": "Gingerbread",
+            "description": "Spiced donut with gingerbread glaze and sugar icing",
+            "price": 2.95
+          }
+        ],
+        "coffee": [
+          {
+            "name": "Peppermint Mocha Coffee",
+            "description": "Espresso with peppermint syrup, steamed milk, and chocolate, topped with whipped cream",
+            "price": 4.95
+          },
+          {
+            "name": "Eggnog Latte",
+            "description": "Espresso combined with rich eggnog, topped with nutmeg",
+            "price": 4.50
+          }
+        ],
+        "tea": [
+          {
+            "name": "Winter Spice Tea",
+            "description": "Black tea with spices like cinnamon, cloves, and orange peel",
+            "price": 3.25
+          },
+          {
+            "name": "Peppermint Herbal Tea",
+            "description": "Cool, refreshing peppermint tea, caffeine-free",
+            "price": 3.00
+          }
+        ]
+      },
+      "spring": {
+        "donuts": [
+          {
+            "name": "Lemon Poppy Seed",
+            "description": "Lemon-flavored donut with a poppy seed glaze",
+            "price": 2.65
+          },
+          {
+            "name": "Strawberry Glazed",
+            "description": "Classic donut with fresh strawberry glaze",
+            "price": 2.80
+          }
+        ],
+        "coffee": [
+          {
+            "name": "Honey Lavender Latte",
+            "description": "Espresso with honey lavender syrup and steamed milk",
+            "price": 4.75
+          },
+          {
+            "name": "Iced Vanilla Rose Latte",
+            "description": "Iced latte with vanilla rose syrup and steamed milk",
+            "price": 4.95
+          }
+        ],
+        "tea": [
+          {
+            "name": "Cherry Blossom Green Tea",
+            "description": "Light, floral green tea with cherry blossom flavor",
+            "price": 3.50
+          },
+          {
+            "name": "Hibiscus Berry Herbal Tea",
+            "description": "A bright herbal tea blend of hibiscus, berries, and rosehips",
+            "price": 3.25
+          }
+        ]
+      },
+      "summer": {
+        "donuts": [
+          {
+            "name": "Mango Coconut",
+            "description": "Tropical mango glaze topped with shredded coconut",
+            "price": 2.95
+          },
+          {
+            "name": "Lemon Blueberry",
+            "description": "Blueberry donut with a tangy lemon glaze",
+            "price": 2.85
+          }
+        ],
+        "coffee": [
+          {
+            "name": "Iced Coconut Cold Brew",
+            "description": "Cold brew coffee with coconut milk and a hint of vanilla",
+            "price": 4.25
+          },
+          {
+            "name": "Iced Caramel Macchiato",
+            "description": "Espresso, milk, and caramel over ice, topped with caramel drizzle",
+            "price": 4.50
+          }
+        ],
+        "tea": [
+          {
+            "name": "Iced Peach Green Tea",
+            "description": "Green tea with refreshing peach flavor, served over ice",
+            "price": 3.50
+          },
+          {
+            "name": "Watermelon Mint Herbal Tea",
+            "description": "Herbal tea with watermelon and mint, caffeine-free",
+            "price": 3.25
+          }
+        ]
+      }
+    }
+  }
+  
