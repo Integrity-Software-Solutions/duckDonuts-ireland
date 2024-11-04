@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar w-full bg-sky-500 flex h-[6.46rem] sticky top-0 left-0 z-20">
+    <header className="navbar w-full bg-sky-500 flex h-[6.46rem] sticky top-0 z-20">
       <Link to="/">
         <img
           src={DuckDonutsLogo}
@@ -23,47 +23,53 @@ const Navbar = () => {
       <div className="mr-8 h-[4.2rem] flex-1 self-end text-white font-bold">
         <div className="flex justify-end h-full pr-3 space-x-3">
           {/* Home */}
-          <div
-            className="h-full p-1 hover:cursor-pointer"
-            onMouseEnter={() => {
-              handleHover("home");
-            }}
-            onMouseLeave={() => {
-              handleHover("");
-            }}
-          >
-            <p
-              className={`py-1 border-b-[3.5px] transition-all ease-in-out duration-700 ${
-                hovered === "home" ? "border-b-white" : "border-b-transparent"
-              }`}
+          <Link to="/">
+            <div
+              className="h-full p-1 hover:cursor-pointer"
+              onMouseEnter={() => {
+                handleHover("home");
+              }}
+              onMouseLeave={() => {
+                handleHover("");
+              }}
             >
-              home
-            </p>
-          </div>
+              <p
+                className={`py-1 border-b-[3.5px] transition-all ease-in-out duration-700 ${
+                  hovered === "home" ? "border-b-white" : "border-b-transparent"
+                }`}
+              >
+                home
+              </p>
+            </div>
+          </Link>
           {/* Menu */}
-          <div
-            className="h-full p-1 hover:cursor-pointer relative"
-            onMouseEnter={() => {
-              handleHover("menu");
-            }}
-            onMouseLeave={() => {
-              handleHover("");
-            }}
-          >
-            <p
-              className={`py-1 border-b-[3.5px] transition-all ease-in-out duration-700 ${
-                hovered === "menu" ? "border-b-white" : "border-b-transparent"
-              }`}
+          <Link to="/menu">
+            <div
+              className="h-full p-1 hover:cursor-pointer relative"
+              onMouseEnter={() => {
+                handleHover("menu");
+              }}
+              onMouseLeave={() => {
+                handleHover("");
+              }}
             >
-              menu
-            </p>
-            <MenuDropdown hovered={hovered} />
-          </div>
+              <p
+                className={`py-1 border-b-[3.5px] transition-all ease-in-out duration-700 ${
+                  hovered === "menu" ? "border-b-white" : "border-b-transparent"
+                }`}
+              >
+                menu
+              </p>
+              {hovered === "menu" && <MenuDropdown hovered={hovered} />}
+            </div>
+          </Link>
         </div>
       </div>
       <OrderOnlineButton />
-    </div>
+    </header>
+
   );
+
 };
 
 export default Navbar;
