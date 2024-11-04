@@ -61,7 +61,7 @@ const MenuItemCards = (props) => {
             className={`${
               hovered &&
               "bg-[rgb(73,164,154)] transition ease-in-out duration-500"
-            } h-10 w-10 p-2 rounded-full bg-[#BEBEBE] text-white flex items-center justify-center text-2xl`}
+            } h-8 w-8 p-2 rounded-full bg-[#BEBEBE] text-white flex items-center justify-center text-2xl`}
           >
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
