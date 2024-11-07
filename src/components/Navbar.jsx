@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import OrderOnlineButton from "./NavbarComponents/OrderOnlineButton";
-import DuckDonutsLogo from "../assets/images/NavbarImages/DuckDonutsLogo.png";
+import DuckDonutsLogo from "/assets/images/NavbarImages/DuckDonutsLogo.png";
 import MenuDropdown from "./NavbarComponents/MenuDropdown";
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
           className="h-[4.7rem] absolute top-4 left-5 2xl:left-[5.5rem] lg:h-[4.6rem]"
         />
       </Link>
-      <div className="mr-8 h-[4.2rem] flex-1 self-end text-white font-bold">
+      <div className="mr-[4.5rem] h-[4.2rem] flex-1 self-end text-white font-bold text-lg">
         <div className="flex justify-end h-full pr-3 space-x-3">
           {/* Home */}
           <Link to="/">
@@ -37,6 +37,7 @@ const Navbar = () => {
                 className={`py-1 border-b-[3.5px] transition-all ease-in-out duration-700 ${
                   hovered === "home" ? "border-b-white" : "border-b-transparent"
                 }`}
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
               >
                 home
               </p>
@@ -57,6 +58,7 @@ const Navbar = () => {
                 className={`py-1 border-b-[3.5px] transition-all ease-in-out duration-700 ${
                   hovered === "menu" ? "border-b-white" : "border-b-transparent"
                 }`}
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
               >
                 menu
               </p>

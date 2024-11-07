@@ -1,0 +1,545 @@
+[
+  {
+    "category": "Seasonal",
+    "seasons": {
+      "fall": {
+        "featuredItems": [
+          {
+            "name": "Fall Favorites Dozen",
+            "yearRound": false,
+            "availability": "September 4 - December 1",
+            "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
+            "ingredients": "Pumpkin, cinnamon, apple cider, cinnamon sugar",
+            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/FallFavoritesDozen.jpg"
+          },
+          {
+            "name": "Bourbon Caramel Apple Pie Milkshake",
+            "yearRound": false,
+            "availability": "September 4 - December 1",
+            "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
+            "ingredients": "Pumpkin, cinnamon, apple cider, cinnamon sugar",
+            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg"
+          },
+          {
+            "name": "Fall Favorites Half Dozen",
+            "yearRound": false,
+            "availability": "September 4 - December 1",
+            "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
+            "ingredients": "Pumpkin, cinnamon, apple cider, cinnamon sugar",
+            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/FallFavoritesHalfDozen.jpg"
+          },
+          {
+            "name": "Pumpkin Macchiato",
+            "yearRound": false,
+            "availability": "September 4 - December 1",
+            "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
+            "ingredients": "Pumpkin, cinnamon, apple cider, cinnamon sugar",
+            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg"
+          }
+        ],
+        "items": []
+      },
+      "winter": {},
+      "spring": {},
+      "summer": {}
+    }
+  },
+  {
+    "category": "Fan Favorites",
+    "items": [
+      {
+        "name": "Bacon in the Sun",
+        "yearRound": true,
+        "description": "A classic donut with a sweet glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BaconInTheSun.png"
+      },
+      {
+        "name": "Beach Ball",
+        "yearRound": true,
+        "description": "A chocolate donut with chocolate frosting",
+        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BeachBall.png"
+      },
+      {
+        "name": "Blueberry Lemonade",
+        "yearRound": true,
+        "description": "A vanilla donut with vanilla frosting",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryLemonade.jpg"
+      },
+      {
+        "name": "Blueberry Pancake",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryPancake.png"
+      },
+      {
+        "name": "Chocolate Caramel Crunch",
+        "yearRound": true,
+        "description": "A classic donut with a sweet glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCaramelCrunch.png"
+      },
+      {
+        "name": "Chocolate Covered Strawberry",
+        "yearRound": true,
+        "description": "Chocolate Covered Strawberry",
+        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCoveredStrawberry.png"
+      },
+      {
+        "name": "Chocolate Explosion",
+        "yearRound": true,
+        "description": "Chocolate Explosion",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateExplosion.png"
+      },
+      {
+        "name": "Cinnamon Bun",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/CinnamonBun.png"
+      },
+      {
+        "name": "Coconut Island Bliss",
+        "yearRound": true,
+        "description": "A classic donut with a sweet glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/CoconutIslandBliss.png"
+      },
+      {
+        "name": "Cookies & Cream",
+        "yearRound": true,
+        "description": "A chocolate donut with chocolate frosting",
+        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/CookiesAndCream.png"
+      },
+      {
+        "name": "French Toast",
+        "yearRound": true,
+        "description": "A vanilla donut with vanilla frosting",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/FrenchToast.png"
+      },
+      {
+        "name": "Maple Bacon",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/MapleBacon.png"
+      },
+      {
+        "name": "Midnight Madness",
+        "yearRound": true,
+        "description": "A classic donut with a sweet glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/MidnightMadness.png"
+      },
+      {
+        "name": "Peanut Butter & Jelly",
+        "yearRound": true,
+        "description": "A chocolate donut with chocolate frosting",
+        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterAndJelly.png"
+      },
+      {
+        "name": "Peanut Butter Paradise",
+        "yearRound": true,
+        "description": "A vanilla donut with vanilla frosting",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterParadise.png"
+      },
+      {
+        "name": "Pina Colada",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/PinaColada.png"
+      },
+      {
+        "name": "Raspberry Fluff",
+        "yearRound": true,
+        "description": "A classic donut with a sweet glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/RaspberryFluff.png"
+      },
+      {
+        "name": "Sand Dollar",
+        "yearRound": true,
+        "description": "A chocolate donut with chocolate frosting",
+        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/SandDollar.png"
+      },
+      {
+        "name": "S'mores",
+        "yearRound": true,
+        "description": "A vanilla donut with vanilla frosting",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/Smores.png"
+      },
+      {
+        "name": "Strawberry Confetti",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryConfetti.png"
+      },
+      {
+        "name": "Strawberry Shortcake",
+        "yearRound": true,
+        "description": "A classic donut with a sweet glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryShortcake.png"
+      },
+      {
+        "name": "Sunrise",
+        "yearRound": true,
+        "description": "A chocolate donut with chocolate frosting",
+        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/Sunrise.png"
+      },
+      {
+        "name": "The Beach",
+        "yearRound": true,
+        "description": "A vanilla donut with vanilla frosting",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/TheBeach.png"
+      },
+      {
+        "name": "The Boardwalk",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/TheBoardwalk.png"
+      },
+      {
+        "name": "The Flip Flop",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/TheFlipFlop.png"
+      }
+    ]
+  },
+  {
+    "category": "Everyday Assortments",
+    "items": [
+      {
+        "name": "Breakfast Box",
+        "yearRound": true,
+        "description": "All of your breakfast favorites in one box. Perfect for “breakfast in bed” and “breakfast for dinner” too!",
+        "ingredients": [
+          {
+            "name": "French Toast",
+            "description": "Maple Icing with Cinnamon Sugar & Powdered Sugar"
+          },
+          {
+            "name": "Blueberry Pancake",
+            "description": "Blueberry Icing with Maple Drizzle & Powdered Sugar"
+          },
+          {
+            "name": "Maple Bacon",
+            "description": "Maple Icing with Chopped Bacon"
+          }
+        ],
+        "image": "/assets/images/MenuImages/EverydayAssortmentsImages/BreakfastBox.jpg"
+      },
+      {
+        "name": "Duck Dozen",
+        "yearRound": true,
+        "description": "Indulge in a dozen filled with creative combinations inspired by our hometown of Duck, NC! This one is sure to light up those tastebuds!",
+        "ingredients": [
+          {
+            "name": "Blueberry Sugar",
+            "description": "Blueberry Icing with Powdered Sugar"
+          },
+          {
+            "name": "Sunrise",
+            "description": "Lemon Icing with Raspberry Drizzle"
+          }
+        ],
+        "image": "/assets/images/MenuImages/EverydayAssortmentsImages/DuckDozen.jpg"
+      },
+      {
+        "name": "Signature Assortment",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": [
+          {
+            "name": "Flour",
+            "description": "Basic dough ingredient"
+          },
+          {
+            "name": "Sugar",
+            "description": "Sweetens the dough"
+          },
+          {
+            "name": "Eggs",
+            "description": "For dough binding and structure"
+          },
+          {
+            "name": "Milk",
+            "description": "For creaminess"
+          },
+          {
+            "name": "Vanilla",
+            "description": "For flavor"
+          },
+          {
+            "name": "Salt",
+            "description": "Enhances flavor"
+          },
+          {
+            "name": "Baking Powder",
+            "description": "Leavening agent"
+          },
+          {
+            "name": "Cream",
+            "description": "For filling"
+          },
+          {
+            "name": "Chocolate",
+            "description": "For glazing"
+          }
+        ],
+        "image": "/assets/images/MenuImages/EverydayAssortmentsImages/SignatureAssortment.jpg"
+      },
+      {
+        "name": "Party Box",
+        "yearRound": true,
+        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
+        "ingredients": [
+          {
+            "name": "Flour",
+            "description": "Basic dough ingredient"
+          },
+          {
+            "name": "Sugar",
+            "description": "Sweetens the dough"
+          },
+          {
+            "name": "Eggs",
+            "description": "For dough binding and structure"
+          },
+          {
+            "name": "Milk",
+            "description": "For creaminess"
+          },
+          {
+            "name": "Vanilla",
+            "description": "For flavor"
+          },
+          {
+            "name": "Salt",
+            "description": "Enhances flavor"
+          },
+          {
+            "name": "Baking Powder",
+            "description": "Leavening agent"
+          },
+          {
+            "name": "Cream",
+            "description": "For filling"
+          },
+          {
+            "name": "Chocolate",
+            "description": "For glazing"
+          }
+        ],
+        "image": "/assets/images/MenuImages/EverydayAssortmentsImages/PartyBox.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Sandwiches",
+    "items": [
+      {
+        "name": "Maple Drizzle, Chopped Bacon, Sausage, Egg & Cheese Breakfast Sandwich",
+        "yearRound": true,
+        "image": "/assets/images/MenuImages/SandwichesImages/MapleDrizzleAndChoppedBacon.png"
+      },
+      {
+        "name": "Bacon, Egg, and Cheese Breakfast Sandwich",
+        "yearRound": true,
+        "image": "/assets/images/MenuImages/SandwichesImages/BaconEggAndCheeseBreakfastSandwich.png"
+      },
+      {
+        "name": "Sausage, Egg, and Cheese Breakfast Sandwich",
+        "yearRound": true,
+        "image": "/assets/images/MenuImages/SandwichesImages/SausageEggAndCheeseBreakfastSandwich.png"
+      },
+      {
+        "name": "Egg & Cheese Breakfast Sandwich",
+        "yearRound": true,
+        "image": "/assets/images/MenuImages/SandwichesImages/EggAndCheeseBreakfastSandwich.png"
+      }
+    ]
+  },
+  {
+    "category": "Coffee, Espresso & More",
+    "featuredItems": [
+      {
+        "name": "Pumpkin Macchiato",
+        "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg"
+      }
+    ],
+    "items": [
+      {
+        "name": "Cold Brew Coffee",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/ColdBrewCoffee.png"
+      },
+      {
+        "name": "Americano",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Americano.png"
+      },
+      {
+        "name": "Cappuccino",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Cappuccino.png"
+      },
+      {
+        "name": "Lattes",
+
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Lattes.png"
+      },
+      {
+        "name": "Caramel Macchiatos",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelMacchiatos.png"
+      },
+      {
+        "name": "Mochas",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Mochas.png"
+      },
+      {
+        "name": "Espresso",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Espresso.png"
+      },
+      {
+        "name": "Hot Chocolate",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/HotChocolate.png"
+      },
+      {
+        "name": "Coffee Frappe",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CoffeeFrappe.png"
+      },
+      {
+        "name": "Mocha Frappe",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/MochaFrappe.png"
+      },
+      {
+        "name": "Caramel Frappe",
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelFrappe.png"
+      }
+    ]
+  },
+  {
+    "category": "Ice Cream",
+    "featuredItems": [
+      {
+        "name": "Bourbon Caramel Apple Pie Milkshake",
+        "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg"
+      }
+    ],
+    "items": [
+      {
+        "name": "Classic Donut Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/ClassicDonutSundae.png"
+      },
+      {
+        "name": "Salted Caramel Donut Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelDonutSundae.png"
+      },
+      {
+        "name": "S'mores Donut Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/S'moresDonutSundae.png"
+      },
+      {
+        "name": "Cookies & Cream Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamSundae.png"
+      },
+      {
+        "name": "Chocolate Madness Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMadnessSundae.png"
+      },
+      {
+        "name": "Confetti Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/ConfettiSundae.png"
+      },
+      {
+        "name": "Peanut Butter Crunch Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/PeanutButterCrunchSundae.png"
+      },
+      {
+        "name": "Strawberry Shortcake Sundae",
+        "image": "/assets/images/MenuImages/IceCreamImages/StrawberryShortcakeSundae.png"
+      },
+      {
+        "name": "Birthday Cake Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/BirthdayCakeMilkshake.png"
+      },
+      {
+        "name": "Blueberry Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/BlueberryMilkshake.png"
+      },
+      {
+        "name": "Chocolate Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMilkshake.png"
+      },
+      {
+        "name": "Cookies & Cream Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamMilkshake.png"
+      },
+      {
+        "name": "Maple Bacon Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/MapleBaconMilkshake.png"
+      },
+      {
+        "name": "Salted Caramel Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelMilkshake.png"
+      },
+      {
+        "name": "S'mores Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/S'moresMilkshake.png"
+      },
+      {
+        "name": "Strawberry Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/StrawberryMilkshake.png"
+      },
+      {
+        "name": "Vanilla Milkshake",
+        "image": "/assets/images/MenuImages/IceCreamImages/VanillaMilkshake.png"
+      },
+      {
+        "name": "Donut Ice Cream Sandwiches",
+        "image": "/assets/images/MenuImages/IceCreamImages/DonutIceCreamSandwiches.png"
+      }
+    ]
+  },
+  {
+    "category": "Lemonade & Refreshers",
+    "items": [
+      {
+        "name": "Original Lemonade",
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/OriginalLemonade.jpg"
+      },
+      {
+        "name": "Strawberry Lemonade",
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/StrawberryLemonade.jpg"
+      },
+      {
+        "name": "Raspberry Dragonfruit Lemonade Refresher",
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/RaspberryDragonfruitLemonadeRefresher.jpg"
+      },
+      {
+        "name": "Citrus Mango Pineapple Lemonade Refresher",
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/CitrusMangoPineappleLemonadeRefresher.jpg"
+      },
+      {
+        "name": "Blueberry Popping Bubbles",
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/BlueberryPoppingBubbles.jpg"
+      }
+    ]
+  }
+]

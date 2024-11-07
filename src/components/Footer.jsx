@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import DuckDonutsLogo from "../assets/images/NavbarImages/DuckDonutsLogo.png";
+import DuckDonutsLogo from "/assets/images/NavbarImages/DuckDonutsLogo.png";
 
 const Footer = () => {
   const [hovered, setHovered] = useState("");
   const footerOptions = [
     "menu",
-    "locations",
     "contact us",
-    "international franchising",
     "nutrition & allergy info",
   ];
-  console.log(hovered);
+
   return (
     <footer className="bg-white w-full">
       <section className="flex relative">
         <div className="flex flex-col items-center justify-center px-20 py-10 mt-24 bg-sky-500 w-full">
           <div className="flex w-full h-full max-w-[76.05em]">
-            <div className="w-[28%] flex items-center">
+            <div className="w-[28%] flex items-center ">
               <Link to="/">
                 <img
                   src={DuckDonutsLogo}
@@ -39,10 +37,13 @@ const Footer = () => {
                   }}
                 >
                   <Link to={`/${option}`}>
-                    <p className="relative transition ease-in-out duration-7000">
+                    <p
+                      className="relative transition ease-in-out duration-7000"
+                      style={{textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"}}
+                    >
                       {option}
                       <span
-                        className={`absolute left-0 bottom-0 w-full h-[2px] bg-current transition-opacity duration-1000 ease-in-out ${
+                        className={`absolute left-0 bottom-[-2.5px] w-full h-[3.5px] bg-current transition-opacity duration-700 ease-in-out ${
                           hovered === option ? "opacity-100" : "opacity-0"
                         }`}
                       ></span>

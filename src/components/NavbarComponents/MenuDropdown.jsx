@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MenuDropdown = (props) => {
   const menuCategories = [
-    "seasonal",
-    "fan favorites",
-    "everyday assortments",
-    "coffee, espresso, & more",
-    "ice cream",
-    "lemonade & refreshers",
-    "sandwiches",
-    "made-to-order donuts",
+    {category: "seasonal", endpoint: "seasonal"},
+    {category: "fan favorites", endpoint: "fan-favorites"},
+    {category: "everyday assortments" , endpoint: "everyday-assortments"},
+    {category: "coffee, espresso, & more", endpoint: "coffee-espresso-more"},
+    {category: "ice cream", endpoint: "ice-cream"},
+    {category: "lemonade & refreshers", endpoint: "lemonade-refreshers"},
+    {category: "sandwiches", endpoint: "sandwiches"},
+    {category: "made-to-order donuts", endpoint: "made-to-order-donuts"},
   ];
   return (
     <>
@@ -30,12 +31,11 @@ const MenuDropdown = (props) => {
         }`}
       >
         {menuCategories.map((category, index) => (
-          <p
-            key={index}
-            className="text-white py-1 hover:cursor-pointer hover:border-b-[3.5px] hover:border-b-white"
-          >
-            {category}
-          </p>
+          <Link to={`menu/${category.endpoint}`} key={index}>
+            <p className="text-white py-1 hover:cursor-pointer hover:border-b-[3.5px] hover:border-b-white">
+              {category.category}
+            </p>
+          </Link>
         ))}
       </div>
     </>
