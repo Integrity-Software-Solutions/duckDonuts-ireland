@@ -6,6 +6,7 @@
         "featuredItems": [
           {
             "name": "Fall Favorites Dozen",
+            "tag": "donuts",
             "yearRound": false,
             "availability": "September 4 - December 1",
             "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
@@ -17,11 +18,11 @@
             "yearRound": false,
             "availability": "September 4 - December 1",
             "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
-            "ingredients": "Pumpkin, cinnamon, apple cider, cinnamon sugar",
             "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg"
           },
           {
             "name": "Fall Favorites Half Dozen",
+            "tag": "donuts",
             "yearRound": false,
             "availability": "September 4 - December 1",
             "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
@@ -46,6 +47,8 @@
   },
   {
     "category": "Fan Favorites",
+    "tag": "donuts",
+    "description": "Not sure what combination you are looking to try? Customers of Duck Donuts came up with their favorite donut combination. Choose a fan favorite or one of our other duckzillion combinations!",
     "items": [
       {
         "name": "Bacon in the Sun",
@@ -178,7 +181,7 @@
         "yearRound": true,
         "description": "A vanilla donut with vanilla frosting",
         "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/Smores.png"
+        "image": "/assets/images/MenuImages/FanFavoritesImages/S'mores.png"
       },
       {
         "name": "Strawberry Confetti",
@@ -226,6 +229,7 @@
   },
   {
     "category": "Everyday Assortments",
+    "tag": "donuts",
     "items": [
       {
         "name": "Breakfast Box",

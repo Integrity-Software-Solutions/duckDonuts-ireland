@@ -1,18 +1,32 @@
 import React, { useState, useEffect } from "react";
+import DonutsBackgroundImage from "/assets/images/MenuImages/DonutsBackgroundImage.jpg";
+import menuData from "../data/menu_data.json";
+import { Link } from "react-router-dom";
 
-const MenuItem = (props) => {
+const Donuts = (props) => {
+  const donutData = menuData.filter((data) => data.tag === "donuts");
+
+  const otherDonutData = menuData
+    .filter((data) => data.category === "Seasonal")
+    .map((data) => {
+      const seasonalData = data.seasons[props.season];
+      const filteredItems = [
+        ...seasonalData.items,
+        ...seasonalData.featuredItems,
+      ].filter((item) => item.tag === "donuts");
+
+      return {
+        category: "Featured Items",
+        tag: "donuts",
+        items: filteredItems,
+      };
+    })
+    .filter((data) => data.items.length > 0); // Remove empty seasonal data if necessary
+
+  const allDonuts = [...otherDonutData, ...donutData];
+
   const [showBackground, setShowBackground] = useState(false);
   const [hovered, setHovered] = useState("");
-  const data = props.data;
-  const title = props.title;
-  const description = data[0].description;
-  const backgroundImage = props.backgroundImage;
-  // const items = [...data.items];
-  // const featuredItems = data.featuredItems ? [...data.featuredItems] : [];
-  // const allItems = [...featuredItems, ...items];
-  // console.log(allItems);
-
-  console.log(data);
 
   useEffect(() => {
     setTimeout(() => {
@@ -48,7 +62,7 @@ const MenuItem = (props) => {
     );
   };
 
-  const ItemsSection = (props) => {
+  const DonutSection = (props) => {
     let items = [];
     let featuredItems = [];
     items = props.data.items ? props.data.items : [];
@@ -91,13 +105,13 @@ const MenuItem = (props) => {
       <div className=" bg-fuchsia-900 relative">
         <img
           alt="Menu Image"
-          src={backgroundImage}
+          src={DonutsBackgroundImage}
           className={`h-[10%] w-full max-h-[525px] bg-cover transition-opacity duration-1000 ease-in-out ${
             showBackground ? "opacity-100" : "opacity-0"
           }`}
           style={{
             backgroundImage: `${
-              showBackground ? `url(${backgroundImage})` : ""
+              showBackground ? `url(${DonutsBackgroundImage})` : ""
             }`,
           }}
         />
@@ -105,7 +119,7 @@ const MenuItem = (props) => {
           className="uppercase absolute bottom-[7rem] left-[22%] text-6xl font-bold text-white font-boogaloo"
           style={{ textShadow: "6px 6px 12px rgba(0, 0, 0, 0.7)" }}
         >
-          {title}
+          Donuts
         </div>
       </div>
       {/* <div className="py-20 px-[1.15rem]">{props.children}</div> */}
@@ -114,12 +128,11 @@ const MenuItem = (props) => {
           className={` text-sky-500 text-8xl font-bold py-3 font-boogaloo`}
           style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
         >
-          {title}
+          DONUTS
         </div>
-        <div className="mt-6 mb-20 text-lg">{description}</div>
-        {data.map((data, index) => {
+        {allDonuts.map((data, index) => {
           return (
-            <ItemsSection
+            <DonutSection
               key={index}
               title={data.category}
               data={data}
@@ -132,4 +145,4 @@ const MenuItem = (props) => {
   );
 };
 
-export default MenuItem;
+export default Donuts;

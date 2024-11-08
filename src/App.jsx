@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import seasonData from "./data/season_data.json";
+import Donuts from "./pages/Donuts";
 
 function App() {
   const determineSeason = () => {
@@ -46,6 +47,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/menu" element={<Menu season={season} />} />
+              <Route path="/menu/donuts" element={<Donuts season={season} />} />
               <Route path="/menu/seasonal" element={<Seasonal />} />
               <Route path="/menu/ice-cream" element={<IceCream />} />
               <Route path="/menu/sandwiches" element={<Sandwiches />} />
