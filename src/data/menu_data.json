@@ -505,77 +505,114 @@
     "featuredItems": [
       {
         "name": "Bourbon Caramel Apple Pie Milkshake",
-        "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg"
+        "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg",
+        "description": "We combined the best fall flavors into one irresistibly indulgent milkshake. Try a Bourbon Caramel Apple Pie milkshake today!",
+        "endpoint": "/menu/ice-cream/bourbon-caramel-apple-pie-milkshake",
+        "availability": "September 4 - December 1"
       }
     ],
     "items": [
       {
         "name": "Classic Donut Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/ClassicDonutSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/ClassicDonutSundae.png",
+        "description": "Peanuts, sprinkles, and fudge piled high atop a warm, freshly made donut. Yes, it is as good as it looks.",
+        "endpoint": "/menu/ice-cream/classic-donut-sundae"
       },
       {
         "name": "Salted Caramel Donut Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelDonutSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelDonutSundae.png",
+        "description": "Salty + Sweet = Pure Perfection! A warm cinnamon sugar donut topped with vanilla ice cream and salted caramel drizzle.",
+        "endpoint": "/menu/ice-cream/salted-caramel-donut-sundae"
       },
       {
         "name": "S'mores Donut Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/S'moresDonutSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/S'moresDonutSundae.png",
+        "description": "We're taking S'mores to a whole new level! A warm, vanilla cake donut coated with chocolate icing and topped with ice cream, marshmallow drizzle, hot fudge and graham cracker crumbs!",
+        "endpoint": "/menu/ice-cream/smores-donut-sundae"
       },
       {
         "name": "Cookies & Cream Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamSundae.png",
+        "description": "One of our best sellers, this donut sundae starts with a warm, vanilla cake donut coated with vanilla icing and topped with vanilla ice cream, hot fudge and of course, OREO® Cookies Pieces!",
+        "endpoint": "/menu/ice-cream/cookies-cream-sundae"
       },
       {
         "name": "Chocolate Madness Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMadnessSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMadnessSundae.png",
+        "description": "Calling all chocolate lovers! A warm, vanilla cake donut topped coated in chocolate icing, topped with vanilla ice cream and topped with all MORE chocolate - hot fudge, OREO(R) Cookie Crumbles and chocolate sprinkles!",
+        "endpoint": "/menu/ice-cream/chocolate-madness-sundae"
       },
       {
         "name": "Confetti Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/ConfettiSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/ConfettiSundae.png",
+        "description": "What better way to celebrate than with donuts, ice cream and sprinkles! A warm, vanilla cake donut coated with vanilla icing and topped with vanilla ice cream, raspberry drizzle and rainbow sprinkles!",
+        "endpoint": "/menu/ice-cream/confetti-sundae"
       },
       {
         "name": "Peanut Butter Crunch Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/PeanutButterCrunchSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/PeanutButterCrunchSundae.png",
+        "description": "Perfect for peanut butter lovers! A warm, vanilla cake donut coated with peanut butter icing, topped with vanilla ice cream and peanuts, and drizzled with marshmallow.",
+        "endpoint": "/menu/ice-cream/peanut-butter-crunch-sundae"
       },
       {
         "name": "Strawberry Shortcake Sundae",
-        "image": "/assets/images/MenuImages/IceCreamImages/StrawberryShortcakeSundae.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/StrawberryShortcakeSundae.png",
+        "description": "A twist on a classic, this sundae starts with a warm, vanilla cake donut coated with strawberry icing, is topped with vanilla ice cream, and finished with graham cracker crumbs!",
+        "endpoint": "/menu/ice-cream/strawberry-shortcake-sundae"
       },
       {
         "name": "Birthday Cake Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/BirthdayCakeMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/BirthdayCakeMilkshake.png",
+        "description": "Vanilla ice cream blended with white chocolate and cupcake flavors and topped with whipped cream and rainbow sprinkles!",
+        "endpoint": "/menu/ice-cream/birthday-cake-milkshake"
       },
       {
         "name": "Blueberry Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/BlueberryMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/BlueberryMilkshake.png",
+        "description": "Vanilla ice cream blended with bits of blueberry and topped with whipped cream!Vanilla ice cream blended with bits of blueberry and topped with whipped cream!",
+        "endpoint": "/menu/ice-cream/blueberry-milkshake"
       },
       {
         "name": "Chocolate Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMilkshake.png",
+        "description": "A classic hand-dipped chocolate shake topped with whipped cream and chocolate drizzle!",
+        "endpoint": "/menu/ice-cream/chocolate-milkshake"
       },
       {
         "name": "Cookies & Cream Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamMilkshake.png",
+        "description": "Vanilla ice cream blended with OREO® Cookie pieces and topped with whipped cream!",
+        "endpoint": "/menu/ice-cream/cookies-cream-milkshake"
       },
       {
         "name": "Maple Bacon Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/MapleBaconMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/MapleBaconMilkshake.png",
+        "description": "A twist on our fan favorite Maple Bacon donut, this hand-dipped milkshake boasts all the flavors you would expect - vanilla ice cream, maple and bacon!",
+        "endpoint": "/menu/ice-cream/maple-bacon-milkshake"
       },
       {
         "name": "Salted Caramel Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelMilkshake.png",
+        "description": "Vanilla ice cream blended and drizzled with salted caramel!",
+        "endpoint": "/menu/ice-cream/salted-caramel-milkshake"
       },
       {
         "name": "S'mores Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/S'moresMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/S'moresMilkshake.png",
+        "description": "A twist on our fan favore S'mores donut, this milkshake blends vanilla ice cream with dark chocolate sauce, toasted marshmallow and topped whipped cream, chocolate and graham cracker!",
+        "endpoint": "/menu/ice-cream/smores-milkshake"
       },
       {
         "name": "Strawberry Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/StrawberryMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/StrawberryMilkshake.png",
+        "description": "Vanilla ice cream blended with bits of strawberry and topped with whipped cream!",
+        "endpoint": "/menu/ice-cream/strawberry-milkshake"
       },
       {
         "name": "Vanilla Milkshake",
-        "image": "/assets/images/MenuImages/IceCreamImages/VanillaMilkshake.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/VanillaMilkshake.png",
+        "description": "Hand-dipped vanilla ice cream topped with whipped cream!",
+        "endpoint": "/menu/ice-cream/vanilla-milkshake"
       },
       {
         "name": "Donut Ice Cream Sandwiches",
