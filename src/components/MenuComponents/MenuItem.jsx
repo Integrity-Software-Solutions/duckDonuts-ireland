@@ -27,7 +27,7 @@ const MenuItem = (props) => {
           }}
         />
         <div
-          className="uppercase absolute bottom-[7rem] left-[22%] text-6xl font-bold text-white font-boogaloo"
+          className="uppercase absolute bottom-[7rem] left-[22%] text-6xl font-bold text-white font-boogaloo w-1/2 leading-snug"
           style={{ textShadow: "6px 6px 12px rgba(0, 0, 0, 0.7)" }}
         >
           {title1}
@@ -45,8 +45,12 @@ const MenuItem = (props) => {
               {props.data.name}
             </div>
             <div className="mt-6 text-lg">{props.data.description}</div>
-            <div className="mt-6 text-xl font-bold">Ingredients</div>
-            <div className="mt-6 text-lg">{props.data.ingredients}</div>
+            {props.data.ingredients && (
+              <>
+                <div className="mt-6 text-xl font-bold">Ingredients</div>
+                <div className="mt-6 text-lg">{props.data.ingredients}</div>
+              </>
+            )}
           </div>
         </div>
       </div>

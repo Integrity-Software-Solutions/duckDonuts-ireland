@@ -40,6 +40,10 @@ import Sunrise from "./pages/MenuPages/MenuItems/FanFavorites/Sunrise";
 import TheBeach from "./pages/MenuPages/MenuItems/FanFavorites/TheBeach";
 import TheBoardwalk from "./pages/MenuPages/MenuItems/FanFavorites/TheBoardwalk";
 import TheFlipFlop from "./pages/MenuPages/MenuItems/FanFavorites/TheFlipFlop";
+import MapleDrizzle from "./pages/MenuPages/MenuItems/Sandwiches/MapleDrizzle";
+import BaconEggAndCheese from "./pages/MenuPages/MenuItems/Sandwiches/BaconEggAndCheese";
+import SausageEggAndCheese from "./pages/MenuPages/MenuItems/Sandwiches/SausageEggAndCheese";
+import EggAndCheese from "./pages/MenuPages/MenuItems/Sandwiches/EggAndCheese";
 
 function App() {
   const determineSeason = () => {
@@ -122,7 +126,11 @@ function App() {
                 {/* Lemonade & Refreshers */}
 
                 {/* Sandwiches */}
-
+                <Route path="/menu/sandwiches/egg-cheese-breakfast-sandwich" element={<EggAndCheese />} />
+                <Route path="/menu/sandwiches/sausage-egg-and-cheese-with-chopped-bacon" element={<MapleDrizzle />} />
+                <Route path="/menu/sandwiches/bacon-egg-and-cheese-breakfast-sandwich" element={<BaconEggAndCheese />} />
+                <Route path="/menu/sandwiches/sausage-egg-and-cheese-breakfast-sandwich" element={<SausageEggAndCheese />} />
+                
                 {/* Made to Order Donuts */}
                 
             </Routes>
