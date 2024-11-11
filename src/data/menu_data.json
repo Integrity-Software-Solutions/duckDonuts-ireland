@@ -393,25 +393,29 @@
         "name": "Maple Drizzle, Chopped Bacon, Sausage, Egg & Cheese Breakfast Sandwich",
         "description": "Get the works with this flavorful breakfast sandwich with egg, sausage, and cheese on a donut topped with maple icing and chopped bacon.",
         "yearRound": true,
-        "image": "/assets/images/MenuImages/SandwichesImages/MapleDrizzleAndChoppedBacon.png"
+        "image": "/assets/images/MenuImages/SandwichesImages/MapleDrizzleAndChoppedBacon.png",
+        "endpoint": "/menu/sandwiches/sausage-egg-and-cheese-with-chopped-bacon"
       },
       {
         "name": "Bacon, Egg, and Cheese Breakfast Sandwich",
         "description": "Everybody loves bacon and donuts - paired with egg and cheese, they make one delicious breakfast sandwich!",
         "yearRound": true,
-        "image": "/assets/images/MenuImages/SandwichesImages/BaconEggAndCheeseBreakfastSandwich.png"
+        "image": "/assets/images/MenuImages/SandwichesImages/BaconEggAndCheeseBreakfastSandwich.png",
+        "endpoint": "/menu/sandwiches/bacon-egg-and-cheese-breakfast-sandwich"
       },
       {
         "name": "Sausage, Egg, and Cheese Breakfast Sandwich",
         "description": "Escape your breakfast rut and thrill your taste buds with our sausage, egg, and cheese breakfast sandwich.",
         "yearRound": true,
-        "image": "/assets/images/MenuImages/SandwichesImages/SausageEggAndCheeseBreakfastSandwich.png"
+        "image": "/assets/images/MenuImages/SandwichesImages/SausageEggAndCheeseBreakfastSandwich.png",
+        "endpoint": "/menu/sandwiches/sausage-egg-and-cheese-breakfast-sandwich"
       },
       {
         "name": "Egg & Cheese Breakfast Sandwich",
         "description": "Enjoy an every day classic with a twist!",
         "yearRound": true,
-        "image": "/assets/images/MenuImages/SandwichesImages/EggAndCheeseBreakfastSandwich.png"
+        "image": "/assets/images/MenuImages/SandwichesImages/EggAndCheeseBreakfastSandwich.png",
+        "endpoint": "/menu/sandwiches/egg-cheese-breakfast-sandwich"
       }
     ]
   },
