@@ -44,6 +44,11 @@ import MapleDrizzle from "./pages/MenuPages/MenuItems/Sandwiches/MapleDrizzle";
 import BaconEggAndCheese from "./pages/MenuPages/MenuItems/Sandwiches/BaconEggAndCheese";
 import SausageEggAndCheese from "./pages/MenuPages/MenuItems/Sandwiches/SausageEggAndCheese";
 import EggAndCheese from "./pages/MenuPages/MenuItems/Sandwiches/EggAndCheese";
+import OriginalLemonade from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/OriginalLemonade";
+import StrawberryLemonade from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/StrawberryLemonade";
+import RaspberryDragonfruitLemonadeRefresher from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/RaspberryDragonfruitLemonadeRefresher";
+import CitrusMangoPineappleLemonadeRefresher from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/CitrusMangoPineappleLemonadeRefresher";
+import BlueberryPoppingBubbles from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/BlueberryPoppingBubbles";
 
 function App() {
   const determineSeason = () => {
@@ -124,13 +129,18 @@ function App() {
                 {/* Ice Cream */}
 
                 {/* Lemonade & Refreshers */}
+                <Route path="/menu/lemonade-refreshers/original-lemonade" element={<OriginalLemonade />} />
+                <Route path="/menu/lemonade-refreshers/strawberry-lemonade" element={<StrawberryLemonade />} />
+                <Route path="/menu/lemonade-refreshers/blueberry-popping-bubbles" element={<BlueberryPoppingBubbles />} />
+                <Route path="/menu/lemonade-refreshers/raspberry-dragonfruit-lemonade-refresher" element={<RaspberryDragonfruitLemonadeRefresher />} />
+                <Route path="/menu/lemonade-refreshers/citrus-mango-pineapple-lemonade-refresher" element={<CitrusMangoPineappleLemonadeRefresher />} />
 
                 {/* Sandwiches */}
                 <Route path="/menu/sandwiches/egg-cheese-breakfast-sandwich" element={<EggAndCheese />} />
                 <Route path="/menu/sandwiches/sausage-egg-and-cheese-with-chopped-bacon" element={<MapleDrizzle />} />
                 <Route path="/menu/sandwiches/bacon-egg-and-cheese-breakfast-sandwich" element={<BaconEggAndCheese />} />
                 <Route path="/menu/sandwiches/sausage-egg-and-cheese-breakfast-sandwich" element={<SausageEggAndCheese />} />
-                
+
                 {/* Made to Order Donuts */}
                 
             </Routes>

@@ -566,23 +566,35 @@
     "items": [
       {
         "name": "Original Lemonade",
-        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/OriginalLemonade.jpg"
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/OriginalLemonade.jpg",
+        "description": "Enjoy a taste of sunshine all year long with our old-fashioned original lemonade.",
+        "endpoint": "/menu/lemonade-refreshers/original-lemonade"
       },
       {
         "name": "Strawberry Lemonade",
-        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/StrawberryLemonade.jpg"
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/StrawberryLemonade.jpg",
+        "description": "Squeeze the day with our strawberry lemonade, made with our old-fashioned lemonade and strawberry fruit bits.",
+        "endpoint": "/menu/lemonade-refreshers/strawberry-lemonade"
       },
       {
         "name": "Raspberry Dragonfruit Lemonade Refresher",
-        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/RaspberryDragonfruitLemonadeRefresher.jpg"
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/RaspberryDragonfruitLemonadeRefresher.jpg",
+        "description": "Get a gentle boost from our Raspberry Dragonfruit Lemonade Refresher that’s infused with natural energy.",
+        "ingredients": "Each fl. oz. of Maui® Refresher contains 60mg of caffeine from green coffee extract and whole coffee fruit extract.",
+        "endpoint": "/menu/lemonade-refreshers/raspberry-dragonfruit-lemonade-refresher"
       },
       {
         "name": "Citrus Mango Pineapple Lemonade Refresher",
-        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/CitrusMangoPineappleLemonadeRefresher.jpg"
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/CitrusMangoPineappleLemonadeRefresher.jpg",
+        "description": "Bursting with flavor and infused with natural energy, our Citrus Mango Pineapple Lemonade Refresher is sure to quench your thirst!", 
+        "ingredients": "Each fl. oz. of Maui® Refresher contains 60mg of caffeine from green coffee extract and whole coffee fruit extract.",
+        "endpoint": "/menu/lemonade-refreshers/citrus-mango-pineapple-lemonade-refresher"
       },
       {
         "name": "Blueberry Popping Bubbles",
-        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/BlueberryPoppingBubbles.jpg"
+        "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/BlueberryPoppingBubbles.jpg",
+        "description": "Want to add a fun twist to your Lemonade or Lemonade Refresher? Add a scoop of our new Blueberry Popping Bubbles! These delightfully flavorful orbs add a playful twist to any drink.",
+        "endpoint": "/menu/lemonade-refreshers/blueberry-popping-bubbles"
       }
     ]
   }
