@@ -55,177 +55,202 @@
       {
         "name": "Bacon in the Sun",
         "yearRound": true,
-        "description": "A classic donut with a sweet glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/BaconInTheSun.png"
+        "description": "Enjoy the flavors of maple icing topped with chopped bacon and salted caramel drizzle.",
+        "ingredients": "Maple Icing, Chopped Bacon, Salted Caramel Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BaconInTheSun.png",
+        "endpoint": "/menu/donuts/bacon-in-the-sun"
       },
       {
         "name": "Beach Ball",
         "yearRound": true,
-        "description": "A chocolate donut with chocolate frosting",
-        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/BeachBall.png"
+        "description": "Can't decide between sprinkles and a chocolate drizzle - get both! Unlock your inner child and get the works on this donut with vanilla icing, rainbow sprinkles, and chocolate drizzle.",
+        "ingredients": "Vanilla Icing, Rainbow Sprinkles, Chocolate Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BeachBall.png",
+        "endpoint": "/menu/donuts/beach-ball"
       },
       {
         "name": "Blueberry Lemonade",
         "yearRound": true,
-        "description": "A vanilla donut with vanilla frosting",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryLemonade.jpg"
+        "description": "Sweet, tangy, and totally satisfying, this summer feature will remind you of a blueberry lemonade–only better!",
+        "ingredients": "Blueberry Icing, Lemon Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryLemonade.jpg",
+        "endpoint": "/menu/donuts/blueberry-lemonade"
       },
       {
         "name": "Blueberry Pancake",
         "yearRound": true,
-        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryPancake.png"
+        "description": "Two breakfast favorites are combined to make one incredible donut! This July featured donut has blueberry icing with a drizzling of maple syrup.",
+        "ingredients": "Blueberry Icing, Maple Drizzle, Powdered Sugar",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryPancake.png",
+        "endpoint": "/menu/donuts/blueberry-pancake"
       },
       {
         "name": "Chocolate Caramel Crunch",
         "yearRound": true,
-        "description": "A classic donut with a sweet glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCaramelCrunch.png"
+        "description": "Go nuts over this salty, sweet, and crunchy donut! Enjoy this donut covered in chocolate icing, peanuts, and salted caramel drizzle.",
+        "ingredients": "Chocolate Icing, Peanuts, Salted Caramel Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCaramelCrunch.png",
+        "endpoint": "/menu/donuts/chocolate-caramel-crunch"
       },
       {
         "name": "Chocolate Covered Strawberry",
         "yearRound": true,
-        "description": "Chocolate Covered Strawberry",
-        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCoveredStrawberry.png"
+        "description": "Enjoy the sweet flavor of strawberry icing finished with chocolate drizzle.",
+        "ingredients": "Strawberry Icing, Chocolate Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCoveredStrawberry.png",
+        "endpoint": "/menu/donuts/chocolate-covered-strawberry"
       },
       {
         "name": "Chocolate Explosion",
         "yearRound": true,
-        "description": "Chocolate Explosion",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateExplosion.png"
+        "description": "What could be better than chocolate, chocolate and more chocolate! It's a chocolate lover's dream!",
+        "ingredients": "Chocolate Icing, OREO® Crumbles, Hot Fudge Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateExplosion.png",
+        "endpoint": "/menu/donuts/chocolate-explosion"
       },
       {
         "name": "Cinnamon Bun",
         "yearRound": true,
-        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/CinnamonBun.png"
+        "description": "Love cinnamon buns? Then you'll love this sweet donut with cinnamon sugar and vanilla icing. Get enough for everyone - this donuts too good to share!",
+        "ingredients": "Cinnamon Sugar, Vanilla Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/CinnamonBun.png",
+        "endpoint": "/menu/donuts/cinnamon-bun"
       },
       {
         "name": "Coconut Island Bliss",
         "yearRound": true,
-        "description": "A classic donut with a sweet glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/CoconutIslandBliss.png"
+        "description": "Chocolate and peanuts is a classic combo—now add coconut for a new twist on this time-honored taste.",
+        "ingredients": "Chocolate Icing, Peanuts, Coconut",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/CoconutIslandBliss.png",
+        "endpoint": "/menu/donuts/coconut-island-bliss"
       },
       {
         "name": "Cookies & Cream",
         "yearRound": true,
-        "description": "A chocolate donut with chocolate frosting",
-        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/CookiesAndCream.png"
+        "description": "That’s just the way the cookie crumbles! Indulge your sweet tooth with vanilla icing, OREO® Cookie pieces, and hot fudge drizzle.",
+        "ingredients": "Vanilla Icing, OREO® Cookie Pieces, Hot Fudge Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/CookiesAndCream.png",
+        "endpoint": "/menu/donuts/cookies-cream"
       },
       {
         "name": "French Toast",
         "yearRound": true,
-        "description": "A vanilla donut with vanilla frosting",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/FrenchToast.png"
+        "description": "Tastes just like French toast! Maple icing topped with powdered and cinnamon sugars.",
+        "ingredients": "Maple Icing, Powdered Sugar, Cinnamon Sugar",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/FrenchToast.png",
+        "endpoint": "/menu/donuts/french-toast"
       },
       {
         "name": "Maple Bacon",
         "yearRound": true,
-        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/MapleBacon.png"
+        "description": "This savory and sweet tribute to everyone's favorite breakfast food is a real fan favorite. This daring donut has maple icing with pieces of bacon on top.",
+        "ingredients": "Maple Icing, Chopped Bacon",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/MapleBacon.png",
+        "endpoint": "/menu/donuts/maple-bacon"
       },
       {
         "name": "Midnight Madness",
         "yearRound": true,
-        "description": "A classic donut with a sweet glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/MidnightMadness.png"
+        "description": "Chocolate icing with chocolate sprinkles is sure to satisfy your sweet tooth.",
+        "ingredients": "Chocolate Icing, Chocolate Sprinkles",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/MidnightMadness.png",
+        "endpoint": "/menu/donuts/midnight-madness"
       },
       {
         "name": "Peanut Butter & Jelly",
         "yearRound": true,
-        "description": "A chocolate donut with chocolate frosting",
-        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterAndJelly.png"
+        "description": "The Duck Donuts homage to the peanut butter and jelly sandwich! Our creamy peanut butter icing and decadent raspberry drizzle are sure to satisfy.",
+        "ingredients": "Peanut Butter Icing, Raspberry Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterAndJelly.png",
+        "endpoint": "/menu/donuts/peanut-butter-jelly"
       },
       {
         "name": "Peanut Butter Paradise",
         "yearRound": true,
-        "description": "A vanilla donut with vanilla frosting",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterParadise.png"
+        "description": "Treat yourself to this donut with peanut butter icing and chocolate drizzle. These two crowd-pleasing flavors combine to make the donut dream team!",
+        "ingredients": "Peanut Butter Icing, Chocolate Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterParadise.png",
+        "endpoint": "/menu/donuts/peanut-butter-paradise"
       },
       {
         "name": "Pina Colada",
         "yearRound": true,
-        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/PinaColada.png"
+        "description": "Fresh, fruity flavors top this donut featuring lemon icing and shredded coconut.",
+        "ingredients": "Lemon Icing, Shredded Coconut",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/PinaColada.png",
+        "endpoint": "/menu/donuts/pina-colada"
       },
       {
         "name": "Raspberry Fluff",
         "yearRound": true,
-        "description": "A classic donut with a sweet glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/RaspberryFluff.png"
+        "description": "This ooey-gooey combination features a delicious drizzle of raspberry and marshmallow on top of our classic vanilla icing.",
+        "ingredients": "Vanilla Icing, Raspberry Drizzle, Marshmallow Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/RaspberryFluff.png",
+        "endpoint": "/menu/donuts/raspberry-fluff"
       },
       {
         "name": "Sand Dollar",
         "yearRound": true,
-        "description": "A chocolate donut with chocolate frosting",
-        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/SandDollar.png"
+        "description": "Creamy vanilla coated in coconut! This is a featured donut for those who like a tropical twist on their classic treats.",
+        "ingredients": "Vanilla Icing, Shredded Coconut, Powdered Sugar",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/SandDollar.png",
+        "endpoint": "/menu/donuts/sand-dollar"
       },
       {
         "name": "S'mores",
         "yearRound": true,
-        "description": "A vanilla donut with vanilla frosting",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/S'mores.png"
+        "description": "It's like donuts at the campfire! Enjoy chocolate icing with graham cracker crumbs & marshmallow drizzle.",
+        "ingredients": "Chocolate Icing, Graham Cracker Crumbs, Marshmallow Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/S'mores.png",
+        "endpoint": "/menu/donuts/smores"
       },
       {
         "name": "Strawberry Confetti",
         "yearRound": true,
-        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryConfetti.png"
+        "description": "One of our most colorful donuts, the combo of strawberry icing and rainbow sprinkles is sure to put a smile on your face!",
+        "ingredients": "Strawberry Icing, Rainbow Sprinkles",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryConfetti.png",
+        "endpoint": "/menu/donuts/strawberry-confetti"
       },
       {
         "name": "Strawberry Shortcake",
         "yearRound": true,
-        "description": "A classic donut with a sweet glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryShortcake.png"
+        "description": "This cheerful combination includes strawberry icing, graham cracker crumbs, and a sweet vanilla drizzle.",
+        "ingredients": "Strawberry Icing, Graham Cracker Crumbs, Vanilla Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryShortcake.png",
+        "endpoint": "/menu/donuts/strawberry-shortcake"
       },
       {
         "name": "Sunrise",
         "yearRound": true,
-        "description": "A chocolate donut with chocolate frosting",
-        "ingredients": "Flour, sugar, eggs, milk, cocoa powder, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/Sunrise.png"
+        "description": "Brighten up your day with this fun, fruity delight! Try this donut with lemon icing and raspberry drizzle today.",
+        "ingredients": "Lemon Icing, Raspberry Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/Sunrise.png",
+        "endpoint": "/menu/donuts/sunrise"
       },
       {
         "name": "The Beach",
         "yearRound": true,
-        "description": "A vanilla donut with vanilla frosting",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/TheBeach.png"
+        "description": "Rich vanilla poured over a generous dusting of blissful cinnamon sugar. This classic, homemade flavor is sure to satisfy.",
+        "ingredients": "Vanilla Icing, Cinnamon Sugar",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/TheBeach.png",
+        "endpoint": "/menu/donuts/the-beach"
       },
       {
         "name": "The Boardwalk",
         "yearRound": true,
-        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/TheBoardwalk.png"
+        "description": "Indulge your sweet tooth with glazed icing, OREO® Cookie Pieces, powdered sugar, and vanilla drizzle.",
+        "ingredients": "Classic Glaze, OREO® Cookie Pieces, Powdered Sugar, Vanilla Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/TheBoardwalk.png",
+        "endpoint": "/menu/donuts/the-boardwalk"
       },
       {
         "name": "The Flip Flop",
         "yearRound": true,
-        "description": "A donut filled with vanilla cream and topped with chocolate glaze",
-        "ingredients": "Flour, sugar, eggs, milk, vanilla, salt, baking powder, cream, chocolate",
-        "image": "/assets/images/MenuImages/FanFavoritesImages/TheFlipFlop.png"
+        "description": "Simple elegance and a big flavor to match. Pairing chocolate and vanilla on a fresh donut is a recipe for a sure-fire classic.",
+        "ingredients": "Chocolate Icing, Vanilla Drizzle",
+        "image": "/assets/images/MenuImages/FanFavoritesImages/TheFlipFlop.png",
+        "endpoint": "/menu/donuts/the-flip-flop"
       }
     ]
   },
