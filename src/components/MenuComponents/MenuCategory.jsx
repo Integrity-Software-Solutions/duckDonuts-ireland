@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const MenuItem = (props) => {
+const MenuCategory = (props) => {
   const [showBackground, setShowBackground] = useState(false);
   const [hovered, setHovered] = useState("");
   const data = props.data;
@@ -19,29 +20,31 @@ const MenuItem = (props) => {
 
   const ItemImageAndDescription = ({ key, item }) => {
     return (
-      <li className="p-4">
-        <div
-          className="w-full h-[16rem] hover:cursor-pointer"
-          onMouseEnter={() => setHovered(item.name)}
-        >
-          <img
-            src={item.image}
-            alt={item.name}
-            className={`object-contain w-full h-full  ${
-              hovered === item.name ? "scale-105" : "scale-100"
+      <Link to={item.endpoint}>
+        <li className="p-4">
+          <div
+            className="w-full h-[16rem] hover:cursor-pointer"
+            onMouseEnter={() => setHovered(item.name)}
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className={`object-contain w-full h-full  ${
+                hovered === item.name ? "scale-105" : "scale-100"
+              }`}
+              onMouseEnter={() => setHovered(item.name)}
+            />
+          </div>
+          <p
+            className={`mt-2 font-bold hover:cursor-pointer ${
+              hovered === item.name ? "underline" : "no-underline"
             }`}
             onMouseEnter={() => setHovered(item.name)}
-          />
-        </div>
-        <p
-          className={`mt-2 font-bold hover:cursor-pointer ${
-            hovered === item.name ? "underline" : "no-underline"
-          }`}
-          onMouseEnter={() => setHovered(item.name)}
-        >
-          {item.name}
-        </p>
-      </li>
+          >
+            {item.name}
+          </p>
+        </li>
+      </Link>
     );
   };
 
@@ -170,4 +173,4 @@ const MenuItem = (props) => {
   );
 };
 
-export default MenuItem;
+export default MenuCategory;
