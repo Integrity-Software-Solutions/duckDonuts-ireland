@@ -34,9 +34,9 @@
             "name": "Pumpkin Macchiato",
             "yearRound": false,
             "availability": "September 4 - December 1",
-            "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
-            "ingredients": "Pumpkin, cinnamon, apple cider, cinnamon sugar",
-            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg"
+            "description": "Crisp leaves in the air, Pumpkin Macchiatos in hand - Fall is officially here. Our Pumpkin Macchiato can be order hot or iced and is perfectly spiced, oh so nice!",
+            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg",
+            "endpoint": "/menu/coffee-espresso-more/pumpkin-macchiato"
           }
         ],
         "items": []
@@ -431,48 +431,69 @@
     "items": [
       {
         "name": "Cold Brew Coffee",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/ColdBrewCoffee.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/ColdBrewCoffee.png",
+        "description": "A tailor-roasted blend, slow-steeped in cold water for 12-16 hours, without touching heat, and poured over ice to order.",
+        "endpoint": "/menu/coffee-espresso-more/cold-brew-coffee"
       },
       {
         "name": "Americano",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Americano.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Americano.png",
+        "description": "Freshly brewed espresso shots combined with water, available hot or iced.",
+        "endpoint": "/menu/coffee-espresso-more/americano"
       },
       {
         "name": "Cappuccino",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Cappuccino.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Cappuccino.png",
+        "description": "Freshly brewed espresso topped with a milk foam handcrafted by frothing the milk. Cappuccinos are only served hot.",
+        "endpoint": "/menu/coffee-espresso-more/cappuccino"
       },
       {
         "name": "Lattes",
-
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Lattes.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Lattes.png",
+        "description": "Available with custom flavors such as caramel and vanilla, a hot latte is freshly brewed espresso and steamed milk with a thin layer of foam on the top and an iced latte is freshly brewed espresso, cold milk, and ice.",
+        "endpoint": "/menu/coffee-espresso-more/lattes"
       },
       {
         "name": "Caramel Macchiatos",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelMacchiatos.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelMacchiatos.png",
+        "description": "Available hot or iced, a caramel macchiato is freshly brewed espresso poured over milk and flavored with vanilla and drizzled with caramel.",
+        "endpoint": "/menu/coffee-espresso-more/caramel-macchiatos"
       },
       {
         "name": "Mochas",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Mochas.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Mochas.png",
+        "description": "Available hot or iced, a mocha is freshly brewed espresso poured over milk and flavored with either white or dark chocolate.",
+        "endpoint": "/menu/coffee-espresso-more/mochas"
       },
       {
         "name": "Espresso",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Espresso.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Espresso.png",
+        "description": "Freshly brewed double shot of espresso available hot or iced.",
+        "endpoint": "/menu/coffee-espresso-more/espresso"
       },
       {
         "name": "Hot Chocolate",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/HotChocolate.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/HotChocolate.png",
+        "description": "Handcrafted fresh to order with steamed milk, dark chocolate, and vanilla. Topped with whipped cream.",
+        "endpoint": "/menu/coffee-espresso-more/hot-chocolate"
       },
       {
         "name": "Coffee Frappe",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CoffeeFrappe.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CoffeeFrappe.png",
+        "description": "A frozen coffee beverage blended with milk and ice.",
+        "endpoint": "/menu/coffee-espresso-more/coffee-frappe"
       },
       {
         "name": "Mocha Frappe",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/MochaFrappe.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/MochaFrappe.png",
+        "description": "A frozen coffee beverage blended with chocolate.",
+        "endpoint": "/menu/coffee-espresso-more/mocha-frappe"
       },
       {
         "name": "Caramel Frappe",
-        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelFrappe.png"
+        "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelFrappe.png",
+        "description": "A frozen coffee beverage blended with sweet caramel sauce.",
+        "endpoint": "/menu/coffee-espresso-more/caramel-frappe"
       }
     ]
   },
