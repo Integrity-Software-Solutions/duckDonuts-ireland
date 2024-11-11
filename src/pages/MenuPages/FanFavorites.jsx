@@ -1,6 +1,6 @@
 import React from "react";
 import FanFavoritesImage from "/assets/images/MenuImages/FanFavoritesImage.jpg";
-import MenuItem from "../../components/MenuComponents/MenuItem";
+import MenuCategory from "../../components/MenuComponents/MenuCategory";
 import menuData from "../../data/menu_data.json";
 
 const FanFavorites = () => {
@@ -9,7 +9,7 @@ const FanFavorites = () => {
   );
   return (
     <>
-      <MenuItem
+      <MenuCategory
         backgroundImage={FanFavoritesImage}
         alt="Fan Favorites"
         title1="Fan Favorites"

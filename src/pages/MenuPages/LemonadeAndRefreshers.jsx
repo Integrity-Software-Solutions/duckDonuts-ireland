@@ -1,6 +1,6 @@
 import React from "react";
 import LemonadeAndRefreshersImage from "/assets/images/MenuImages/LemonadeAndRefreshersImage.jpg";
-import MenuItem from "../../components/MenuComponents/MenuItem";
+import MenuCategory from "../../components/MenuComponents/MenuCategory";
 import menuData from "../../data/menu_data.json";
 
 const LemonadeAndRefreshers = () => {
@@ -10,7 +10,7 @@ const LemonadeAndRefreshers = () => {
 
   return (
     <>
-      <MenuItem
+      <MenuCategory
         backgroundImage={LemonadeAndRefreshersImage}
         alt="Lemonade and Refreshers Image"
         title1="Lemonade & Refreshers"

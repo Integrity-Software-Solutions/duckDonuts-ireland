@@ -1,6 +1,6 @@
 import React from "react";
 import IceCreamImage from "/assets/images/MenuImages/IceCream.jpg";
-import MenuItem from "../../components/MenuComponents/MenuItem";
+import MenuCategory from "../../components/MenuComponents/MenuCategory";
 import menuData from "../../data/menu_data.json";
 
 const IceCream = () => {
@@ -8,7 +8,7 @@ const IceCream = () => {
 
   return (
     <>
-      <MenuItem
+      <MenuCategory
         backgroundImage={IceCreamImage}
         alt="Ice Cream"
         title1="Ice Cream"

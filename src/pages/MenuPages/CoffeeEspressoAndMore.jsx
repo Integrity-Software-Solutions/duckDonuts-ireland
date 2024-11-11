@@ -1,6 +1,6 @@
 import React from "react";
 import CoffeeEspressoMoreImage from "/assets/images/MenuImages/CoffeeEspressoMoreImage.jpg";
-import MenuItem from "../../components/MenuComponents/MenuItem";
+import MenuCategory from "../../components/MenuComponents/MenuCategory";
 import menuData from "../../data/menu_data.json";
 
 const CoffeeEspressoAndMore = () => {
@@ -9,7 +9,7 @@ const CoffeeEspressoAndMore = () => {
   );
   return (
     <>
-      <MenuItem
+      <MenuCategory
         backgroundImage={CoffeeEspressoMoreImage}
         alt="Coffee, Espresso, and More Image"
         title1="Coffee, Espresso, & More"

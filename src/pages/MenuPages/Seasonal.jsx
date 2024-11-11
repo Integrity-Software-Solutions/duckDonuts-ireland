@@ -1,6 +1,6 @@
 import React from "react";
 import SeasonalImage from "/assets/images/MenuImages/SeasonalImage.jpg";
-import MenuItem from "../../components/MenuComponents/MenuItem";
+import MenuCategory from "../../components/MenuComponents/MenuCategory";
 import menuData from "../../data/menu_data.json";
 
 const Seasonal = (props) => {
@@ -16,7 +16,7 @@ const Seasonal = (props) => {
 
   return (
     <>
-      <MenuItem
+      <MenuCategory
         backgroundImage={SeasonalImage}
         alt="Seasonal"
         title1="Seasonal"
@@ -24,7 +24,7 @@ const Seasonal = (props) => {
         data={data}
         centerText={true}
         boldText={true}
-      ></MenuItem>
+      />
     </>
   );
 };

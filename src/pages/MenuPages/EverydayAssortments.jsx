@@ -1,6 +1,6 @@
 import React from "react";
 import EverydayAssortmentsImage from "/assets/images/MenuImages/EverydayAssortmentsImage.jpg";
-import MenuItem from "../../components/MenuComponents/MenuItem";
+import MenuCategory from "../../components/MenuComponents/MenuCategory";
 import menuData from "../../data/menu_data.json";
 
 const EverydayAssortments = () => {
@@ -10,7 +10,7 @@ const EverydayAssortments = () => {
 
   return (
     <>
-      <MenuItem
+      <MenuCategory
         backgroundImage={EverydayAssortmentsImage}
         alt="Everyday Assortments"
         title1="Everyday Assortments"
