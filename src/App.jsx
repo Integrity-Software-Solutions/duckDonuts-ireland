@@ -49,6 +49,18 @@ import StrawberryLemonade from "./pages/MenuPages/MenuItems/LemonadeAndRefresher
 import RaspberryDragonfruitLemonadeRefresher from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/RaspberryDragonfruitLemonadeRefresher";
 import CitrusMangoPineappleLemonadeRefresher from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/CitrusMangoPineappleLemonadeRefresher";
 import BlueberryPoppingBubbles from "./pages/MenuPages/MenuItems/LemonadeAndRefreshers/BlueberryPoppingBubbles";
+import ColdBrewCoffee from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/ColdBrewCoffee";
+import Americano from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Americano";
+import Cappuccino from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Cappuccino";
+import Lattes from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Lattes";
+import CaramelMacchiatos from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/CaramelMacchiatos";
+import Mochas from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Mochas";
+import Espresso from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Espresso";
+import HotChocolate from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/HotChocolate";
+import CoffeeFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/CoffeeFrappe";
+import MochaFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/MochaFrappe";
+import CaramelFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/CaramelFrappe";
+import PumpkinMacchiato from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/PumpkinMacchiato";
 
 function App() {
   const determineSeason = () => {
@@ -125,6 +137,18 @@ function App() {
                 {/* Everyday Assortments */}
 
                 {/* Coffee, Espresso & More */}
+                <Route path="/menu/coffee-espresso-more/mochas" element={<Mochas />} />
+                <Route path="/menu/coffee-espresso-more/lattes" element={<Lattes />} />
+                <Route path="/menu/coffee-espresso-more/espresso" element={<Espresso />} />
+                <Route path="/menu/coffee-espresso-more/americano" element={<Americano />} />
+                <Route path="/menu/coffee-espresso-more/cappuccino" element={<Cappuccino />} />
+                <Route path="/menu/coffee-espresso-more/mocha-frappe" element={<MochaFrappe />} />
+                <Route path="/menu/coffee-espresso-more/hot-chocolate" element={<HotChocolate />} />
+                <Route path="/menu/coffee-espresso-more/coffee-frappe" element={<CoffeeFrappe />} />
+                <Route path="/menu/coffee-espresso-more/caramel-frappe" element={<CaramelFrappe />} />
+                <Route path="/menu/coffee-espresso-more/cold-brew-coffee" element={<ColdBrewCoffee />} />
+                <Route path="/menu/coffee-espresso-more/caramel-macchiatos" element={<CaramelMacchiatos />} />
+                <Route path="/menu/coffee-espresso-more/pumpkin-macchiato" element={<PumpkinMacchiato />} />
 
                 {/* Ice Cream */}
 

@@ -425,7 +425,9 @@
     "featuredItems": [
       {
         "name": "Pumpkin Macchiato",
-        "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg"
+        "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg",
+        "description": "Crisp leaves in the air, Pumpkin Macchiatos in hand - Fall is officially here. Our Pumpkin Macchiato can be order hot or iced and is perfectly spiced, oh so nice!",
+        "endpoint": "/menu/coffee-espresso-more/pumpkin-macchiato"
       }
     ],
     "items": [
