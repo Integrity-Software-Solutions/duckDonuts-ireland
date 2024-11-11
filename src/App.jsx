@@ -15,6 +15,31 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import seasonData from "./data/season_data.json";
 import Donuts from "./pages/Donuts";
+import BaconInTheSun from "./pages/MenuPages/MenuItems/FanFavorites/BaconInTheSun";
+import BeachBall from "./pages/MenuPages/MenuItems/FanFavorites/BeachBall";
+import BlueberryLemonade from "./pages/MenuPages/MenuItems/FanFavorites/BlueberryLemonade";
+import BlueberryPancake from "./pages/MenuPages/MenuItems/FanFavorites/BlueberryPancake";
+import ChocolateCaramelCrunch from "./pages/MenuPages/MenuItems/FanFavorites/ChocolateCaramelCrunch";
+import ChocolateCoveredStrawberry from "./pages/MenuPages/MenuItems/FanFavorites/ChocolateCoveredStrawberry";
+import ChocolateExplosion from "./pages/MenuPages/MenuItems/FanFavorites/ChocolateExplosion";
+import CinnamonBun from "./pages/MenuPages/MenuItems/FanFavorites/CinnamonBun";
+import CoconutIslandBliss from "./pages/MenuPages/MenuItems/FanFavorites/CoconutIslandBliss";
+import CookiesAndCream from "./pages/MenuPages/MenuItems/FanFavorites/CookiesAndCream";
+import FrenchToast from "./pages/MenuPages/MenuItems/FanFavorites/FrenchToast";
+import MapleBacon from "./pages/MenuPages/MenuItems/FanFavorites/MapleBacon";
+import MidnightMadness from "./pages/MenuPages/MenuItems/FanFavorites/MidnightMadness";
+import PeanutButterAndJelly from "./pages/MenuPages/MenuItems/FanFavorites/PeanutButterAndJelly";
+import PeanutButterParadise from "./pages/MenuPages/MenuItems/FanFavorites/PeanutButterParadise";
+import PinaColada from "./pages/MenuPages/MenuItems/FanFavorites/PinaColada";
+import RaspberryFluff from "./pages/MenuPages/MenuItems/FanFavorites/RaspberryFluff";
+import SandDollar from "./pages/MenuPages/MenuItems/FanFavorites/SandDollar";
+import Smores from "./pages/MenuPages/MenuItems/FanFavorites/Smores";
+import StrawberryConfetti from "./pages/MenuPages/MenuItems/FanFavorites/StrawberryConfetti";
+import StrawberryShortcake from "./pages/MenuPages/MenuItems/FanFavorites/StrawberryShortcake";
+import Sunrise from "./pages/MenuPages/MenuItems/FanFavorites/Sunrise";
+import TheBeach from "./pages/MenuPages/MenuItems/FanFavorites/TheBeach";
+import TheBoardwalk from "./pages/MenuPages/MenuItems/FanFavorites/TheBoardwalk";
+import TheFlipFlop from "./pages/MenuPages/MenuItems/FanFavorites/TheFlipFlop";
 
 function App() {
   const determineSeason = () => {
@@ -47,6 +72,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/menu" element={<Menu season={season} />} />
+
+              {/* menu categories */}
               <Route path="/menu/donuts" element={<Donuts season={season} />} />
               <Route path="/menu/seasonal" element={<Seasonal season={season} />} />
               <Route path="/menu/ice-cream" element={<IceCream />} />
@@ -56,6 +83,48 @@ function App() {
               <Route path="/menu/everyday-assortments" element={<EverydayAssortments />} />
               <Route path="/menu/lemonade-refreshers" element={<LemonadeAndRefreshers />} />
               <Route path="/menu/coffee-espresso-more" element={<CoffeeEspressoAndMore />} />
+
+              {/* menu items */}
+                {/* seasonal */}
+
+                {/* Fan Favorites */}
+                <Route path="/menu/donuts/smores" element={<Smores />} />
+                <Route path="/menu/donuts/sunrise" element={<Sunrise />} />
+                <Route path="/menu/donuts/the-beach" element={<TheBeach />} />
+                <Route path="/menu/donuts/beach-ball" element={<BeachBall />} />
+                <Route path="/menu/donuts/maple-bacon" element={<MapleBacon />} />
+                <Route path="/menu/donuts/pina-colada" element={<PinaColada />} />
+                <Route path="/menu/donuts/sand-dollar" element={<SandDollar />} />
+                <Route path="/menu/donuts/cinnamon-bun" element={<CinnamonBun />} />
+                <Route path="/menu/donuts/french-toast" element={<FrenchToast />} />
+                <Route path="/menu/donuts/the-flip-flop" element={<TheFlipFlop />} />
+                <Route path="/menu/donuts/the-boardwalk" element={<TheBoardwalk />} />
+                <Route path="/menu/donuts/cookies-cream" element={<CookiesAndCream />} />
+                <Route path="/menu/donuts/bacon-in-the-sun" element={<BaconInTheSun />} />
+                <Route path="/menu/donuts/raspberry-fluff" element={<RaspberryFluff />} />
+                <Route path="/menu/donuts/midnight-madness" element={<MidnightMadness />} />
+                <Route path="/menu/donuts/blueberry-pancake" element={<BlueberryPancake />} />
+                <Route path="/menu/donuts/blueberry-lemonade" element={<BlueberryLemonade />} />
+                <Route path="/menu/donuts/chocolate-explosion" element={<ChocolateExplosion />} />
+                <Route path="/menu/donuts/strawberry-confetti" element={<StrawberryConfetti />} />
+                <Route path="/menu/donuts/coconut-island-bliss" element={<CoconutIslandBliss />} />
+                <Route path="/menu/donuts/peanut-butter-jelly" element={<PeanutButterAndJelly />} />
+                <Route path="/menu/donuts/strawberry-shortcake" element={<StrawberryShortcake />} />
+                <Route path="/menu/donuts/peanut-butter-paradise" element={<PeanutButterParadise />} />
+                <Route path="/menu/donuts/chocolate-caramel-crunch" element={<ChocolateCaramelCrunch />} />
+                <Route path="/menu/donuts/chocolate-covered-strawberry" element={<ChocolateCoveredStrawberry />} />
+                {/* Everyday Assortments */}
+
+                {/* Coffee, Espresso & More */}
+
+                {/* Ice Cream */}
+
+                {/* Lemonade & Refreshers */}
+
+                {/* Sandwiches */}
+
+                {/* Made to Order Donuts */}
+                
             </Routes>
           </ScrollToTop>
         </main>
