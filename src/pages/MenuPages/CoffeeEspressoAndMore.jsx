@@ -1,19 +1,23 @@
-import React from 'react'
-import CoffeeEspressoMoreImage from '/assets/images/MenuImages/CoffeeEspressoMoreImage.jpg'
-import MenuItem from '../../components/MenuComponents/MenuItem'
+import React from "react";
+import CoffeeEspressoMoreImage from "/assets/images/MenuImages/CoffeeEspressoMoreImage.jpg";
+import MenuItem from "../../components/MenuComponents/MenuItem";
+import menuData from "../../data/menu_data.json";
 
 const CoffeeEspressoAndMore = () => {
+  const coffeeEspressoAndMoreData = menuData.filter(
+    (data) => data.category === "Coffee, Espresso & More"
+  );
   return (
     <>
       <MenuItem
         backgroundImage={CoffeeEspressoMoreImage}
-        alt='Coffee, Espresso, and More Image'
-        title='Coffee, Espresso, & More'
-      >
-        {/* <div className='flex justify-self-center h-screen w-full bg-red-400 max-w-[60rem] my-10 mx-20'>hello world</div> */}
-      </MenuItem>
+        alt="Coffee, Espresso, and More Image"
+        title1="Coffee, Espresso, & More"
+        title2="Coffee, Espresso, & More"
+        data={coffeeEspressoAndMoreData}
+      />
     </>
-  )
-}
+  );
+};
 
-export default CoffeeEspressoAndMore
+export default CoffeeEspressoAndMore;

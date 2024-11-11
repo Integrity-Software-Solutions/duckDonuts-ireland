@@ -48,7 +48,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/menu" element={<Menu season={season} />} />
               <Route path="/menu/donuts" element={<Donuts season={season} />} />
-              <Route path="/menu/seasonal" element={<Seasonal />} />
+              <Route path="/menu/seasonal" element={<Seasonal season={season} />} />
               <Route path="/menu/ice-cream" element={<IceCream />} />
               <Route path="/menu/sandwiches" element={<Sandwiches />} />
               <Route path="/menu/fan-favorites" element={<FanFavorites />} />

@@ -1,37 +1,30 @@
 import React from "react";
 import SeasonalImage from "/assets/images/MenuImages/SeasonalImage.jpg";
 import MenuItem from "../../components/MenuComponents/MenuItem";
-// now import the menu_data.json file and access the seasonal data
 import menuData from "../../data/menu_data.json";
 
-const Seasonal = () => {
-  let data = menuData['Seasonal'];
-  const determineSeason = () => {
-    if (new Date().getMonth() >= 8 && new Date().getMonth() <= 11) {
-      return "Fall";
-    } else if (new Date().getMonth() >= 5 && new Date().getMonth() <= 7) {
-      return "Summer";
-    } else if (new Date().getMonth() >= 2 && new Date().getMonth() <= 4) {
-      return "Spring";
-    } else {
-      return "Winter";
-    }
-  };
-
-  if (determineSeason() === "Fall") {
-    data = data['fall'];
-  }
+const Seasonal = (props) => {
+  const seasonalData = menuData.filter((data) => data.category === "Seasonal");
+  let data = seasonalData[0].seasons[props.season];
+  data = [
+    {
+      category: seasonalData[0].category,
+      description: seasonalData[0].description,
+      ...data,
+    },
+  ];
 
   return (
     <>
       <MenuItem
         backgroundImage={SeasonalImage}
-        alt="Seasonal Image"
-        title="Seasonal"
-        centerTitle={true}
+        alt="Seasonal"
+        title1="Seasonal"
+        title2="Seasonal Offerings"
         data={data}
-      >
-      </MenuItem>
+        centerText={true}
+        boldText={true}
+      ></MenuItem>
     </>
   );
 };

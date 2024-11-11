@@ -317,7 +317,7 @@ const Home = () => {
                 icon={faMessage}
               />
               <FontAwesomeIcon
-                className={`absolute -top-[18px] left-[47%] text-white w-3 h-3 transition-opacity duration-500 ease-in-out ${
+                className={`absolute -top-[18px] left-[45.6%] text-white w-3 h-3 transition-opacity duration-500 ease-in-out ${
                   duckDonutsInstagramHovered ? "opacity-100" : "opacity-0"
                 }`}
                 icon={faHeart}

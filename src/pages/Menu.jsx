@@ -67,12 +67,14 @@ const Menu = (props) => {
             {props.title ? props.title : "Title 1"}
           </div>
           {displayViewAllButton && (
-            <button
-              id="viewAllButton"
-              className="bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white"
-            >
-              View All
-            </button>
+            <Link to={props.data.endpoint}>
+              <button
+                id="viewAllButton"
+                className="bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white"
+              >
+                View All
+              </button>
+            </Link>
           )}
         </div>
         <div

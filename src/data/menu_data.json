@@ -1,6 +1,7 @@
 [
   {
     "category": "Seasonal",
+    "description": "Indulge in our seasonal donut offerings! With a rotating selection of irresistible treats, including returning favorites and exciting new flavors, there's something for everyone to enjoy. Donut miss out on these limited-time sweet treats!",
     "seasons": {
       "fall": {
         "featuredItems": [
@@ -49,6 +50,7 @@
     "category": "Fan Favorites",
     "tag": "donuts",
     "description": "Not sure what combination you are looking to try? Customers of Duck Donuts came up with their favorite donut combination. Choose a fan favorite or one of our other duckzillion combinations!",
+    "endpoint": "/menu/fan-favorites",
     "items": [
       {
         "name": "Bacon in the Sun",
@@ -230,6 +232,7 @@
   {
     "category": "Everyday Assortments",
     "tag": "donuts",
+    "description": "Make every day great with a dozen of our Fan Favorites, creative combinations and warm, delicious donuts that are made to order!",
     "items": [
       {
         "name": "Breakfast Box",
@@ -359,6 +362,7 @@
   },
   {
     "category": "Sandwiches",
+    "description": "Get your favorite breakfast combinations on a donut. Our Donut Breakfast Sandwich starts with a warm, delicious sliced donut. Make it your own with your choice of protein: egg, cheese, sausage or bacon, and don't forget to top it with maple drizzle and chopped bacon!",
     "items": [
       {
         "name": "Maple Drizzle, Chopped Bacon, Sausage, Egg & Cheese Breakfast Sandwich",
@@ -384,6 +388,7 @@
   },
   {
     "category": "Coffee, Espresso & More",
+    "endpoint": "/menu/coffee-espresso-more",
     "featuredItems": [
       {
         "name": "Pumpkin Macchiato",
@@ -440,6 +445,7 @@
   },
   {
     "category": "Ice Cream",
+    "endpoint": "/menu/ice-cream",
     "featuredItems": [
       {
         "name": "Bourbon Caramel Apple Pie Milkshake",
@@ -517,12 +523,13 @@
       },
       {
         "name": "Donut Ice Cream Sandwiches",
-        "image": "/assets/images/MenuImages/IceCreamImages/DonutIceCreamSandwiches.png"
+        "image": "/assets/images/MenuImages/IceCreamImages/DonutIceCreamSandwiches.jpg"
       }
     ]
   },
   {
     "category": "Lemonade & Refreshers",
+    "endpoint": "/menu/lemonade-refreshers",
     "items": [
       {
         "name": "Original Lemonade",

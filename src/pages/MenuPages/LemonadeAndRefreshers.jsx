@@ -1,17 +1,22 @@
 import React from "react";
 import LemonadeAndRefreshersImage from "/assets/images/MenuImages/LemonadeAndRefreshersImage.jpg";
 import MenuItem from "../../components/MenuComponents/MenuItem";
+import menuData from "../../data/menu_data.json";
 
 const LemonadeAndRefreshers = () => {
+  const lemonadeAndRefreshersData = menuData.filter(
+    (data) => data.category === "Lemonade & Refreshers"
+  );
+
   return (
     <>
       <MenuItem
         backgroundImage={LemonadeAndRefreshersImage}
         alt="Lemonade and Refreshers Image"
-        title="Lemonade & Refreshers"
-      >
-        {/* <div className="flex justify-self-center h-screen w-full bg-red-400 max-w-[60rem] my-10 mx-20">hello world</div> */}
-      </MenuItem>
+        title1="Lemonade & Refreshers"
+        title2="Lemonade & Refreshers"
+        data={lemonadeAndRefreshersData}
+      />
     </>
   );
 };
