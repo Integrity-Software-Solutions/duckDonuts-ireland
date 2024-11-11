@@ -1,7 +1,7 @@
 import React from "react";
 import FanFavoritesImage from "/assets/images/MenuImages/FanFavoritesImage.jpg";
-import MenuCategory from "../../components/MenuComponents/MenuCategory";
-import menuData from "../../data/menu_data.json";
+import MenuCategory from "../../../components/MenuComponents/MenuCategory";
+import menuData from "../../../data/menu_data.json";
 
 const FanFavorites = () => {
   const fanFavoritesData = menuData.filter(

@@ -1,7 +1,7 @@
 import React from "react";
 import SeasonalImage from "/assets/images/MenuImages/SeasonalImage.jpg";
-import MenuCategory from "../../components/MenuComponents/MenuCategory";
-import menuData from "../../data/menu_data.json";
+import MenuCategory from "../../../components/MenuComponents/MenuCategory";
+import menuData from "../../../data/menu_data.json";
 
 const Seasonal = (props) => {
   const seasonalData = menuData.filter((data) => data.category === "Seasonal");

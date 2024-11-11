@@ -1,7 +1,7 @@
 import React from "react";
 import IceCreamImage from "/assets/images/MenuImages/IceCream.jpg";
-import MenuCategory from "../../components/MenuComponents/MenuCategory";
-import menuData from "../../data/menu_data.json";
+import MenuCategory from "../../../components/MenuComponents/MenuCategory";
+import menuData from "../../../data/menu_data.json";
 
 const IceCream = () => {
   const iceCreamData = menuData.filter((data) => data.category === "Ice Cream");
