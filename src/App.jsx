@@ -147,8 +147,8 @@ function App() {
                 <Route path="/menu/coffee-espresso-more/coffee-frappe" element={<CoffeeFrappe />} />
                 <Route path="/menu/coffee-espresso-more/caramel-frappe" element={<CaramelFrappe />} />
                 <Route path="/menu/coffee-espresso-more/cold-brew-coffee" element={<ColdBrewCoffee />} />
-                <Route path="/menu/coffee-espresso-more/caramel-macchiatos" element={<CaramelMacchiatos />} />
                 <Route path="/menu/coffee-espresso-more/pumpkin-macchiato" element={<PumpkinMacchiato />} />
+                <Route path="/menu/coffee-espresso-more/caramel-macchiatos" element={<CaramelMacchiatos />} />
 
                 {/* Ice Cream */}
 
