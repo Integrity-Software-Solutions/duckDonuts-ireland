@@ -61,6 +61,7 @@ import CoffeeFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Coff
 import MochaFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/MochaFrappe";
 import CaramelFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/CaramelFrappe";
 import PumpkinMacchiato from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/PumpkinMacchiato";
+import FoodAllergyInfo from "./pages/FoodAllergyInfo";
 
 function App() {
   const determineSeason = () => {
@@ -93,6 +94,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/menu" element={<Menu season={season} />} />
+              <Route path="/about-us/food-allergy-information" element={<FoodAllergyInfo />} />
 
               {/* menu categories */}
               <Route path="/menu/donuts" element={<Donuts season={season} />} />

@@ -5,9 +5,12 @@ import DuckDonutsLogo from "/assets/images/NavbarImages/DuckDonutsLogo.png";
 const Footer = () => {
   const [hovered, setHovered] = useState("");
   const footerOptions = [
-    "menu",
-    "contact us",
-    "nutrition & allergy info",
+    { name: "menu", link: "/menu" },
+    { name: "contact us", link: "/contact-us" },
+    {
+      name: "nutrition & allergy info",
+      link: "/about-us/food-allergy-information",
+    },
   ];
 
   return (
@@ -28,23 +31,23 @@ const Footer = () => {
               {footerOptions.map((option) => (
                 <li
                   className="flex items-center hover:cursor-pointer py-2"
-                  key={option}
+                  key={option.name}
                   onMouseEnter={() => {
-                    setHovered(option);
+                    setHovered(option.name);
                   }}
                   onMouseLeave={() => {
                     setHovered("");
                   }}
                 >
-                  <Link to={`/${option}`}>
+                  <Link to={option.link}>
                     <p
                       className="relative transition ease-in-out duration-7000"
-                      style={{textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"}}
+                      style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
                     >
-                      {option}
+                      {option.name}
                       <span
                         className={`absolute left-0 bottom-[-2.5px] w-full h-[3.5px] bg-current transition-opacity duration-700 ease-in-out ${
-                          hovered === option ? "opacity-100" : "opacity-0"
+                          hovered === option.name ? "opacity-100" : "opacity-0"
                         }`}
                       ></span>
                     </p>
