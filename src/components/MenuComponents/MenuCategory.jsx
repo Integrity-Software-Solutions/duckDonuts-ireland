@@ -116,7 +116,7 @@ const MenuCategory = (props) => {
 
   return (
     <div className="h-full w-full">
-      <div className=" bg-fuchsia-900 relative">
+      <div className="bg-fuchsia-900 relative">
         <img
           alt="Menu Image"
           src={backgroundImage}

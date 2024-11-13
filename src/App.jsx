@@ -62,6 +62,7 @@ import MochaFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Mocha
 import CaramelFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/CaramelFrappe";
 import PumpkinMacchiato from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/PumpkinMacchiato";
 import FoodAllergyInfo from "./pages/FoodAllergyInfo";
+import Contact from "./pages/Contact";
 
 function App() {
   const determineSeason = () => {
@@ -87,12 +88,13 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen items-center">
     <Router>
-      <div className="w-full  flex flex-col min-h-screen relative">
+      <div className="w-full flex flex-col min-h-screen relative">
           <Navbar />
         <main className="flex-grow mx-auto max-w-[2055px] w-full">
           <ScrollToTop>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/contact-us" element={<Contact />} />
               <Route path="/menu" element={<Menu season={season} />} />
               <Route path="/about-us/food-allergy-information" element={<FoodAllergyInfo />} />
 
