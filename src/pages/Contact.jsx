@@ -90,12 +90,12 @@ const Contact = () => {
               <div className="my-4 text-white font-bold uppercase text-xl">
                 Duck Donuts
               </div>
-              <div className="flex items-center space-x-4 text-white font-bold text-xl">
+              <div className="flex items-center space-x-4 text-white font-bold text-xl pb-[10px]">
                 <FontAwesomeIcon icon={faPhone} />
-                <p className="pb-[6px]">(123)-456-7899</p>
+                <p>(123)-456-7899</p>
               </div>
               <div className="flex space-x-5 text-white font-bold text-xl">
-                <div className="">
+                <div className="ml-[3px]">
                   <FontAwesomeIcon icon={faLocationDot} />
                 </div>
                 <div className="text-sm font-normal">
