@@ -52,29 +52,42 @@ const Home = () => {
   return (
     <div className="max-w-[2055px] m-auto z-10 h-auto">
       <section
-            id="MainstageScroller"
-            className="hidden sm:flex relative md:py-44 lg:pt-40 lg:pb-56 xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
-        >
-          <div
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
-                style={{
-                    backgroundImage: `url(${DuckDonutsLogo})`,
-                    opacity: showBackground ? 1 : 0, // Only the background fades in
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                }}
-            ></div>
+        id="MainstageScroller"
+        className="hidden sm:flex relative md:py-44 lg:pt-40 lg:pb-56 xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
+      >
+        <div
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
+          style={{
+            backgroundImage: `url(${DuckDonutsLogo})`,
+            opacity: showBackground ? 1 : 0, // Only the background fades in
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+        ></div>
         <div className="ml-auto mr-auto w-full max-w-[60rem] font-extrabold italic uppercase relative z-10">
           <div className="text-center">
             <div className="flex flex-col">
-              <span className="py-2 md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo" style={{textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5"}}>Warm, Delicious</span>
-              <span className="py-4 md:text-7xl lg:text-8xl xl:text-9xl font-boogaloo" style={{textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5"}}>Made to Order</span>
+              <span
+                className="py-2 md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
+                style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
+              >
+                Warm, Delicious
+              </span>
+              <span
+                className="py-4 md:text-7xl lg:text-8xl xl:text-9xl font-boogaloo"
+                style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
+              >
+                Made to Order
+              </span>
               <div className="flex items-center justify-center mt-4">
                 <div
                   className="w-36 h-[0.32rem] bg-white mr-2"
                   style={{ boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
                 ></div>
-                <div className="md:text-2xl lg:text-3xl xl:text-4xl mx-2 font-bold not-italic font-mono" style={{textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5"}}>
+                <div
+                  className="md:text-2xl lg:text-3xl xl:text-4xl mx-2 font-bold not-italic font-mono"
+                  style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
+                >
                   CUSTOMIZED BEFORE YOUR EYES!
                 </div>
                 <div
@@ -96,7 +109,35 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/*  */}
+      {/* mobile section */}
+      <section className="flex sm:hidden bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 items-center justify-center pt-20 pb-40 px-4">
+        <div className="h-full w-full flex flex-col items-center text-white uppercase">
+          <div
+            style={{ textShadow: "3px 3px 6px rgb(0, 0, 0.1)" }}
+            className="font-boogaloo text-4xl"
+          >
+            Warm, Delicious
+          </div>
+          <div
+            style={{ textShadow: "3px 3px 6px rgb(0, 0, 0.1)" }}
+            className="font-boogaloo text-5xl mb-4"
+          >
+            Made to Order
+          </div>
+          <div className="flex flex-col items-center font-bold text-xl relative mb-10">
+            <div className="absolute top-[13px] -left-4 h-1 bg-white w-8"></div>
+            <div className="absolute top-[13px] -right-4 h-1 bg-white w-8"></div>
+            <div>Customized</div>
+            <div>Before your eyes!</div>
+          </div>
+          <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500 mb-4">
+            Order Online
+          </button>
+          <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500">
+            Seasonal Flavors
+          </button>
+        </div>
+      </section>
       <section
         id="MenuProductTypeFeed"
         className="flex items-center justify-center py-20 px-5"
