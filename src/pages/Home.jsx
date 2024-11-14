@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import LazyLoad from "../components/LazyLoad";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faHeart } from "@fortawesome/free-solid-svg-icons";
+import MenuItemCardsMobile from "../components/HomePageComponents/MenuItemCardsMobile";
 
 const Home = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -138,9 +139,18 @@ const Home = () => {
           </button>
         </div>
       </section>
+      <section className="flex sm:hidden items-center justify-center px-4 py-8">
+        <div className="h-full w-full space-y-4">
+          <MenuItemCardsMobile image={ChocolateCoveredStrawberry} cardTitle={"Fan Favorites"} />
+          <MenuItemCardsMobile image={MenuDrinks} cardTitle={"Coffee, Espresso & More"} />
+          <MenuItemCardsMobile image={MenuIceCream} cardTitle={"Ice Cream"} />
+          <MenuItemCardsMobile image={LemonadeRefreshers} cardTitle={"Lemonade & Refreshers"} />
+          <MenuItemCardsMobile image={MenuSandwiches} cardTitle={"Sandwiches"} />
+        </div>
+      </section>
       <section
         id="MenuProductTypeFeed"
-        className="flex items-center justify-center py-20 px-5"
+        className="hidden sm:flex items-center justify-center py-20 px-5"
       >
         <div className="max-w-[71.8rem] h-full w-full px-2 grid grid-cols-4 gap-x-4 justify-items-center">
           <MenuItemCards
