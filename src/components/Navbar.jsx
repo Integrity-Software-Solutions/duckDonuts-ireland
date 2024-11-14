@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="navbar w-full bg-sky-500 flex h-[6.46rem] sticky top-0 z-20 shadow-2xl shadow-slate-500">
+    <header className="navbar w-full bg-sky-500 flex h-[6.46rem] sticky top-0 z-30 shadow-2xl shadow-slate-500">
       <Link to="/">
         <img
           src={DuckDonutsLogo}
@@ -69,9 +69,7 @@ const Navbar = () => {
       </div>
       <OrderOnlineButton />
     </header>
-
   );
-
 };
 
 export default Navbar;

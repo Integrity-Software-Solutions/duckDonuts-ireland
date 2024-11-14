@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import purpleWave from "/assets/images/ContactPageImages/ContactPagePurpleWave.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -58,8 +59,17 @@ const Contact = () => {
   return (
     <div className="py-[4.944rem] px-[1.15rem]] h-full w-full flex justify-center items-center">
       <div className="mx-auto w-full max-w-[60rem]">
-        <div className="px-[12%] bg-gradient-to-b from-[#7a51d2] to-[#8C69D8] p-[3rem] rounded-[3rem] w-full h-full shadow-2xl">
-          <div>
+        <div className="px-[12%] bg-gradient-to-b from-[#7a51d2] to-[#8C69D8] p-[3rem] rounded-[3rem] w-full h-full shadow-2xl relative">
+          <figure className="absolute left-0 top-0 w-full h-full overflow-hidden pointer-events-none rounded-[3rem]">
+            <div
+              style={{
+                backgroundImage: `url(${purpleWave})`,
+                backgroundPosition: "top center",
+              }}
+              className="bg-contain bg-repeat-y w-full h-full"
+            ></div>
+          </figure>
+          <div className="relative z-20">
             <div
               className="text-7xl uppercase text-white font-boogaloo text-center"
               style={{ textShadow: "1px 1px px rgb(0, 0, 0.5)" }}
@@ -75,7 +85,7 @@ const Contact = () => {
               order, pleaase contact your local Duck Donuts store.
             </div>
           </div>
-          <div className="mt-4 flex w-full">
+          <div className="mt-4 flex w-full relative z-20">
             <div className="w-full max-w-[35%] mt-6 cursor-default">
               <div className="my-4 text-white font-bold uppercase text-xl">
                 Duck Donuts
