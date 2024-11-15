@@ -54,7 +54,7 @@ const Home = () => {
     <div className="max-w-[2055px] m-auto z-10 h-auto">
       <section
         id="MainstageScroller"
-        className="hidden sm:flex relative md:py-44  lg:h-screen lg:-mt-[6rem] xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
+        className="hidden sm:flex relative md:py-44 lg:py-72 lg:-mt-[6rem] xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
       >
         <div
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
@@ -141,18 +141,30 @@ const Home = () => {
       </section>
       <section className="flex sm:hidden items-center justify-center px-4 py-8">
         <div className="h-full w-full space-y-4">
-          <MenuItemCardsMobile image={ChocolateCoveredStrawberry} cardTitle={"Fan Favorites"} />
-          <MenuItemCardsMobile image={MenuDrinks} cardTitle={"Coffee, Espresso & More"} />
+          <MenuItemCardsMobile
+            image={ChocolateCoveredStrawberry}
+            cardTitle={"Fan Favorites"}
+          />
+          <MenuItemCardsMobile
+            image={MenuDrinks}
+            cardTitle={"Coffee, Espresso & More"}
+          />
           <MenuItemCardsMobile image={MenuIceCream} cardTitle={"Ice Cream"} />
-          <MenuItemCardsMobile image={LemonadeRefreshers} cardTitle={"Lemonade & Refreshers"} />
-          <MenuItemCardsMobile image={MenuSandwiches} cardTitle={"Sandwiches"} />
+          <MenuItemCardsMobile
+            image={LemonadeRefreshers}
+            cardTitle={"Lemonade & Refreshers"}
+          />
+          <MenuItemCardsMobile
+            image={MenuSandwiches}
+            cardTitle={"Sandwiches"}
+          />
         </div>
       </section>
       <section
         id="MenuProductTypeFeed"
         className="hidden sm:flex items-center justify-center py-20 px-5"
       >
-        <div className="max-w-[71.8rem] h-full w-full px-2 grid grid-cols-4 gap-x-4 justify-items-center">
+        <div className="max-w-[71.8rem] h-full w-full px-2 grid grid-cols-1 grid-rows-5 grid-flow-col place-items-center lg:grid-cols-4 lg:grid-rows-2 lg:grid-flow-row gap-4">
           <MenuItemCards
             image={ChocolateCoveredStrawberry}
             cardTitle={"Fan Favorites"}
