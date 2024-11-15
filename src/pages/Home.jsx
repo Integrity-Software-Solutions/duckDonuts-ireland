@@ -111,8 +111,8 @@ const Home = () => {
         </div>
       </section>
       {/* mobile section */}
-      <section className="flex sm:hidden bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 items-center justify-center pt-20 pb-40 px-4">
-        <div className="h-full w-full flex flex-col items-center text-white uppercase">
+      <section className="flex flex-col sm:hidden bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 items-center justify-center px-4 h-screen -mt-[6.46rem]">
+        <div className="h-auto w-full flex flex-col items-center text-white uppercase">
           <div
             style={{ textShadow: "3px 3px 6px rgb(0, 0, 0.1)" }}
             className="font-boogaloo text-4xl"
