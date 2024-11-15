@@ -54,7 +54,7 @@ const Home = () => {
     <div className="max-w-[2055px] m-auto z-10 h-auto">
       <section
         id="MainstageScroller"
-        className="hidden sm:flex relative md:py-44 lg:pt-40 lg:pb-56 xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
+        className="hidden sm:flex relative md:py-44  lg:h-screen lg:-mt-[6rem] xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
       >
         <div
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
