@@ -14,7 +14,9 @@ const MenuItemCardsMobile = (props) => {
         alt={props.cardTitle}
         className="w-20 h-20 justify-self-start"
       />
-      <p className="">{props.cardTitle}</p>
+      <p className="text-lg flex items-center justify-center text-center h-20 w-1/2">
+        {props.cardTitle}
+      </p>
       <button className="w-10 h-10 rounded-full bg-[rgb(73,164,154)] text-white justify-self-end">
         <FontAwesomeIcon icon={faChevronRight} />
       </button>
