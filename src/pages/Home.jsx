@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import LazyLoad from "../components/LazyLoad";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faHeart } from "@fortawesome/free-solid-svg-icons";
+import MenuItemCardsMobile from "../components/HomePageComponents/MenuItemCardsMobile";
 
 const Home = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -51,34 +52,44 @@ const Home = () => {
 
   return (
     <div className="max-w-[2055px] m-auto z-10 h-auto">
-      {/* Warm Delicious Made to Order */}
-      {/* h-[6.46rem] */}
       <section
-            id="MainstageScroller"
-            className="relative h-screen flex items-center justify-center text-white bg-cover bg-center"
-        >
-          <div
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
-                style={{
-                    backgroundImage: `url(${DuckDonutsLogo})`,
-                    backgroundSize: showBackground ? "115%" : "cover",
-                    opacity: showBackground ? 1 : 0, // Only the background fades in
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                }}
-            ></div>
+        id="MainstageScroller"
+        className="hidden sm:flex relative md:py-44 lg:py-72 lg:-mt-[6rem] xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
+      >
+        <div
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
+          style={{
+            backgroundImage: `url(${DuckDonutsLogo})`,
+            opacity: showBackground ? 1 : 0, // Only the background fades in
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+        ></div>
         <div className="ml-auto mr-auto w-full max-w-[60rem] font-extrabold italic uppercase relative z-10">
           <div className="text-center">
             <div className="flex flex-col">
-              <span className="py-2 text-7xl font-boogaloo" style={{textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5"}}>Warm, Delicious</span>
-              <span className="py-4 text-8xl font-boogaloo" style={{textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5"}}>Made to Order</span>
+              <span
+                className="py-2 md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
+                style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
+              >
+                Warm, Delicious
+              </span>
+              <span
+                className="py-4 md:text-7xl lg:text-8xl xl:text-9xl font-boogaloo"
+                style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
+              >
+                Made to Order
+              </span>
               <div className="flex items-center justify-center mt-4">
                 <div
                   className="w-36 h-[0.32rem] bg-white mr-2"
                   style={{ boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
                 ></div>
-                <div className="text-2xl mx-2 font-bold not-italic font-mono" style={{textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5"}}>
-                  CUSTOMIZED BEFORE YOUR EYES
+                <div
+                  className="md:text-2xl lg:text-3xl xl:text-4xl mx-2 font-bold not-italic font-mono"
+                  style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
+                >
+                  CUSTOMIZED BEFORE YOUR EYES!
                 </div>
                 <div
                   className="w-36 h-[0.32rem] bg-white ml-2"
@@ -86,11 +97,11 @@ const Home = () => {
                 ></div>
               </div>
               <div className="flex justify-center space-x-10 mt-10">
-                <button className="bg-[#E6427A] text-base font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
+                <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
                   Order Online
                 </button>
                 <Link to="/menu/seasonal">
-                  <button className="bg-[#E6427A] text-base font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
+                  <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
                     Seasonal Flavors
                   </button>
                 </Link>
@@ -99,12 +110,61 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/*  */}
+      {/* mobile section */}
+      <section className="flex flex-col sm:hidden bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 items-center justify-center px-4 h-screen -mt-[6.46rem]">
+        <div className="h-auto w-full flex flex-col items-center text-white uppercase">
+          <div
+            style={{ textShadow: "3px 3px 6px rgb(0, 0, 0.1)" }}
+            className="font-boogaloo text-4xl"
+          >
+            Warm, Delicious
+          </div>
+          <div
+            style={{ textShadow: "3px 3px 6px rgb(0, 0, 0.1)" }}
+            className="font-boogaloo text-5xl mb-4"
+          >
+            Made to Order
+          </div>
+          <div className="flex flex-col items-center font-bold text-xl relative mb-10">
+            <div className="absolute top-[13px] -left-4 h-1 bg-white w-8"></div>
+            <div className="absolute top-[13px] -right-4 h-1 bg-white w-8"></div>
+            <div>Customized</div>
+            <div>Before your eyes!</div>
+          </div>
+          <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500 mb-4">
+            Order Online
+          </button>
+          <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500">
+            Seasonal Flavors
+          </button>
+        </div>
+      </section>
+      <section className="flex sm:hidden items-center justify-center px-4 py-8">
+        <div className="h-full w-full space-y-4">
+          <MenuItemCardsMobile
+            image={ChocolateCoveredStrawberry}
+            cardTitle={"Fan Favorites"}
+          />
+          <MenuItemCardsMobile
+            image={MenuDrinks}
+            cardTitle={"Coffee, Espresso & More"}
+          />
+          <MenuItemCardsMobile image={MenuIceCream} cardTitle={"Ice Cream"} />
+          <MenuItemCardsMobile
+            image={LemonadeRefreshers}
+            cardTitle={"Lemonade & Refreshers"}
+          />
+          <MenuItemCardsMobile
+            image={MenuSandwiches}
+            cardTitle={"Sandwiches"}
+          />
+        </div>
+      </section>
       <section
         id="MenuProductTypeFeed"
-        className="flex items-center justify-center py-20 px-5"
+        className="hidden sm:flex items-center justify-center py-20 px-5"
       >
-        <div className="max-w-[71.8rem] h-full w-full px-2 grid grid-cols-4 gap-x-4 justify-items-center">
+        <div className="max-w-[71.8rem] h-full w-full px-2 grid grid-cols-1 grid-rows-5 grid-flow-col place-items-center lg:grid-cols-4 lg:grid-rows-2 lg:grid-flow-row gap-4">
           <MenuItemCards
             image={ChocolateCoveredStrawberry}
             cardTitle={"Fan Favorites"}
@@ -148,13 +208,13 @@ const Home = () => {
           <div className="w-full h-1/2 lg:h-auto lg:w-1/2 xl:py-8 xl:pl-16 2xl:pl-32 2xl:py-12">
             <div className="w-full h-full flex flex-col items-center">
               <div
-                className="text-5xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
+                className="text-xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
                 style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
               >
                 WARM, DELICIOUS
               </div>
               <div
-                className="text-6xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
+                className="text-xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
                 style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
               >
                 MADE TO ORDER
@@ -200,7 +260,7 @@ const Home = () => {
                   DRIZZLE
                 </div>
               </div>
-              <div className="px-6 leading-6 text-sm mt-3">
+              <div className="px-6 leading-6 text-sm mt-3 lg:w-max lg:max-w-[30rem]">
                 {madeToOrderText()}
               </div>
               <div className="flex space-x-4 h-full w-full justify-center pt-4 pb-14">
@@ -237,7 +297,7 @@ const Home = () => {
               </div>
               <div>
                 <Link to="/menu/made-to-order-donuts">
-                  <button className="bg-[#E6427A] text-base font-[650] p-4 rounded-full w-52 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white">
+                  <button className="bg-[#E6427A] text-base lg:text-lg font-[650] p-4 rounded-full w-52 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white">
                     See All Options
                   </button>
                 </Link>
