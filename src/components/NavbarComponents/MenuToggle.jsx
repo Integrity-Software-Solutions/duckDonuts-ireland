@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-const MenuToggle = () => {
+const MenuToggle = (props) => {
   const [isChanged, setIsChanged] = useState(false);
 
   const handleClick = () => {
     setIsChanged((prev) => !prev);
+    props.setMobileNavbarOpen((prev) => !prev);
   };
   return (
     <div

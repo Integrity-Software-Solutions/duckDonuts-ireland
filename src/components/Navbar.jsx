@@ -8,7 +8,7 @@ import MenuToggle from "./NavbarComponents/MenuToggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [hovered, setHovered] = useState("");
 
   const handleHover = (option) => {
@@ -81,7 +81,7 @@ const Navbar = () => {
       {/* mobile header/navbar */}
       <header className="flex justify-between items-center sm:hidden navbar w-full bg-sky-50 h-[4.5rem] sticky top-0 z-30 shadow-lg shadow-slate-500">
         <div className="h-full w-16 flex items-center justify-center bg-[#E6427A]">
-          <MenuToggle />
+          <MenuToggle setMobileNavbarOpen={props.setMobileNavbarOpen} />
         </div>
         <Link to="/" className="absolute top-0 left-[27%]">
           <img
