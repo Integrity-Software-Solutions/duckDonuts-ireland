@@ -63,53 +63,78 @@ import CaramelFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Car
 import PumpkinMacchiato from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/PumpkinMacchiato";
 import FoodAllergyInfo from "./pages/FoodAllergyInfo";
 import Contact from "./pages/Contact";
+import MenuDropdownMobile from "./components/NavbarComponents/MenuDropdownMobile";
 
 function App() {
   const determineSeason = () => {
     const currentDate = new Date();
-    
+
     // Loop through each season and check if currentDate is within the season's date range
     for (let season of seasonData) {
       const start = new Date(season.startDate);
       const end = new Date(season.endDate);
-  
+
       // Adjust for end date at year boundaries
       if (start <= currentDate && currentDate <= end) {
         return season.season;
       }
     }
-  
+
     // Default to "winter" if no match
     return "winter";
   };
-  
+
   const season = determineSeason();
+
+  const [mobileNavbarOpen, setMobileNavbarOpen] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen items-center">
-    <Router>
-      <div className="w-full flex flex-col min-h-screen relative">
-          <Navbar />
-        <main className="flex-grow mx-auto max-w-[2055px] w-full">
-          <ScrollToTop>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/contact-us" element={<Contact />} />
-              <Route path="/menu" element={<Menu season={season} />} />
-              <Route path="/about-us/food-allergy-information" element={<FoodAllergyInfo />} />
+      <Router>
+        <div className="w-full flex flex-col min-h-screen relative">
+          <Navbar setMobileNavbarOpen={setMobileNavbarOpen} />
+          <MenuDropdownMobile mobileNavbarOpen={mobileNavbarOpen} />
+          <main className="flex-grow mx-auto max-w-[2055px] w-full">
+            <ScrollToTop>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/menu" element={<Menu season={season} />} />
+                <Route
+                  path="/about-us/food-allergy-information"
+                  element={<FoodAllergyInfo />}
+                />
 
-              {/* menu categories */}
-              <Route path="/menu/donuts" element={<Donuts season={season} />} />
-              <Route path="/menu/seasonal" element={<Seasonal season={season} />} />
-              <Route path="/menu/ice-cream" element={<IceCream />} />
-              <Route path="/menu/sandwiches" element={<Sandwiches />} />
-              <Route path="/menu/fan-favorites" element={<FanFavorites />} />
-              <Route path="/menu/made-to-order-donuts" element={<MadeToOrderDonuts />} />
-              <Route path="/menu/everyday-assortments" element={<EverydayAssortments />} />
-              <Route path="/menu/lemonade-refreshers" element={<LemonadeAndRefreshers />} />
-              <Route path="/menu/coffee-espresso-more" element={<CoffeeEspressoAndMore />} />
+                {/* menu categories */}
+                <Route
+                  path="/menu/donuts"
+                  element={<Donuts season={season} />}
+                />
+                <Route
+                  path="/menu/seasonal"
+                  element={<Seasonal season={season} />}
+                />
+                <Route path="/menu/ice-cream" element={<IceCream />} />
+                <Route path="/menu/sandwiches" element={<Sandwiches />} />
+                <Route path="/menu/fan-favorites" element={<FanFavorites />} />
+                <Route
+                  path="/menu/made-to-order-donuts"
+                  element={<MadeToOrderDonuts />}
+                />
+                <Route
+                  path="/menu/everyday-assortments"
+                  element={<EverydayAssortments />}
+                />
+                <Route
+                  path="/menu/lemonade-refreshers"
+                  element={<LemonadeAndRefreshers />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more"
+                  element={<CoffeeEspressoAndMore />}
+                />
 
-              {/* menu items */}
+                {/* menu items */}
                 {/* seasonal */}
 
                 {/* Fan Favorites */}
@@ -117,67 +142,192 @@ function App() {
                 <Route path="/menu/donuts/sunrise" element={<Sunrise />} />
                 <Route path="/menu/donuts/the-beach" element={<TheBeach />} />
                 <Route path="/menu/donuts/beach-ball" element={<BeachBall />} />
-                <Route path="/menu/donuts/maple-bacon" element={<MapleBacon />} />
-                <Route path="/menu/donuts/pina-colada" element={<PinaColada />} />
-                <Route path="/menu/donuts/sand-dollar" element={<SandDollar />} />
-                <Route path="/menu/donuts/cinnamon-bun" element={<CinnamonBun />} />
-                <Route path="/menu/donuts/french-toast" element={<FrenchToast />} />
-                <Route path="/menu/donuts/the-flip-flop" element={<TheFlipFlop />} />
-                <Route path="/menu/donuts/the-boardwalk" element={<TheBoardwalk />} />
-                <Route path="/menu/donuts/cookies-cream" element={<CookiesAndCream />} />
-                <Route path="/menu/donuts/bacon-in-the-sun" element={<BaconInTheSun />} />
-                <Route path="/menu/donuts/raspberry-fluff" element={<RaspberryFluff />} />
-                <Route path="/menu/donuts/midnight-madness" element={<MidnightMadness />} />
-                <Route path="/menu/donuts/blueberry-pancake" element={<BlueberryPancake />} />
-                <Route path="/menu/donuts/blueberry-lemonade" element={<BlueberryLemonade />} />
-                <Route path="/menu/donuts/chocolate-explosion" element={<ChocolateExplosion />} />
-                <Route path="/menu/donuts/strawberry-confetti" element={<StrawberryConfetti />} />
-                <Route path="/menu/donuts/coconut-island-bliss" element={<CoconutIslandBliss />} />
-                <Route path="/menu/donuts/peanut-butter-jelly" element={<PeanutButterAndJelly />} />
-                <Route path="/menu/donuts/strawberry-shortcake" element={<StrawberryShortcake />} />
-                <Route path="/menu/donuts/peanut-butter-paradise" element={<PeanutButterParadise />} />
-                <Route path="/menu/donuts/chocolate-caramel-crunch" element={<ChocolateCaramelCrunch />} />
-                <Route path="/menu/donuts/chocolate-covered-strawberry" element={<ChocolateCoveredStrawberry />} />
+                <Route
+                  path="/menu/donuts/maple-bacon"
+                  element={<MapleBacon />}
+                />
+                <Route
+                  path="/menu/donuts/pina-colada"
+                  element={<PinaColada />}
+                />
+                <Route
+                  path="/menu/donuts/sand-dollar"
+                  element={<SandDollar />}
+                />
+                <Route
+                  path="/menu/donuts/cinnamon-bun"
+                  element={<CinnamonBun />}
+                />
+                <Route
+                  path="/menu/donuts/french-toast"
+                  element={<FrenchToast />}
+                />
+                <Route
+                  path="/menu/donuts/the-flip-flop"
+                  element={<TheFlipFlop />}
+                />
+                <Route
+                  path="/menu/donuts/the-boardwalk"
+                  element={<TheBoardwalk />}
+                />
+                <Route
+                  path="/menu/donuts/cookies-cream"
+                  element={<CookiesAndCream />}
+                />
+                <Route
+                  path="/menu/donuts/bacon-in-the-sun"
+                  element={<BaconInTheSun />}
+                />
+                <Route
+                  path="/menu/donuts/raspberry-fluff"
+                  element={<RaspberryFluff />}
+                />
+                <Route
+                  path="/menu/donuts/midnight-madness"
+                  element={<MidnightMadness />}
+                />
+                <Route
+                  path="/menu/donuts/blueberry-pancake"
+                  element={<BlueberryPancake />}
+                />
+                <Route
+                  path="/menu/donuts/blueberry-lemonade"
+                  element={<BlueberryLemonade />}
+                />
+                <Route
+                  path="/menu/donuts/chocolate-explosion"
+                  element={<ChocolateExplosion />}
+                />
+                <Route
+                  path="/menu/donuts/strawberry-confetti"
+                  element={<StrawberryConfetti />}
+                />
+                <Route
+                  path="/menu/donuts/coconut-island-bliss"
+                  element={<CoconutIslandBliss />}
+                />
+                <Route
+                  path="/menu/donuts/peanut-butter-jelly"
+                  element={<PeanutButterAndJelly />}
+                />
+                <Route
+                  path="/menu/donuts/strawberry-shortcake"
+                  element={<StrawberryShortcake />}
+                />
+                <Route
+                  path="/menu/donuts/peanut-butter-paradise"
+                  element={<PeanutButterParadise />}
+                />
+                <Route
+                  path="/menu/donuts/chocolate-caramel-crunch"
+                  element={<ChocolateCaramelCrunch />}
+                />
+                <Route
+                  path="/menu/donuts/chocolate-covered-strawberry"
+                  element={<ChocolateCoveredStrawberry />}
+                />
                 {/* Everyday Assortments */}
 
                 {/* Coffee, Espresso & More */}
-                <Route path="/menu/coffee-espresso-more/mochas" element={<Mochas />} />
-                <Route path="/menu/coffee-espresso-more/lattes" element={<Lattes />} />
-                <Route path="/menu/coffee-espresso-more/espresso" element={<Espresso />} />
-                <Route path="/menu/coffee-espresso-more/americano" element={<Americano />} />
-                <Route path="/menu/coffee-espresso-more/cappuccino" element={<Cappuccino />} />
-                <Route path="/menu/coffee-espresso-more/mocha-frappe" element={<MochaFrappe />} />
-                <Route path="/menu/coffee-espresso-more/hot-chocolate" element={<HotChocolate />} />
-                <Route path="/menu/coffee-espresso-more/coffee-frappe" element={<CoffeeFrappe />} />
-                <Route path="/menu/coffee-espresso-more/caramel-frappe" element={<CaramelFrappe />} />
-                <Route path="/menu/coffee-espresso-more/cold-brew-coffee" element={<ColdBrewCoffee />} />
-                <Route path="/menu/coffee-espresso-more/pumpkin-macchiato" element={<PumpkinMacchiato />} />
-                <Route path="/menu/coffee-espresso-more/caramel-macchiatos" element={<CaramelMacchiatos />} />
+                <Route
+                  path="/menu/coffee-espresso-more/mochas"
+                  element={<Mochas />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/lattes"
+                  element={<Lattes />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/espresso"
+                  element={<Espresso />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/americano"
+                  element={<Americano />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/cappuccino"
+                  element={<Cappuccino />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/mocha-frappe"
+                  element={<MochaFrappe />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/hot-chocolate"
+                  element={<HotChocolate />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/coffee-frappe"
+                  element={<CoffeeFrappe />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/caramel-frappe"
+                  element={<CaramelFrappe />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/cold-brew-coffee"
+                  element={<ColdBrewCoffee />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/pumpkin-macchiato"
+                  element={<PumpkinMacchiato />}
+                />
+                <Route
+                  path="/menu/coffee-espresso-more/caramel-macchiatos"
+                  element={<CaramelMacchiatos />}
+                />
 
                 {/* Ice Cream */}
 
                 {/* Lemonade & Refreshers */}
-                <Route path="/menu/lemonade-refreshers/original-lemonade" element={<OriginalLemonade />} />
-                <Route path="/menu/lemonade-refreshers/strawberry-lemonade" element={<StrawberryLemonade />} />
-                <Route path="/menu/lemonade-refreshers/blueberry-popping-bubbles" element={<BlueberryPoppingBubbles />} />
-                <Route path="/menu/lemonade-refreshers/raspberry-dragonfruit-lemonade-refresher" element={<RaspberryDragonfruitLemonadeRefresher />} />
-                <Route path="/menu/lemonade-refreshers/citrus-mango-pineapple-lemonade-refresher" element={<CitrusMangoPineappleLemonadeRefresher />} />
+                <Route
+                  path="/menu/lemonade-refreshers/original-lemonade"
+                  element={<OriginalLemonade />}
+                />
+                <Route
+                  path="/menu/lemonade-refreshers/strawberry-lemonade"
+                  element={<StrawberryLemonade />}
+                />
+                <Route
+                  path="/menu/lemonade-refreshers/blueberry-popping-bubbles"
+                  element={<BlueberryPoppingBubbles />}
+                />
+                <Route
+                  path="/menu/lemonade-refreshers/raspberry-dragonfruit-lemonade-refresher"
+                  element={<RaspberryDragonfruitLemonadeRefresher />}
+                />
+                <Route
+                  path="/menu/lemonade-refreshers/citrus-mango-pineapple-lemonade-refresher"
+                  element={<CitrusMangoPineappleLemonadeRefresher />}
+                />
 
                 {/* Sandwiches */}
-                <Route path="/menu/sandwiches/egg-cheese-breakfast-sandwich" element={<EggAndCheese />} />
-                <Route path="/menu/sandwiches/sausage-egg-and-cheese-with-chopped-bacon" element={<MapleDrizzle />} />
-                <Route path="/menu/sandwiches/bacon-egg-and-cheese-breakfast-sandwich" element={<BaconEggAndCheese />} />
-                <Route path="/menu/sandwiches/sausage-egg-and-cheese-breakfast-sandwich" element={<SausageEggAndCheese />} />
+                <Route
+                  path="/menu/sandwiches/egg-cheese-breakfast-sandwich"
+                  element={<EggAndCheese />}
+                />
+                <Route
+                  path="/menu/sandwiches/sausage-egg-and-cheese-with-chopped-bacon"
+                  element={<MapleDrizzle />}
+                />
+                <Route
+                  path="/menu/sandwiches/bacon-egg-and-cheese-breakfast-sandwich"
+                  element={<BaconEggAndCheese />}
+                />
+                <Route
+                  path="/menu/sandwiches/sausage-egg-and-cheese-breakfast-sandwich"
+                  element={<SausageEggAndCheese />}
+                />
 
                 {/* Made to Order Donuts */}
-                
-            </Routes>
-          </ScrollToTop>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  </div>
+              </Routes>
+            </ScrollToTop>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 }
 
