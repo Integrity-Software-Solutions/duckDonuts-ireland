@@ -202,19 +202,19 @@ const Home = () => {
         className="h-screen lg:h-[65%] py-10 px-6 lg:pl-0 lg:py-20 lg:pr-5 2xl:pr-[18%]"
       >
         <div className="h-full w-full flex flex-col lg:flex-row">
-          <div className="w-full h-1/2 lg:h-auto lg:w-1/2 flex justify-center items-center p-48 lg:py-10 lg:px-16 xl:pr-32 2xl:pr-16">
-            <img src={madeToOrderImage()} alt="Chocolate Donut" />
+          <div className="w-full h-1/2 lg:h-auto lg:w-1/2 flex justify-center items-center p-20 sm:p-32 md:p-48 lg:py-10 lg:px-16 xl:pr-32 2xl:pr-16">
+            <img src={madeToOrderImage()} alt="Chocolate Donut" className="w-[20rem] lg:w-auto" />
           </div>
           <div className="w-full h-1/2 lg:h-auto lg:w-1/2 xl:py-8 xl:pl-16 2xl:pl-32 2xl:py-12">
             <div className="w-full h-full flex flex-col items-center">
               <div
-                className="text-xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
+                className="text-5xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
                 style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
               >
                 WARM, DELICIOUS
               </div>
               <div
-                className="text-xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
+                className="text-6xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
                 style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
               >
                 MADE TO ORDER
