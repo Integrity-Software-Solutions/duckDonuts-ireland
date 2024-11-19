@@ -54,7 +54,7 @@ const Home = () => {
     <div className="max-w-[2055px] m-auto z-10 h-auto">
       <section
         id="MainstageScroller"
-        className="hidden sm:flex relative md:py-44 lg:py-72 lg:-mt-[6rem] xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
+        className="hidden sm:flex relative py-44 lg:py-72 lg:-mt-[6rem] xl:py-0 xl:h-screen items-center justify-center text-white bg-cover bg-center"
       >
         <div
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
@@ -69,34 +69,34 @@ const Home = () => {
           <div className="text-center">
             <div className="flex flex-col">
               <span
-                className="py-2 md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
+                className="py-2 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
                 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
               >
                 Warm, Delicious
               </span>
               <span
-                className="py-4 md:text-7xl lg:text-8xl xl:text-9xl font-boogaloo"
+                className="py-4 text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-boogaloo"
                 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
               >
                 Made to Order
               </span>
               <div className="flex items-center justify-center mt-4">
                 <div
-                  className="w-36 h-[0.32rem] bg-white mr-2"
+                  className="w-20 h-[0.3rem] md:w-36 md:h-[0.32rem] bg-white mr-2"
                   style={{ boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
                 ></div>
                 <div
-                  className="md:text-2xl lg:text-3xl xl:text-4xl mx-2 font-bold not-italic font-mono"
+                  className=" text-2xl md:text-2xl lg:text-3xl xl:text-4xl mx-2 font-bold not-italic font-mono"
                   style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
                 >
                   CUSTOMIZED BEFORE YOUR EYES!
                 </div>
                 <div
-                  className="w-36 h-[0.32rem] bg-white ml-2"
+                  className="w-20 h-[0.3rem] md:w-36 md:h-[0.32rem] bg-white ml-2"
                   style={{ boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
                 ></div>
               </div>
-              <div className="flex justify-center space-x-10 mt-10">
+              <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 mt-10">
                 <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
                   Order Online
                 </button>
