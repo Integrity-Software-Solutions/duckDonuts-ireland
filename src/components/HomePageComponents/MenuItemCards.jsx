@@ -12,8 +12,8 @@ const MenuItemCards = (props) => {
         to={props.link}
         className={`${
           props.index < 4
-            ? "md:h-[400px] lg:h-[350px] md:w-80 lg:w-56 xl:w-64 relative flex justify-center pb-6"
-            : "md:h-[400px] lg:h-[350px] md:w-80 lg:w-56 xl:w-64 lg:col-span-4 justify-self-center relative flex justify-center pb-6"
+            ? "sm:h-[350px] sm:w-80 lg:h-[350px] lg:w-56 xl:w-64  relative flex justify-center pb-6"
+            : "sm:h-[350px] sm:w-80 lg:h-[350px] lg:w-56 xl:w-64  lg:col-span-4 justify-self-center relative flex justify-center pb-6"
         } hover:cursor-pointer`}
         onMouseEnter={() => {
           setHovered(true);
@@ -46,7 +46,7 @@ const MenuItemCards = (props) => {
           } transition-transform duration-300`}
         >
           <img
-            className="w-full lg:h-[13rem] relative"
+            className="w-full h-[15rem] lg:h-[13rem] relative"
             src={props.image}
             alt="Chocolate Covered Strawberry"
           />
