@@ -92,8 +92,8 @@ function App() {
     <div className="flex flex-col min-h-screen items-center">
       <Router>
         <div className="w-full flex flex-col min-h-screen relative">
-          <Navbar setMobileNavbarOpen={setMobileNavbarOpen} />
-          <MenuDropdownMobile mobileNavbarOpen={mobileNavbarOpen} />
+          <Navbar mobileNavbarOpen={mobileNavbarOpen} setMobileNavbarOpen={setMobileNavbarOpen} />
+          <MenuDropdownMobile mobileNavbarOpen={mobileNavbarOpen} setMobileNavbarOpen={setMobileNavbarOpen} />
           <main className="flex-grow mx-auto max-w-[2055px] w-full">
             <ScrollToTop>
               <Routes>

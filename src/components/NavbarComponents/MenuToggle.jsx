@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const MenuToggle = (props) => {
   const [isChanged, setIsChanged] = useState(false);
@@ -7,6 +7,15 @@ const MenuToggle = (props) => {
     setIsChanged((prev) => !prev);
     props.setMobileNavbarOpen((prev) => !prev);
   };
+
+  // this useEffect hook will reset the isChanged state to false when the mobileNavbarOpen state is false
+  // this is mainly for the case when the user selects an option in the mobile dropdown menu
+  useEffect(() => {
+    if (!props.mobileNavbarOpen) {
+      setIsChanged(false);
+    }
+  }, [props.mobileNavbarOpen]);
+
   return (
     <div
       className={`container ${
