@@ -199,7 +199,7 @@ const Home = () => {
       </section>
       <section
         id="SeasonalContentv1"
-        className="h-screen lg:h-[65%] py-10 px-6 lg:pl-0 lg:py-20 lg:pr-5 2xl:pr-[18%]"
+        className="md:h-screen lg:h-[65%] py-10 px-6 lg:pl-0 lg:py-20 lg:pr-5 2xl:pr-[18%]"
       >
         <div className="h-full w-full flex flex-col lg:flex-row">
           <div className="w-full h-1/2 lg:h-auto lg:w-1/2 flex justify-center items-center p-20 sm:p-32 md:p-48 lg:py-10 lg:px-16 xl:pr-32 2xl:pr-16">
@@ -308,17 +308,17 @@ const Home = () => {
       </section>
       <section
         id="SeasonalContentv1"
-        className="h-screen lg:h-[65%] py-10 px-6 lg:py-20 lg:pl-5 2xl:pl-[20%]"
+        className="h-auto lg:h-[65%] py-10 px-6 lg:py-20 lg:pl-5 2xl:pl-[20%]"
       >
-        <div className="h-full w-full flex flex-col lg:flex-row-reverse">
-          <div className="w-full h-1/2 lg:h-full lg:w-[53%] flex justify-center items-center bg-blue-300">
+        <div className="h-full w-full flex flex-col-reverse md:flex-row-reverse">
+          <div className="w-full min-h-full lg:h-full lg:w-[53%] flex justify-center items-center">
             <img
               src={FallSeasonalDonuts}
               alt="Fall Seasonal Donuts"
-              className=""
+              className="h-[15rem] lg:h-auto"
             />
           </div>
-          <div className="w-full h-1/2 lg:h-auto lg:w-[47%] xl:py-8 xl:pr-16 2xl:pr-32 2xl:py-12">
+          <div className="text-center md:text-left w-full h-1/2 lg:h-auto lg:w-[47%] xl:py-8 xl:pr-16 2xl:pr-32 2xl:py-12">
             <div className="w-full h-full">
               <div className="text-5xl py-2 text-sky-500 font-bold font-boogaloo">
                 A DOZEN REASONS WE LOVE FALL
@@ -330,7 +330,7 @@ const Home = () => {
                 Cozy up with our Fall Favorites Dozen complete with apple
                 topping, Girl Scout Coconut Caramel Cookie crumbles, and more.
               </div>
-              <div className="pt-6">
+              <div className="pt-6 pb-6 md:pb-0">
                 <Link to="/menu/seasonal">
                   <button className="bg-[#E6427A] text-base font-[650] p-4 rounded-full w-52 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white">
                     Seasonal Donuts
