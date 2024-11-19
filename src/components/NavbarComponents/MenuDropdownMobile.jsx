@@ -30,24 +30,27 @@ const MenuDropdownMobile = (props) => {
             </p>
           </li>
         </Link>
-        <Link to="/menu">
-          <li className="py-2 border-b-[1px] border-b-white border-opacity-50 flex justify-between items-center">
+        <li className="py-2 border-b-[1px] border-b-white border-opacity-50 flex justify-between items-center">
+          <Link to="/menu">
             <p
-              className="w-min"
+              className="w-min z-10"
               onClick={() => {
                 props.setMobileNavbarOpen(false);
               }}
             >
               menu
             </p>
-            <FontAwesomeIcon
-              icon={expandMenu ? faMinus : faPlus}
-              size="xl"
-              className={`mr-2 cursor-pointer transition ease-in-out duration-1000`}
-              onClick={() => setExpandMenu((prev) => !prev)}
-            />
-          </li>
-        </Link>
+          </Link>
+          <FontAwesomeIcon
+            icon={expandMenu ? faMinus : faPlus}
+            size="xl"
+            className={`mr-2 cursor-pointer transition ease-in-out duration-1000 z-20`}
+            onClick={() => {
+              setExpandMenu((prev) => !prev);
+            }}
+          />
+        </li>
+
         <div
           className={`overflow-hidden transition-[max-height] duration-1000 ease-in-out ${
             expandMenu ? "max-h-[500px]" : "max-h-0"
