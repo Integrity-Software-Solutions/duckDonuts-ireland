@@ -349,7 +349,7 @@ const Home = () => {
       </section>
       <section
         id="SeasonalContentv1"
-        className="h-auto flex items-center justify-center py-16 px-20 sm:px-8 lg:px-28 xl:px-28"
+        className="h-auto flex items-center justify-center py-16 px-10 sm:px-8 lg:px-28 xl:px-28"
       >
         <div className="flex items-center justify-center h-full w-full max-w-[70rem]">
           <div className="h-1 w-1/4 md:w-1/5 xl:w-1/6 bg-sky-500"></div>

@@ -86,7 +86,7 @@ const Navbar = (props) => {
         <div className="h-full w-16 flex items-center justify-center bg-[#E6427A]">
           <MenuToggle mobileNavbarOpen={props.mobileNavbarOpen} setMobileNavbarOpen={props.setMobileNavbarOpen} />
         </div>
-        <Link to="/" className="absolute top-0 left-[27%]">
+        <Link to="/" className="absolute top-0 left-[29%] sm:left-[36%]">
           <img
             src={DuckDonutsMobileLogo}
             alt="Duck Donuts Mobile Logo"
