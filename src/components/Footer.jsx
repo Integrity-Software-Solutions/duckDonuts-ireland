@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white w-full">
+    <footer className="w-full -mt-16 lg:-mt-0">
       <section className="flex relative">
         <div className="flex flex-col items-center justify-center px-8 lg:px-20 py-10 mt-24 bg-sky-500 w-full pb-40 lg:pb-10">
           <div className="flex flex-col lg:flex-row w-full h-full max-w-[76.05em]">
