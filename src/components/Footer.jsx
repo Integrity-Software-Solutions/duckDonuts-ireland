@@ -16,18 +16,18 @@ const Footer = () => {
   return (
     <footer className="bg-white w-full">
       <section className="flex relative">
-        <div className="flex flex-col items-center justify-center px-20 py-10 mt-24 bg-sky-500 w-full">
-          <div className="flex w-full h-full max-w-[76.05em]">
-            <div className="w-[28%] flex items-center ">
+        <div className="flex flex-col items-center justify-center px-8 lg:px-20 py-10 mt-24 bg-sky-500 w-full pb-40 lg:pb-10">
+          <div className="flex flex-col lg:flex-row w-full h-full max-w-[76.05em]">
+            <div className="w-full max-w-[300px] lg:w-[28%] flex items-center mx-auto">
               <Link to="/">
                 <img
                   src={DuckDonutsLogo}
                   alt="Duck Donuts Logo"
-                  className="h-[4.7rem] lg:h-[4.6rem]"
+                  className="h-full lg:h-[4.6rem]"
                 />
               </Link>
             </div>
-            <ul className="w-[54%] flex-wrap justify-start grid grid-cols-2 text-white font-bold text-lg">
+            <ul className="w-[54%] flex-wrap justify-start lg:grid lg:grid-cols-2 text-white font-bold text-lg">
               {footerOptions.map((option) => (
                 <li
                   className="flex items-center hover:cursor-pointer py-2"
@@ -61,7 +61,7 @@ const Footer = () => {
         <picture
           role="presentation"
           class="footer-duck"
-          className="absolute bottom-0 right-[2%] w-[10%] h-full"
+          className="absolute bottom-0 right-[40%] sm:right-[43%] w-[125px] lg:right-[2%] lg:w-[10%] h-full"
         >
           <img
             src="https://d2nmqj11l1ij0u.cloudfront.net//images/design/footer-duck.png"
@@ -77,7 +77,7 @@ const Footer = () => {
             @ {new Date().getFullYear()} All rights reserved.
           </p>
 
-          <nav class="flex justify-start">
+          <nav class="flex justify-start text-nowrap">
             <a className="pr-6 underline hover:no-underline" href="/site-map/">
               Site Map
             </a>
