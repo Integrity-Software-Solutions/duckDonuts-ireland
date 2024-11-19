@@ -349,11 +349,11 @@ const Home = () => {
       </section>
       <section
         id="SeasonalContentv1"
-        className="h-auto flex items-center justify-center py-16 px-28"
+        className="h-auto flex items-center justify-center py-16 px-20 sm:px-8 lg:px-28 xl:px-28"
       >
         <div className="flex items-center justify-center h-full w-full max-w-[70rem]">
-          <div className="h-1 w-1/5 bg-sky-500"></div>
-          <div className="uppercase text-3xl flex text-sky-500 font-bold w-full justify-center">
+          <div className="h-1 w-1/4 md:w-1/5 xl:w-1/6 bg-sky-500"></div>
+          <div className="uppercase text-sm sm:text-sm md:text-lg lg:text-xl xl:text-3xl flex flex-col sm:flex-row text-sky-500 font-bold w-full text-center sm:text-left justify-center items-center">
             FOLLOW US ON INSTAGRAM
             <p
               className="ml-2 text-[#E6427A] cursor-pointer relative"
@@ -371,20 +371,20 @@ const Home = () => {
                 }`}
               ></span>
               <FontAwesomeIcon
-                className={`absolute -top-6 left-[43%] transition-opacity duration-500 ease-in-out ${
+                className={`absolute hidden md:flex sm:-top-4 sm:left-[45%] xl:-top-6 xl:left-[43%] transition-opacity duration-500 ease-in-out ${
                   duckDonutsInstagramHovered ? "opacity-100" : "opacity-0"
                 }`}
                 icon={faMessage}
               />
               <FontAwesomeIcon
-                className={`absolute -top-[18px] left-[45.6%] text-white w-3 h-3 transition-opacity duration-500 ease-in-out ${
+                className={`absolute hidden md:flex sm:-top-[13px] sm:left-[47.45%] xl:-top-[18px] xl:left-[45.6%] text-white sm:w-[9px] sm:h-[9px] xl:w-3 xl:h-3 transition-opacity duration-500 ease-in-out ${
                   duckDonutsInstagramHovered ? "opacity-100" : "opacity-0"
                 }`}
                 icon={faHeart}
               />
             </p>
           </div>
-          <div className="h-1 w-1/5 bg-sky-500"></div>
+          <div className="h-1 w-1/4 md:w-1/5 xl:w-1/6 bg-sky-500"></div>
         </div>
       </section>
     </div>
