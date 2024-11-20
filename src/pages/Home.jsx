@@ -134,9 +134,11 @@ const Home = () => {
           <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500 mb-4">
             Order Online
           </button>
-          <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500">
-            Seasonal Flavors
-          </button>
+          <Link to="/menu/seasonal">
+            <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500">
+              Seasonal Flavors
+            </button>
+          </Link>
         </div>
       </section>
       <section className="flex sm:hidden items-center justify-center px-4 py-8">
@@ -144,19 +146,27 @@ const Home = () => {
           <MenuItemCardsMobile
             image={ChocolateCoveredStrawberry}
             cardTitle={"Fan Favorites"}
+            link="/menu/fan-favorites"
           />
           <MenuItemCardsMobile
             image={MenuDrinks}
             cardTitle={"Coffee, Espresso & More"}
+            link="/menu/coffee-espresso-more"
           />
-          <MenuItemCardsMobile image={MenuIceCream} cardTitle={"Ice Cream"} />
+          <MenuItemCardsMobile
+            image={MenuIceCream}
+            cardTitle={"Ice Cream"}
+            link="/menu/ice-cream"
+          />
           <MenuItemCardsMobile
             image={LemonadeRefreshers}
             cardTitle={"Lemonade & Refreshers"}
+            link="/menu/lemonade-refreshers"
           />
           <MenuItemCardsMobile
             image={MenuSandwiches}
             cardTitle={"Sandwiches"}
+            link="/menu/sandwiches"
           />
         </div>
       </section>
@@ -203,7 +213,11 @@ const Home = () => {
       >
         <div className="h-full w-full flex flex-col lg:flex-row">
           <div className="w-full h-1/2 lg:h-auto lg:w-1/2 flex justify-center items-center p-20 sm:p-32 md:p-48 lg:py-10 lg:px-16 xl:pr-32 2xl:pr-16">
-            <img src={madeToOrderImage()} alt="Chocolate Donut" className="w-[20rem] lg:w-auto" />
+            <img
+              src={madeToOrderImage()}
+              alt="Chocolate Donut"
+              className="w-[20rem] lg:w-auto"
+            />
           </div>
           <div className="w-full h-1/2 lg:h-auto lg:w-1/2 xl:py-8 xl:pl-16 2xl:pl-32 2xl:py-12">
             <div className="w-full h-full flex flex-col items-center">

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const MenuItemCards = (props) => {
   const [hovered, setHovered] = useState(false);
-  console.log(props.link);
+
   return (
       <Link
         to={props.link}
