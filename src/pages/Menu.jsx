@@ -17,7 +17,7 @@ const Menu = (props) => {
     return (
       <li className="p-4">
         <div
-          className="w-full h-[16rem] hover:cursor-pointer"
+          className="w-full lg:h-[16rem] hover:cursor-pointer"
           onMouseEnter={() => setHovered(item.name)}
         >
           <img
@@ -70,7 +70,7 @@ const Menu = (props) => {
             <Link to={props.data.endpoint}>
               <button
                 id="viewAllButton"
-                className="bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white"
+                className="hidden md:flex bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white"
               >
                 View All
               </button>
@@ -83,14 +83,29 @@ const Menu = (props) => {
             setHovered("");
           }}
         >
-          <ul className="grid grid-flow-row grid-cols-4 text-center -mx-4">
+          <ul className="grid grid-flow-row grid-cols-2 md:grid-cols-4  text-center -mx-4">
             {firstFourItems.map((item, index) => (
               <ItemImageAndDescription key={index} item={item} />
             ))}
           </ul>
+          {displayViewAllButton && (
+            <Link to={props.data.endpoint}>
+              <button
+                id="viewAllButton"
+                className="block md:hidden bg-white border-[#E6427A] border-2 text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-[#E6427A] mx-auto"
+              >
+                View All
+              </button>
+            </Link>
+          )}
         </div>
-        <div id="spacingDiv" className="opacity-0">
+        <div id="spacingDiv" className="hidden lg:block opacity-0">
           <div id="categoryName" className="my-[1.222rem] text-2xl">
+            This text is just here to mimic the height of the categoryName div
+          </div>
+        </div>
+        <div id="spacingDiv" className="block lg:hidden opacity-0">
+          <div id="categoryName" className="text-sm">
             This text is just here to mimic the height of the categoryName div
           </div>
         </div>
@@ -112,16 +127,16 @@ const Menu = (props) => {
           }}
         />
         <div
-          className="uppercase absolute bottom-[7rem] left-[22%] text-6xl font-bold text-white font-boogaloo"
+          className="uppercase absolute bottom-[3rem] left-[8%] lg:bottom-[7rem] lg:left-[22%] text-4xl md:text-5xl lg:text-6xl font-bold text-white font-boogaloo"
           style={{ textShadow: "6px 6px 12px rgba(0, 0, 0, 0.7)" }}
         >
           Menu
         </div>
       </div>
       {/* <div className="py-20 px-[1.15rem]">{props.children}</div> */}
-      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] my-24 mx-20">
+      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] my-8 xl:my-24 mx-20 px-6 xl:px-0">
         <div
-          className={` text-sky-500 text-8xl font-bold py-3 font-boogaloo`}
+          className={` text-sky-500 text-5xl md:text-6xl lg:text-8xl font-bold py-3 font-boogaloo`}
           style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
         >
           MENU
