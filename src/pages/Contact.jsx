@@ -57,7 +57,7 @@ const Contact = () => {
     // You can send this data to an API or handle further logic here
   };
   return (
-    <div className="py-[4.944rem] px-[1.15rem]] h-full w-full flex justify-center items-center">
+    <div className="py-10 lg:py-[4.944rem] px-[1.15rem] h-full w-full flex justify-center items-center">
       <div className="mx-auto w-full max-w-[60rem]">
         <div className="px-[12%] bg-gradient-to-b from-[#7a51d2] to-[#8C69D8] p-[3rem] rounded-[3rem] w-full h-full shadow-2xl relative">
           <figure className="absolute left-0 top-0 w-full h-full overflow-hidden pointer-events-none rounded-[3rem]">
@@ -71,7 +71,7 @@ const Contact = () => {
           </figure>
           <div className="relative z-20">
             <div
-              className="text-7xl uppercase text-white font-boogaloo text-center"
+              className="text-5xl md:text-6xl lg:text-7xl uppercase text-white font-boogaloo text-center"
               style={{ textShadow: "1px 1px px rgb(0, 0, 0.5)" }}
             >
               Quack at us!
@@ -80,25 +80,25 @@ const Contact = () => {
               To contact Duck Donuts' Customer Service Team, please fill out the
               form below.
             </div>
-            <div className="text-center text-white text-sm">
+            <div className="text-center text-white font-bold md:font-normal text-sm">
               If you are looking for local community donations or to place an
               order, pleaase contact your local Duck Donuts store.
             </div>
           </div>
-          <div className="mt-4 flex w-full relative z-20">
+          <div className="mt-4 flex flex-col-reverse lg:flex-row w-full relative z-20">
             <div className="w-full max-w-[35%] mt-6 cursor-default">
-              <div className="my-4 text-white font-bold uppercase text-xl">
+              <div className="my-4 text-white font-bold uppercase text-xl text-nowrap">
                 Duck Donuts
               </div>
               <div className="flex items-center space-x-4 text-white font-bold text-xl pb-[10px]">
                 <FontAwesomeIcon icon={faPhone} />
-                <p>(123)-456-7899</p>
+                <p className="text-nowrap">(123)-456-7899</p>
               </div>
               <div className="flex space-x-5 text-white font-bold text-xl">
                 <div className="ml-[3px]">
                   <FontAwesomeIcon icon={faLocationDot} />
                 </div>
-                <div className="text-sm font-normal">
+                <div className="text-sm font-normal text-nowrap">
                   <p>1215 Manor Drive</p>
                   <p>Suite 206</p>
                   <p>Mechanicsburg, PA 17055</p>
@@ -124,9 +124,9 @@ const Contact = () => {
             <div className="w-full">
               <form
                 onSubmit={handleSubmit}
-                className="flex flex-wrap justify-between gap-4 text-white"
+                className="flex flex-col md:flex-row md:flex-wrap justify-between gap-4 text-white"
               >
-                <div className="w-[47%]">
+                <div className="w-full md:w-[47%]">
                   <label
                     htmlFor="firstName"
                     className="block text-sm font-semibold"
@@ -152,7 +152,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="w-[47%]">
+                <div className="w-full md:w-[47%]">
                   <label
                     htmlFor="lastName"
                     className="block text-sm font-semibold"
@@ -178,7 +178,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="w-[47%]">
+                <div className="w-full md:w-[47%]">
                   <label
                     htmlFor="phone"
                     className="block text-sm font-semibold"
@@ -204,7 +204,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="w-[47%]">
+                <div className="w-full md:w-[47%]">
                   <label
                     htmlFor="email"
                     className="block text-sm font-semibold"
@@ -346,10 +346,9 @@ const Contact = () => {
                 <p className="w-full text-xs font-bold text-white mb-10">
                   *indicates required field
                 </p>
-
                 <button
                   type="submit"
-                  className="transition ease-in-out delay-75 duration-700 bg-[#E6427A] rounded-[5rem] hidden lg:flex items-center justify-center text-white text-xl font-bold px-16 py-4 self-center shadow-xl hover:cursor-pointer hover:bg-sky-400"
+                  className="transition ease-in-out delay-75 duration-700 bg-[#E6427A] rounded-[5rem] flex items-center justify-center text-white text-lg md:text-xl font-bold px-20 md:px-16 py-2 md:py-4 self-center shadow-xl hover:cursor-pointer hover:bg-sky-400"
                 >
                   Submit
                 </button>
