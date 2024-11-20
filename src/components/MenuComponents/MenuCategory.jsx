@@ -23,7 +23,7 @@ const MenuCategory = (props) => {
       <Link to={item.endpoint}>
         <li className="p-4">
           <div
-            className="w-full lg:h-[16rem] hover:cursor-pointer"
+            className="w-full h-[10rem] lg:h-[16rem] hover:cursor-pointer"
             onMouseEnter={() => setHovered(item.name)}
           >
             <img
