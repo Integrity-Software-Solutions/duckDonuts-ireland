@@ -27,7 +27,7 @@ const MenuItem = (props) => {
           }}
         />
         <div
-          className="uppercase absolute bottom-[2.5rem] left-[10%] lg:bottom-[7rem] lg:left-[22%] text-2xl sm:text-4xl md:text-5xl text-nowrap lg:text-6xl font-bold text-white font-boogaloo w-1/2 leading-snug"
+          className="uppercase absolute bottom-[2.5rem] left-[10%] lg:bottom-[7rem] lg:left-[22%] text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white font-boogaloo w-full2 md:w-1/2 leading-snug"
           style={{ textShadow: "6px 6px 12px rgba(0, 0, 0, 0.7)" }}
         >
           {title1}
@@ -37,18 +37,24 @@ const MenuItem = (props) => {
         <img
           src={props.itemImage}
           alt={props.title1}
-          className="w-1/2 md:w-full md:h-full my-auto"
+          className="w-1/2 md:w-full md:h-full max-h-[30rem] object-contain my-auto"
         />
         <div className="h-full w-full my-auto ml-3 md:ml-8">
           <div className="">
             <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl uppercase font-boogaloo text-sky-500">
               {props.data.name}
             </div>
-            <div className="mt-2 md:mt-6 text-base font-semibold md:font-normal md:text-lg">{props.data.description}</div>
+            <div className="mt-2 md:mt-6 text-base font-semibold md:font-normal md:text-lg">
+              {props.data.description}
+            </div>
             {props.data.ingredients && (
               <>
-                <div className="mt-2 md:mt-6 text-lg md:text-xl font-bold">Ingredients</div>
-                <div className="mt-2 md:mt-6 text-base font-semibold md:font-normal md:text-lg">{props.data.ingredients}</div>
+                <div className="mt-2 md:mt-6 text-lg md:text-xl font-bold">
+                  Ingredients
+                </div>
+                <div className="mt-2 md:mt-6 text-base font-semibold md:font-normal md:text-lg">
+                  {props.data.ingredients}
+                </div>
               </>
             )}
           </div>

@@ -16,10 +16,10 @@
           },
           {
             "name": "Bourbon Caramel Apple Pie Milkshake",
-            "yearRound": false,
-            "availability": "September 4 - December 1",
-            "description": "A dozen of our favorite fall donuts, including Pumpkin Spice and Apple Cider",
-            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg"
+            "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg",
+            "description": "We combined the best fall flavors into one irresistibly indulgent milkshake. Try a Bourbon Caramel Apple Pie milkshake today!",
+            "endpoint": "/menu/ice-cream/bourbon-caramel-apple-pie-milkshake",
+            "availability": "September 4 - December 1"
           },
           {
             "name": "Fall Favorites Half Dozen",
@@ -616,7 +616,8 @@
       },
       {
         "name": "Donut Ice Cream Sandwiches",
-        "image": "/assets/images/MenuImages/IceCreamImages/DonutIceCreamSandwiches.jpg"
+        "image": "/assets/images/MenuImages/IceCreamImages/DonutIceCreamSandwiches.jpg",
+        "endpoint": "/menu/ice-cream/donut-ice-cream-sandwiches"
       }
     ]
   },

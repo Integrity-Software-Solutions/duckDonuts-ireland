@@ -64,6 +64,25 @@ import PumpkinMacchiato from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/
 import FoodAllergyInfo from "./pages/FoodAllergyInfo";
 import Contact from "./pages/Contact";
 import MenuDropdownMobile from "./components/NavbarComponents/MenuDropdownMobile";
+import ClassicDonutSundae from "./pages/MenuPages/MenuItems/IceCream/ClassicDonutSundae";
+import SaltedCaramelDonutSundae from "./pages/MenuPages/MenuItems/IceCream/SaltedCaramelDonutSundae";
+import SmoresDonutSundae from "./pages/MenuPages/MenuItems/IceCream/SmoresDonutSundae";
+import CookiesAndCreamSundae from "./pages/MenuPages/MenuItems/IceCream/CookiesAndCreamSundae";
+import ChocolateMadnessSundae from "./pages/MenuPages/MenuItems/IceCream/ChocolateMadnessSundae";
+import ConfettiSundae from "./pages/MenuPages/MenuItems/IceCream/ConfettieSundae";
+import PeanutButterCrunchSundae from "./pages/MenuPages/MenuItems/IceCream/PeanutButterCrunchSundae";
+import StrawberryShortcakeSundae from "./pages/MenuPages/MenuItems/IceCream/StrawberryShortcakeSundae";
+import BirthdayCakeMilkshake from "./pages/MenuPages/MenuItems/IceCream/BirthdayCakeMilkshake";
+import BlueberryMilkshake from "./pages/MenuPages/MenuItems/IceCream/BlueberryMilkshake";
+import ChocolateMilkshake from "./pages/MenuPages/MenuItems/IceCream/ChocolateMilkshake";
+import CookiesAndCreamMilkshake from "./pages/MenuPages/MenuItems/IceCream/CookiesAndCreamMilkshake";
+import MapleBaconMilkshake from "./pages/MenuPages/MenuItems/IceCream/MapleBaconMilkshake";
+import SaltedCaramelMilkshake from "./pages/MenuPages/MenuItems/IceCream/SaltedCaramelMilkshake";
+import SmoresMilkshake from "./pages/MenuPages/MenuItems/IceCream/SmoresMilkshake";
+import StrawberryMilkshake from "./pages/MenuPages/MenuItems/IceCream/StrawberryMilkshake";
+import VanillaMilkshake from "./pages/MenuPages/MenuItems/IceCream/VanillaMilkshake";
+import DonutIceCreamSandwiches from "./pages/MenuPages/MenuItems/IceCream/DonutIceCreamSandwiches";
+import BourbonCaramelApplePieMilkshake from "./pages/MenuPages/MenuItems/IceCream/BourbonCaramelApplePieMilkshake";
 
 function App() {
   const determineSeason = () => {
@@ -92,8 +111,14 @@ function App() {
     <div className="flex flex-col min-h-screen items-center">
       <Router>
         <div className="w-full flex flex-col min-h-screen relative">
-          <Navbar mobileNavbarOpen={mobileNavbarOpen} setMobileNavbarOpen={setMobileNavbarOpen} />
-          <MenuDropdownMobile mobileNavbarOpen={mobileNavbarOpen} setMobileNavbarOpen={setMobileNavbarOpen} />
+          <Navbar
+            mobileNavbarOpen={mobileNavbarOpen}
+            setMobileNavbarOpen={setMobileNavbarOpen}
+          />
+          <MenuDropdownMobile
+            mobileNavbarOpen={mobileNavbarOpen}
+            setMobileNavbarOpen={setMobileNavbarOpen}
+          />
           <main className="flex-grow mx-auto max-w-[2055px] w-full">
             <ScrollToTop>
               <Routes>
@@ -279,6 +304,82 @@ function App() {
                 />
 
                 {/* Ice Cream */}
+                <Route 
+                  path="/menu/ice-cream/bourbon-caramel-apple-pie-milkshake"
+                  element={<BourbonCaramelApplePieMilkshake />}
+                />
+                <Route
+                  path="/menu/ice-cream/classic-donut-sundae"
+                  element={<ClassicDonutSundae />}
+                />
+                <Route
+                  path="/menu/ice-cream/salted-caramel-donut-sundae"
+                  element={<SaltedCaramelDonutSundae />}
+                />
+                <Route
+                  path="/menu/ice-cream/smores-donut-sundae"
+                  element={<SmoresDonutSundae />}
+                />
+                <Route
+                  path="/menu/ice-cream/cookies-cream-sundae"
+                  element={<CookiesAndCreamSundae />}
+                />
+                <Route
+                  path="/menu/ice-cream/chocolate-madness-sundae"
+                  element={<ChocolateMadnessSundae />}
+                />
+                <Route
+                  path="/menu/ice-cream/confetti-sundae"
+                  element={<ConfettiSundae />}
+                />
+                <Route
+                  path="/menu/ice-cream/peanut-butter-crunch-sundae"
+                  element={<PeanutButterCrunchSundae />}
+                />
+                <Route
+                  path="/menu/ice-cream/strawberry-shortcake-sundae"
+                  element={<StrawberryShortcakeSundae />}
+                />
+                <Route 
+                  path="/menu/ice-cream/birthday-cake-milkshake"
+                  element={<BirthdayCakeMilkshake />}
+                />
+                <Route
+                  path="/menu/ice-cream/blueberry-milkshake"
+                  element={<BlueberryMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/chocolate-milkshake"
+                  element={<ChocolateMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/cookies-cream-milkshake"
+                  element={<CookiesAndCreamMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/maple-bacon-milkshake"
+                  element={<MapleBaconMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/salted-caramel-milkshake"
+                  element={<SaltedCaramelMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/smores-milkshake"
+                  element={<SmoresMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/strawberry-milkshake"
+                  element={<StrawberryMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/vanilla-milkshake"
+                  element={<VanillaMilkshake />}
+                />
+                <Route 
+                  path="/menu/ice-cream/donut-ice-cream-sandwiches"
+                  element={<DonutIceCreamSandwiches />}
+                />
 
                 {/* Lemonade & Refreshers */}
                 <Route
