@@ -15,9 +15,6 @@ const Navbar = (props) => {
     setHovered(option);
   };
 
-  // hidden md:flkex navbar w-full bg-sky-500
-  // warm, delicious made to order
-
   return (
     <>
       <header className="hidden md:flex navbar w-full bg-sky-500 h-[6.46rem] sticky top-0 z-30 shadow-2xl shadow-slate-500">
@@ -82,7 +79,7 @@ const Navbar = (props) => {
         <OrderOnlineButton />
       </header>
       {/* mobile header/navbar */}
-      <header className="flex justify-between items-center md:hidden navbar w-full bg-sky-50 h-[4.5rem] sticky top-0 z-30 shadow-lg shadow-slate-500">
+      <header className="flex overflow-hidden justify-between items-center md:hidden navbar w-full bg-sky-50 h-[4.5rem] sticky top-0 z-30 shadow-lg shadow-slate-500">
         <div className="h-full w-16 flex items-center justify-center bg-[#E6427A]">
           <MenuToggle mobileNavbarOpen={props.mobileNavbarOpen} setMobileNavbarOpen={props.setMobileNavbarOpen} />
         </div>

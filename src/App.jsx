@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
@@ -112,6 +112,15 @@ function App() {
   const season = determineSeason();
 
   const [mobileNavbarOpen, setMobileNavbarOpen] = useState(false);
+
+    // Add/remove 'overflow-hidden' class on the body
+    useEffect(() => {
+      if (mobileNavbarOpen) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+    }, [mobileNavbarOpen]);
 
   return (
     <div className="flex flex-col min-h-screen items-center">
