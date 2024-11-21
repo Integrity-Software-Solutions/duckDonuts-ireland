@@ -95,7 +95,7 @@ const Footer = () => {
             </a>
           </nav>
         </small>
-        <a
+        {/* <a
           href="https://www.scorpion.co/franchises/"
           target="_blank"
           className="flex justify-end"
@@ -105,7 +105,7 @@ const Footer = () => {
             alt="Scorpion Internet Marketing Experts"
             className="w-1/2"
           />
-        </a>
+        </a> */}
       </section>
     </footer>
   );
