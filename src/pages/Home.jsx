@@ -222,13 +222,13 @@ const Home = () => {
           <div className="w-full h-1/2 lg:h-auto lg:w-1/2 xl:py-8 xl:pl-16 2xl:pl-32 2xl:py-12">
             <div className="w-full h-full flex flex-col items-center">
               <div
-                className="text-5xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
+                className="text-4xl sm:text-5xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
                 style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
               >
                 WARM, DELICIOUS
               </div>
               <div
-                className="text-6xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
+                className="text-5xl sm:text-6xl lg:text-7xl text-sky-500 font-bold w-full flex justify-center py-2 font-boogaloo"
                 style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
               >
                 MADE TO ORDER

@@ -34,31 +34,57 @@ const Donuts = (props) => {
     }, 1000);
   }, []);
 
+  function getDeviceType() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return "Mobile";
+    } else {
+      return "Desktop";
+    }
+  }
+
   const ItemImageAndDescription = ({ key, item }) => {
     return (
-      <li className="p-4">
-        <div
-          className="w-full h-[16rem] hover:cursor-pointer"
-          onMouseEnter={() => setHovered(item.name)}
-        >
-          <img
-            src={item.image}
-            alt={item.name}
-            className={`object-fill w-full h-full  ${
-              hovered === item.name ? "scale-105" : "scale-100"
+      <Link to={item.endpoint}>
+        <li className="p-4">
+          <div
+            className="w-full h-[16rem] hover:cursor-pointer"
+            onMouseEnter={() => {
+              if (getDeviceType() === "Desktop") {
+                setHovered(item.name);
+              }
+            }}
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className={`object-fill w-full h-full  ${
+                hovered === item.name ? "scale-105" : "scale-100"
+              }`}
+              onMouseEnter={() => {
+                if (getDeviceType() === "Desktop") {
+                  setHovered(item.name);
+                }
+              }}
+            />
+          </div>
+          <p
+            className={`mt-2 font-bold hover:cursor-pointer ${
+              hovered === item.name ? "underline" : "no-underline"
             }`}
-            onMouseEnter={() => setHovered(item.name)}
-          />
-        </div>
-        <p
-          className={`mt-2 font-bold hover:cursor-pointer ${
-            hovered === item.name ? "underline" : "no-underline"
-          }`}
-          onMouseEnter={() => setHovered(item.name)}
-        >
-          {item.name}
-        </p>
-      </li>
+            onMouseEnter={() => {
+              if (getDeviceType() === "Desktop") {
+                setHovered(item.name);
+              }
+            }}
+          >
+            {item.name}
+          </p>
+        </li>
+      </Link>
     );
   };
 
@@ -116,16 +142,16 @@ const Donuts = (props) => {
           }}
         />
         <div
-          className="uppercase absolute bottom-[7rem] left-[22%] text-6xl font-bold text-white font-boogaloo"
+          className="uppercase absolute bottom-[2.5rem] left-[10%] lg:bottom-[7rem] lg:left-[22%] text-2xl sm:text-4xl md:text-5xl text-nowrap lg:text-6xl font-bold text-white font-boogaloo"
           style={{ textShadow: "6px 6px 12px rgba(0, 0, 0, 0.7)" }}
         >
           Donuts
         </div>
       </div>
       {/* <div className="py-20 px-[1.15rem]">{props.children}</div> */}
-      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] my-24 mx-20">
+      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] py-8 sm:my-16 lg:my-24 lg:mx-20 px-6 xl:px-0">
         <div
-          className={` text-sky-500 text-8xl font-bold py-3 font-boogaloo`}
+          className={`text-sky-500 text-5xl lg:text-7xl font-bold py-3 font-boogaloo`}
           style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
         >
           DONUTS

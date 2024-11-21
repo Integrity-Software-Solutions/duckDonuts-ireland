@@ -7,6 +7,18 @@ const Menu = (props) => {
   const [showBackground, setShowBackground] = useState(false);
   const [hovered, setHovered] = useState("");
 
+  function getDeviceType() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return "Mobile";
+    } else {
+      return "Desktop";
+    }
+  }
+
   useEffect(() => {
     setTimeout(() => {
       setShowBackground(true);
@@ -19,7 +31,11 @@ const Menu = (props) => {
         <li className="p-4">
           <div
             className="w-full lg:h-[16rem] hover:cursor-pointer"
-            onMouseEnter={() => setHovered(item.name)}
+            onMouseEnter={() => {
+              if (getDeviceType() === "Desktop") {
+                setHovered(item.name);
+              }
+            }}
           >
             <img
               src={item.image}
@@ -27,14 +43,22 @@ const Menu = (props) => {
               className={`object-fill w-full h-full  ${
                 hovered === item.name ? "scale-105" : "scale-100"
               }`}
-              onMouseEnter={() => setHovered(item.name)}
+              onMouseEnter={() => {
+                if (getDeviceType() === "Desktop") {
+                  setHovered(item.name);
+                }
+              }}
             />
           </div>
           <p
             className={`mt-2 font-bold hover:cursor-pointer ${
               hovered === item.name ? "underline" : "no-underline"
             }`}
-            onMouseEnter={() => setHovered(item.name)}
+            onMouseEnter={() => {
+              if (getDeviceType() === "Desktop") {
+                setHovered(item.name);
+              }
+            }}
           >
             {item.name}
           </p>
@@ -136,7 +160,7 @@ const Menu = (props) => {
         </div>
       </div>
       {/* <div className="py-20 px-[1.15rem]">{props.children}</div> */}
-      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] my-8 xl:my-24 mx-20 px-6 xl:px-0">
+      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] my-8 xl:my-24 lg:mx-20 px-6 xl:px-0">
         <div
           className={` text-sky-500 text-5xl md:text-6xl lg:text-8xl font-bold py-3 font-boogaloo`}
           style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}

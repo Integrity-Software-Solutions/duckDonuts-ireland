@@ -15,7 +15,7 @@ const MenuDropdownMobile = (props) => {
     <div
       className={`${
         props.mobileNavbarOpen ? "flex sm:hidden" : "hidden"
-      } flex-col items-center sticky top-[4.5rem] left-0 w-full h-screen z-30 overflow-hidden -mt[4.5rem] bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 text-white p-2 font-bold`}
+      } flex-col items-center sticky top-[4.5rem] left-0 w-full h-screen z-30 overflow-hidden -mt-[4.5rem] bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 text-white p-2 font-bold`}
     >
       <ul className="w-full">
         <Link to="/">

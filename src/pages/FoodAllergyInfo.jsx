@@ -32,7 +32,7 @@ const FoodAllergyInfo = () => {
           {title}
         </div>
       </div>
-      <div className="flex flex-col justify-self-center h-full w-full max-w-[72rem] py-10 sm:my-16 xl:my-24 mx-20 px-6 xl:px-0">
+      <div className="flex flex-col justify-self-center h-full w-full max-w-[72rem] py-10 sm:my-16 xl:my-24 lg:mx-20 px-6 xl:px-0">
         <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-nowrap uppercase font-boogaloo text-sky-500">
           {title}
         </div>

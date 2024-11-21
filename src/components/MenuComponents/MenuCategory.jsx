@@ -18,13 +18,29 @@ const MenuCategory = (props) => {
     }, 1000);
   }, []);
 
+  function getDeviceType() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return "Mobile";
+    } else {
+      return "Desktop";
+    }
+  }
+
   const ItemImageAndDescription = ({ key, item }) => {
     return (
       <Link to={item.endpoint}>
         <li className="p-4">
           <div
             className="w-full h-[10rem] lg:h-[16rem] hover:cursor-pointer"
-            onMouseEnter={() => setHovered(item.name)}
+            onMouseEnter={() => {
+              if (getDeviceType() === "Desktop") {
+                setHovered(item.name);
+              }
+            }}
           >
             <img
               src={item.image}
@@ -32,14 +48,22 @@ const MenuCategory = (props) => {
               className={`object-contain w-full h-full  ${
                 hovered === item.name ? "scale-105" : "scale-100"
               }`}
-              onMouseEnter={() => setHovered(item.name)}
+              onMouseEnter={() => {
+                if (getDeviceType() === "Desktop") {
+                  setHovered(item.name);
+                }
+              }}
             />
           </div>
           <p
             className={`mt-2 font-bold hover:cursor-pointer ${
               hovered === item.name ? "underline" : "no-underline"
             }`}
-            onMouseEnter={() => setHovered(item.name)}
+            onMouseEnter={() => {
+              if (getDeviceType() === "Desktop") {
+                setHovered(item.name);
+              }
+            }}
           >
             {item.name}
           </p>
@@ -142,7 +166,7 @@ const MenuCategory = (props) => {
         </div>
       </div>
       {/* <div className="py-20 px-[1.15rem]">{props.children}</div> */}
-      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] py-8 sm:my-16 lg:my-24 mx-20 px-6 xl:px-0">
+      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] py-8 sm:my-16 lg:my-24 lg:mx-20 px-6 xl:px-0">
         <div
           className={`${
             props.centerText && "text-center"

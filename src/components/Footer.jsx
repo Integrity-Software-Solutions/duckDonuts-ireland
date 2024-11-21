@@ -16,18 +16,18 @@ const Footer = () => {
   return (
     <footer className="w-full -mt-16 lg:-mt-0">
       <section className="flex relative">
-        <div className="flex flex-col items-center justify-center px-8 lg:px-20 py-10 mt-24 bg-sky-500 w-full pb-40 lg:pb-10">
-          <div className="flex flex-col lg:flex-row w-full h-full max-w-[76.05em]">
+        <div className="flex flex-col items-center justify-center px-8 lg:px-20 py-10 mt-24 bg-sky-500 w-full lg:pb-10">
+          <div className="flex flex-col lgflex-row w-full h-full max-w-[76.05em]">
             <div className="w-full max-w-[300px] lg:w-[28%] flex items-center mx-auto">
-              <Link to="/">
+              <Link to="/" className="mx-auto">
                 <img
                   src={DuckDonutsLogo}
                   alt="Duck Donuts Logo"
-                  className="h-full lg:h-[4.6rem]"
+                  className="h-full lg:h-[4.6rem] max-h-[5rem]"
                 />
               </Link>
             </div>
-            <ul className="w-[54%] flex-wrap justify-start lg:grid lg:grid-cols-2 text-white font-bold text-lg">
+            <ul className="w-[54%] flex-wrap justify-start grid lg:grid-cols-2 text-white font-bold text-lg">
               {footerOptions.map((option) => (
                 <li
                   className="flex items-center hover:cursor-pointer py-2"
@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="w-[18%]"></div>
           </div>
         </div>
-        <picture
+        {/* <picture
           role="presentation"
           class="footer-duck"
           className="absolute bottom-0 right-[40%] sm:right-[43%] w-[125px] lg:right-[2%] lg:w-[10%] h-full"
@@ -68,7 +68,7 @@ const Footer = () => {
             alt=""
             className="absolute w-full h-full object-contain object-bottom bg-contain bg-bottom bg-no-repeat"
           />
-        </picture>
+        </picture> */}
       </section>
       <section className="bg-black px-10 py-6 flex justify-between text-white items-center">
         <small>

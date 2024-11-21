@@ -33,7 +33,7 @@ const MenuItem = (props) => {
           {title1}
         </div>
       </div>
-      <div className="flex justify-self-center h-full w-full max-w-[72rem] my-4 xl:my-24 mx-20 px-6 xl:px-0">
+      <div className="flex justify-self-center h-full w-full max-w-[72rem] my-4 xl:my-24 lg:mx-20 px-6 xl:px-0">
         <img
           src={props.itemImage}
           alt={props.title1}

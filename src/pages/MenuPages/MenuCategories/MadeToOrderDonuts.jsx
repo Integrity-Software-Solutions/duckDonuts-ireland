@@ -34,7 +34,7 @@ const MadeToOrderDonuts = () => {
           {title1}
         </div>
       </div>
-      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] py-10 sm:my-16 xl:my-24 mx-20 px-6 xl:px-0">
+      <div className="flex flex-col justify-self-center h-full w-full max-w-[75rem] py-10 sm:my-16 xl:my-24 lg:mx-20 px-6 xl:px-0">
         <div
           className={` text-sky-500 text-5xl lg:text-7xl font-bold font-boogaloo`}
           style={{ textShadow: "2px 2px 4px rgb(0, 0, 0, 0.5)" }}
