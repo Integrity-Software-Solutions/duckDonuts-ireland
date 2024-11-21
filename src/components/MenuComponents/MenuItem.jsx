@@ -47,13 +47,27 @@ const MenuItem = (props) => {
             <div className="mt-2 md:mt-6 text-base font-semibold md:font-normal md:text-lg">
               {props.data.description}
             </div>
-            {props.data.ingredients && (
+            {typeof props.data.ingredients === "string" && (
               <>
                 <div className="mt-2 md:mt-6 text-lg md:text-xl font-bold">
                   Ingredients
                 </div>
                 <div className="mt-2 md:mt-6 text-base font-semibold md:font-normal md:text-lg">
                   {props.data.ingredients}
+                </div>
+              </>
+            )}
+            {typeof props.data.ingredients === "object" && (
+              <>
+                <div className="mt-2 md:mt-6 text-base font-semibold md:font-normal md:text-lg">
+                  {props.data.ingredients.map((item, index) => (
+                    <div className="text-sm" key={index}>
+                      • {item.name}
+                      {item.description !== "" && (
+                        <span> - {item.description}</span>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </>
             )}

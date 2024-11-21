@@ -83,6 +83,12 @@ import StrawberryMilkshake from "./pages/MenuPages/MenuItems/IceCream/Strawberry
 import VanillaMilkshake from "./pages/MenuPages/MenuItems/IceCream/VanillaMilkshake";
 import DonutIceCreamSandwiches from "./pages/MenuPages/MenuItems/IceCream/DonutIceCreamSandwiches";
 import BourbonCaramelApplePieMilkshake from "./pages/MenuPages/MenuItems/IceCream/BourbonCaramelApplePieMilkshake";
+import BreakfastBox from "./pages/MenuPages/MenuItems/EverydayAssortments/BreakfastBox";
+import DuckDozen from "./pages/MenuPages/MenuItems/EverydayAssortments/DuckDozen";
+import SignatureAssortment from "./pages/MenuPages/MenuItems/EverydayAssortments/SignatureAssortment";
+import PartyBox from "./pages/MenuPages/MenuItems/EverydayAssortments/PartyBox";
+import FallFavoritesDozen from "./pages/MenuPages/MenuItems/Seasonal/FallFavoritesDozen";
+import FallFavoritesHalfDozen from "./pages/MenuPages/MenuItems/Seasonal/FallFavoritesHalfDozen";
 
 function App() {
   const determineSeason = () => {
@@ -161,6 +167,14 @@ function App() {
 
                 {/* menu items */}
                 {/* seasonal */}
+                <Route
+                  path="/menu/donuts/fall-favorites-dozen"
+                  element={<FallFavoritesDozen />}
+                />
+                <Route
+                  path="/menu/donuts/fall-favorites-half-dozen"
+                  element={<FallFavoritesHalfDozen />}
+                />
 
                 {/* Fan Favorites */}
                 <Route path="/menu/donuts/smores" element={<Smores />} />
@@ -252,6 +266,16 @@ function App() {
                   element={<ChocolateCoveredStrawberry />}
                 />
                 {/* Everyday Assortments */}
+                <Route
+                  path="/menu/donuts/breakfast-box"
+                  element={<BreakfastBox />}
+                />
+                <Route path="/menu/donuts/duck-dozen" element={<DuckDozen />} />
+                <Route
+                  path="/menu/donuts/signature-assortment"
+                  element={<SignatureAssortment />}
+                />
+                <Route path="/menu/donuts/party-box" element={<PartyBox />} />
 
                 {/* Coffee, Espresso & More */}
                 <Route
@@ -304,7 +328,7 @@ function App() {
                 />
 
                 {/* Ice Cream */}
-                <Route 
+                <Route
                   path="/menu/ice-cream/bourbon-caramel-apple-pie-milkshake"
                   element={<BourbonCaramelApplePieMilkshake />}
                 />
@@ -340,7 +364,7 @@ function App() {
                   path="/menu/ice-cream/strawberry-shortcake-sundae"
                   element={<StrawberryShortcakeSundae />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/birthday-cake-milkshake"
                   element={<BirthdayCakeMilkshake />}
                 />
@@ -348,35 +372,35 @@ function App() {
                   path="/menu/ice-cream/blueberry-milkshake"
                   element={<BlueberryMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/chocolate-milkshake"
                   element={<ChocolateMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/cookies-cream-milkshake"
                   element={<CookiesAndCreamMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/maple-bacon-milkshake"
                   element={<MapleBaconMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/salted-caramel-milkshake"
                   element={<SaltedCaramelMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/smores-milkshake"
                   element={<SmoresMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/strawberry-milkshake"
                   element={<StrawberryMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/vanilla-milkshake"
                   element={<VanillaMilkshake />}
                 />
-                <Route 
+                <Route
                   path="/menu/ice-cream/donut-ice-cream-sandwiches"
                   element={<DonutIceCreamSandwiches />}
                 />
