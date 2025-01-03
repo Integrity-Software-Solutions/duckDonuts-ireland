@@ -97,7 +97,7 @@ const Home = () => {
                 ></div>
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 mt-10">
-                <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
+                <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-[#FFE87C]">
                   Order Online
                 </button>
                 {/* <Link to="/menu/seasonal">
@@ -311,7 +311,7 @@ const Home = () => {
               </div>
               <div>
                 <Link to="/menu/made-to-order-donuts">
-                  <button className="bg-[#E6427A] text-base lg:text-lg font-[650] p-4 rounded-full w-52 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white">
+                  <button className="bg-[#E6427A] text-base lg:text-lg font-[650] p-4 rounded-full w-52 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-[#FFE87C] text-white">
                     See All Options
                   </button>
                 </Link>

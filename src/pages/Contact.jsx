@@ -92,7 +92,9 @@ const Contact = () => {
               </div>
               <div className="flex items-center space-x-4 text-white font-bold text-xl pb-[10px]">
                 <FontAwesomeIcon icon={faPhone} />
-                <a href="tel:+447384855061" className="text-nowrap">+44 7384 855061</a>
+                <a href="tel:+447384855061" className="text-nowrap">
+                  +44 7384 855061
+                </a>
               </div>
               <div className="flex space-x-5 text-white font-bold text-xl">
                 <div className="ml-[3px]">
@@ -111,7 +113,8 @@ const Contact = () => {
                       setDirectionsHovered(false);
                     }}
                     onClick={() => {
-                      const mapsUrl = "https://www.google.com/maps/search/?api=1&query=304+Ormeau+Road,Belfast,United+Kingdom";
+                      const mapsUrl =
+                        "https://www.google.com/maps/search/?api=1&query=304+Ormeau+Road,Belfast,United+Kingdom";
                       window.open(mapsUrl, "_blank", "noopener noreferrer");
                     }}
                   >
@@ -352,7 +355,7 @@ const Contact = () => {
                 </p>
                 <button
                   type="submit"
-                  className="transition ease-in-out delay-75 duration-700 bg-[#E6427A] rounded-[5rem] flex items-center justify-center text-white text-lg md:text-xl font-bold px-20 md:px-16 py-2 md:py-4 self-center shadow-xl hover:cursor-pointer hover:bg-sky-400"
+                  className="transition ease-in-out delay-75 duration-700 bg-[#E6427A] rounded-[5rem] flex items-center justify-center text-white text-lg md:text-xl font-bold px-20 md:px-16 py-2 md:py-4 self-center shadow-xl hover:cursor-pointer hover:bg-[#FFE87C]"
                 >
                   Submit
                 </button>

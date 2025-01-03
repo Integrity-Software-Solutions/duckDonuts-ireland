@@ -155,6 +155,18 @@ const MenuDropdownMobile = (props) => {
             </Link>
           </ul>
         </div>
+        <Link to="/jobs">
+          <li className="py-2 border-b-[1px] border-b-white border-opacity-50">
+            <p
+              className="w-min"
+              onClick={() => {
+                props.setMobileNavbarOpen(false);
+              }}
+            >
+              jobs
+            </p>
+          </li>
+        </Link>
         <Link to="/contact-us">
           <li className="py-2 border-b-[1px] border-b-white border-opacity-50">
             <p

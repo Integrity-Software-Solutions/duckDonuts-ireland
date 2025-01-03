@@ -14,10 +14,10 @@ const Navbar = (props) => {
   const handleHover = (option) => {
     setHovered(option);
   };
-
+  // #0EA5E9
   return (
     <>
-      <header className="hidden md:flex navbar w-full bg-sky-500 h-[6.46rem] sticky top-0 z-30 shadow-2xl shadow-slate-500">
+      <header className="hidden md:flex navbar w-full bg-[#23A3DD] h-[6.46rem] sticky top-0 z-30 shadow-2xl shadow-slate-500">
         <Link to="/">
           <img
             src={DuckDonutsLogo}
@@ -74,6 +74,29 @@ const Navbar = (props) => {
                 {hovered === "menu" && <MenuDropdown hovered={hovered} />}
               </div>
             </Link>
+            {/* jobs */}
+            <Link to="/jobs">
+              <div
+                className="h-full p-1 hover:cursor-pointer"
+                onMouseEnter={() => {
+                  handleHover("jobs");
+                }}
+                onMouseLeave={() => {
+                  handleHover("");
+                }}
+              >
+                <p
+                  className={`py-1 border-b-[3.5px] transition-all ease-in-out duration-700 ${
+                    hovered === "jobs"
+                      ? "border-b-white"
+                      : "border-b-transparent"
+                  }`}
+                  style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
+                >
+                  jobs
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
         <OrderOnlineButton />
@@ -81,7 +104,10 @@ const Navbar = (props) => {
       {/* mobile header/navbar */}
       <header className="flex overflow-hidden justify-between items-center md:hidden navbar w-full bg-sky-50 h-[4.5rem] sticky top-0 z-30 shadow-lg shadow-slate-500">
         <div className="h-full w-16 flex items-center justify-center bg-[#E6427A]">
-          <MenuToggle mobileNavbarOpen={props.mobileNavbarOpen} setMobileNavbarOpen={props.setMobileNavbarOpen} />
+          <MenuToggle
+            mobileNavbarOpen={props.mobileNavbarOpen}
+            setMobileNavbarOpen={props.setMobileNavbarOpen}
+          />
         </div>
         <Link to="/" className="absolute top-0 left-[29%] sm:left-[36%]">
           <img
@@ -90,9 +116,9 @@ const Navbar = (props) => {
             className="h-[4.7rem]"
           />
         </Link>
-        <div className="mr-4 p-2">
+        <a className="mr-4 p-2" href="tel:+447384855061">
           <FontAwesomeIcon className="text-[#E6427A] text-3xl" icon={faPhone} />
-        </div>
+        </a>
       </header>
     </>
   );

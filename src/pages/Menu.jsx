@@ -96,7 +96,7 @@ const Menu = (props) => {
             <Link to={props.data.endpoint}>
               <button
                 id="viewAllButton"
-                className="hidden md:block bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400 text-white"
+                className="hidden md:block bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-[#FFE87C] text-white"
               >
                 View All
               </button>
