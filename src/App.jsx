@@ -63,6 +63,7 @@ import CaramelFrappe from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/Car
 import PumpkinMacchiato from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/PumpkinMacchiato";
 import FoodAllergyInfo from "./pages/FoodAllergyInfo";
 import Contact from "./pages/Contact";
+import Jobs from "./pages/Jobs";
 import MenuDropdownMobile from "./components/NavbarComponents/MenuDropdownMobile";
 import ClassicDonutSundae from "./pages/MenuPages/MenuItems/IceCream/ClassicDonutSundae";
 import SaltedCaramelDonutSundae from "./pages/MenuPages/MenuItems/IceCream/SaltedCaramelDonutSundae";
@@ -139,6 +140,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact-us" element={<Contact />} />
+                <Route path="/jobs" element={<Jobs />} />
                 <Route path="/menu" element={<Menu season={season} />} />
                 <Route
                   path="/about-us/food-allergy-information"
