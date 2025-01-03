@@ -1,0 +1,832 @@
+[
+    {
+      "category": "Seasonal",
+      "description": "Indulge in our seasonal donut offerings! With a rotating selection of irresistible treats, including returning favorites and exciting new flavors, there's something for everyone to enjoy. Donut miss out on these limited-time sweet treats!",
+      "seasons": {
+        "fall": {
+          "featuredItems": [
+            {
+              "name": "Fall Favorites Dozen",
+              "endpoint": "/menu/donuts/fall-favorites-dozen",
+              "tag": "donuts",
+              "yearRound": false,
+              "availability": "September 4 - December 1",
+              "description": "A dozen donuts that feature the rich, comforting flavors of fall! Let's start with a warm vanilla cake donut, topped with apples and generously drizzled with a bourbon caramel sauce to offer a sophisticated twist to seasonal flavors. Adding a delightful crunch and depth of flavor, enjoy Girl Scout Coconut Caramel Cookie Crumbles on select donuts. These donuts capture the essence of the season and offer a delicious escape into autumn!",
+              "ingredients": [
+                {
+                  "name": "Coconut Caramel Crunch",
+                  "description": "Glazed with Coconut Caramel Cookie Crumbles"
+                },
+                {
+                  "name": "Cinnamon Sugar",
+                  "description": ""
+                },
+                {
+                  "name": "Choco-Coconut Caramel Delight",
+                  "description": "Chocolate Icing with Coconut Caramel Cookie Crumbles & Salted Caramel Drizzle"
+                },
+                {
+                  "name": "Apple Cobbler",
+                  "description": "Cinnamon Sugar with Apple Topping & Streusel"
+                },
+                {
+                  "name": "Bourbon Apple Bliss",
+                  "description": "Vanilla Icing with Apple Topping & Bourbon Caramel Drizzle"
+                },
+                {
+                  "name": "S'mores",
+                  "description": "Chocolate Icing with Graham Cracker Crumbs & Marshmallow Drizzle"
+                },
+                {
+                  "name": "Bacon in the Sun",
+                  "description": "Maple Icing with Bacon & Salted Caramel Drizzle"
+                },
+                {
+                  "name": "Vanilla-Coconut Caramel Delight",
+                  "description": "Vanilla Icing with Coconut Caramel Cookie Crumbles & Hot Fudge Drizzle"
+                },
+                {
+                  "name": "Peanut Butter Paradise",
+                  "description": "Peanut Butter Icing with Chocolate Drizzle"
+                },
+                {
+                  "name": "Coffee Cake",
+                  "description": "Glazed with Streusel and Powdered Sugar"
+                },
+                {
+                  "name": "Bourbon Caramel Apple Pie",
+                  "description": "Vanilla Icing with Apple Topping, Streusel & Bourbon Caramel Drizzle"
+                },
+                {
+                  "name": "French Toast",
+                  "description": "Maple Icing with Powdered Sugar & Cinnamon Sugar"
+                }
+              ],
+              "image": "/assets/images/MenuImages/SeasonalImages/FallImages/FallFavoritesDozen.jpg"
+            },
+            {
+              "name": "Bourbon Caramel Apple Pie Milkshake",
+              "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg",
+              "description": "We combined the best fall flavors into one irresistibly indulgent milkshake. Try a Bourbon Caramel Apple Pie milkshake today!",
+              "endpoint": "/menu/ice-cream/bourbon-caramel-apple-pie-milkshake",
+              "availability": "September 4 - December 1"
+            },
+            {
+              "name": "Fall Favorites Half Dozen",
+              "endpoint": "/menu/donuts/fall-favorites-half-dozen",
+              "tag": "donuts",
+              "yearRound": false,
+              "availability": "September 4 - December 1",
+              "description": "A half dozen donuts that feature the rich, comforting flavors of fall! Let's start with a warm vanilla cake donut, topped with apples and generously drizzled with a bourbon caramel sauce to offer a sophisticated twist to seasonal flavors. Adding a delightful crunch and depth of flavor, enjoy Girl Scout Coconut Caramel Cookie Crumbles on select donuts. These donuts capture the essence of the season and offer a delicious escape into autumn!",
+              "ingredients": [
+                {
+                  "name": "Bourbon Apple Bliss",
+                  "description": "Vanilla Icing with Apple Topping & Bourbon Caramel Drizzle"
+                },
+                {
+                  "name": "Bacon in the Sun",
+                  "description": "Maple Icing with Bacon & Salted Caramel Drizzle"
+                },
+                {
+                  "name": "Choco-Coconut Caramel Delight",
+                  "description": "Chocolate Icing with Coconut Caramel Cookie Crumbles & Salted Caramel Drizzle"
+                },
+                {
+                  "name": "French Toast",
+                  "description": "Maple Icing with Powdered Sugar & Cinnamon Sugar"
+                },
+                {
+                  "name": "Vanilla-Coconut Caramel Delight",
+                  "description": "Vanilla Icing with Coconut Caramel Cookie Crumbles & Hot Fudge Drizzle"
+                },
+                {
+                  "name": "Apple Cobbler",
+                  "description": "Cinnamon Sugar with Apple Topping & Streusel"
+                }
+              ],
+              "image": "/assets/images/MenuImages/SeasonalImages/FallImages/FallFavoritesHalfDozen.jpg"
+            },
+            {
+              "name": "Pumpkin Macchiato",
+              "yearRound": false,
+              "availability": "September 4 - December 1",
+              "description": "Crisp leaves in the air, Pumpkin Macchiatos in hand - Fall is officially here. Our Pumpkin Macchiato can be order hot or iced and is perfectly spiced, oh so nice!",
+              "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg",
+              "endpoint": "/menu/coffee-espresso-more/pumpkin-macchiato"
+            }
+          ],
+          "items": []
+        },
+        "winter": {},
+        "spring": {},
+        "summer": {}
+      }
+    },
+    {
+      "category": "Fan Favorites",
+      "tag": "donuts",
+      "description": "Not sure what combination you are looking to try? Customers of Duck Donuts came up with their favorite donut combination. Choose a fan favorite or one of our other duckzillion combinations!",
+      "endpoint": "/menu/fan-favorites",
+      "items": [
+        {
+          "name": "Bacon in the Sun",
+          "yearRound": true,
+          "description": "Enjoy the flavors of maple icing topped with chopped bacon and salted caramel drizzle.",
+          "ingredients": "Maple Icing, Chopped Bacon, Salted Caramel Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/BaconInTheSun.png",
+          "endpoint": "/menu/donuts/bacon-in-the-sun"
+        },
+        {
+          "name": "Beach Ball",
+          "yearRound": true,
+          "description": "Can't decide between sprinkles and a chocolate drizzle - get both! Unlock your inner child and get the works on this donut with vanilla icing, rainbow sprinkles, and chocolate drizzle.",
+          "ingredients": "Vanilla Icing, Rainbow Sprinkles, Chocolate Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/BeachBall.png",
+          "endpoint": "/menu/donuts/beach-ball"
+        },
+        {
+          "name": "Blueberry Lemonade",
+          "yearRound": true,
+          "description": "Sweet, tangy, and totally satisfying, this summer feature will remind you of a blueberry lemonade–only better!",
+          "ingredients": "Blueberry Icing, Lemon Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryLemonade.jpg",
+          "endpoint": "/menu/donuts/blueberry-lemonade"
+        },
+        {
+          "name": "Blueberry Pancake",
+          "yearRound": true,
+          "description": "Two breakfast favorites are combined to make one incredible donut! This July featured donut has blueberry icing with a drizzling of maple syrup.",
+          "ingredients": "Blueberry Icing, Maple Drizzle, Powdered Sugar",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/BlueberryPancake.png",
+          "endpoint": "/menu/donuts/blueberry-pancake"
+        },
+        {
+          "name": "Chocolate Caramel Crunch",
+          "yearRound": true,
+          "description": "Go nuts over this salty, sweet, and crunchy donut! Enjoy this donut covered in chocolate icing, peanuts, and salted caramel drizzle.",
+          "ingredients": "Chocolate Icing, Peanuts, Salted Caramel Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCaramelCrunch.png",
+          "endpoint": "/menu/donuts/chocolate-caramel-crunch"
+        },
+        {
+          "name": "Chocolate Covered Strawberry",
+          "yearRound": true,
+          "description": "Enjoy the sweet flavor of strawberry icing finished with chocolate drizzle.",
+          "ingredients": "Strawberry Icing, Chocolate Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateCoveredStrawberry.png",
+          "endpoint": "/menu/donuts/chocolate-covered-strawberry"
+        },
+        {
+          "name": "Chocolate Explosion",
+          "yearRound": true,
+          "description": "What could be better than chocolate, chocolate and more chocolate! It's a chocolate lover's dream!",
+          "ingredients": "Chocolate Icing, OREO® Crumbles, Hot Fudge Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/ChocolateExplosion.png",
+          "endpoint": "/menu/donuts/chocolate-explosion"
+        },
+        {
+          "name": "Cinnamon Bun",
+          "yearRound": true,
+          "description": "Love cinnamon buns? Then you'll love this sweet donut with cinnamon sugar and vanilla icing. Get enough for everyone - this donuts too good to share!",
+          "ingredients": "Cinnamon Sugar, Vanilla Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/CinnamonBun.png",
+          "endpoint": "/menu/donuts/cinnamon-bun"
+        },
+        {
+          "name": "Coconut Island Bliss",
+          "yearRound": true,
+          "description": "Chocolate and peanuts is a classic combo—now add coconut for a new twist on this time-honored taste.",
+          "ingredients": "Chocolate Icing, Peanuts, Coconut",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/CoconutIslandBliss.png",
+          "endpoint": "/menu/donuts/coconut-island-bliss"
+        },
+        {
+          "name": "Cookies & Cream",
+          "yearRound": true,
+          "description": "That’s just the way the cookie crumbles! Indulge your sweet tooth with vanilla icing, OREO® Cookie pieces, and hot fudge drizzle.",
+          "ingredients": "Vanilla Icing, OREO® Cookie Pieces, Hot Fudge Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/CookiesAndCream.png",
+          "endpoint": "/menu/donuts/cookies-cream"
+        },
+        {
+          "name": "French Toast",
+          "yearRound": true,
+          "description": "Tastes just like French toast! Maple icing topped with powdered and cinnamon sugars.",
+          "ingredients": "Maple Icing, Powdered Sugar, Cinnamon Sugar",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/FrenchToast.png",
+          "endpoint": "/menu/donuts/french-toast"
+        },
+        {
+          "name": "Maple Bacon",
+          "yearRound": true,
+          "description": "This savory and sweet tribute to everyone's favorite breakfast food is a real fan favorite. This daring donut has maple icing with pieces of bacon on top.",
+          "ingredients": "Maple Icing, Chopped Bacon",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/MapleBacon.png",
+          "endpoint": "/menu/donuts/maple-bacon"
+        },
+        {
+          "name": "Midnight Madness",
+          "yearRound": true,
+          "description": "Chocolate icing with chocolate sprinkles is sure to satisfy your sweet tooth.",
+          "ingredients": "Chocolate Icing, Chocolate Sprinkles",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/MidnightMadness.png",
+          "endpoint": "/menu/donuts/midnight-madness"
+        },
+        {
+          "name": "Peanut Butter & Jelly",
+          "yearRound": true,
+          "description": "The Duck Donuts homage to the peanut butter and jelly sandwich! Our creamy peanut butter icing and decadent raspberry drizzle are sure to satisfy.",
+          "ingredients": "Peanut Butter Icing, Raspberry Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterAndJelly.png",
+          "endpoint": "/menu/donuts/peanut-butter-jelly"
+        },
+        {
+          "name": "Peanut Butter Paradise",
+          "yearRound": true,
+          "description": "Treat yourself to this donut with peanut butter icing and chocolate drizzle. These two crowd-pleasing flavors combine to make the donut dream team!",
+          "ingredients": "Peanut Butter Icing, Chocolate Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/PeanutButterParadise.png",
+          "endpoint": "/menu/donuts/peanut-butter-paradise"
+        },
+        {
+          "name": "Pina Colada",
+          "yearRound": true,
+          "description": "Fresh, fruity flavors top this donut featuring lemon icing and shredded coconut.",
+          "ingredients": "Lemon Icing, Shredded Coconut",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/PinaColada.png",
+          "endpoint": "/menu/donuts/pina-colada"
+        },
+        {
+          "name": "Raspberry Fluff",
+          "yearRound": true,
+          "description": "This ooey-gooey combination features a delicious drizzle of raspberry and marshmallow on top of our classic vanilla icing.",
+          "ingredients": "Vanilla Icing, Raspberry Drizzle, Marshmallow Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/RaspberryFluff.png",
+          "endpoint": "/menu/donuts/raspberry-fluff"
+        },
+        {
+          "name": "Sand Dollar",
+          "yearRound": true,
+          "description": "Creamy vanilla coated in coconut! This is a featured donut for those who like a tropical twist on their classic treats.",
+          "ingredients": "Vanilla Icing, Shredded Coconut, Powdered Sugar",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/SandDollar.png",
+          "endpoint": "/menu/donuts/sand-dollar"
+        },
+        {
+          "name": "S'mores",
+          "yearRound": true,
+          "description": "It's like donuts at the campfire! Enjoy chocolate icing with graham cracker crumbs & marshmallow drizzle.",
+          "ingredients": "Chocolate Icing, Graham Cracker Crumbs, Marshmallow Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/S'mores.png",
+          "endpoint": "/menu/donuts/smores"
+        },
+        {
+          "name": "Strawberry Confetti",
+          "yearRound": true,
+          "description": "One of our most colorful donuts, the combo of strawberry icing and rainbow sprinkles is sure to put a smile on your face!",
+          "ingredients": "Strawberry Icing, Rainbow Sprinkles",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryConfetti.png",
+          "endpoint": "/menu/donuts/strawberry-confetti"
+        },
+        {
+          "name": "Strawberry Shortcake",
+          "yearRound": true,
+          "description": "This cheerful combination includes strawberry icing, graham cracker crumbs, and a sweet vanilla drizzle.",
+          "ingredients": "Strawberry Icing, Graham Cracker Crumbs, Vanilla Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/StrawberryShortcake.png",
+          "endpoint": "/menu/donuts/strawberry-shortcake"
+        },
+        {
+          "name": "Sunrise",
+          "yearRound": true,
+          "description": "Brighten up your day with this fun, fruity delight! Try this donut with lemon icing and raspberry drizzle today.",
+          "ingredients": "Lemon Icing, Raspberry Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/Sunrise.png",
+          "endpoint": "/menu/donuts/sunrise"
+        },
+        {
+          "name": "The Beach",
+          "yearRound": true,
+          "description": "Rich vanilla poured over a generous dusting of blissful cinnamon sugar. This classic, homemade flavor is sure to satisfy.",
+          "ingredients": "Vanilla Icing, Cinnamon Sugar",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/TheBeach.png",
+          "endpoint": "/menu/donuts/the-beach"
+        },
+        {
+          "name": "The Boardwalk",
+          "yearRound": true,
+          "description": "Indulge your sweet tooth with glazed icing, OREO® Cookie Pieces, powdered sugar, and vanilla drizzle.",
+          "ingredients": "Classic Glaze, OREO® Cookie Pieces, Powdered Sugar, Vanilla Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/TheBoardwalk.png",
+          "endpoint": "/menu/donuts/the-boardwalk"
+        },
+        {
+          "name": "The Flip Flop",
+          "yearRound": true,
+          "description": "Simple elegance and a big flavor to match. Pairing chocolate and vanilla on a fresh donut is a recipe for a sure-fire classic.",
+          "ingredients": "Chocolate Icing, Vanilla Drizzle",
+          "image": "/assets/images/MenuImages/FanFavoritesImages/TheFlipFlop.png",
+          "endpoint": "/menu/donuts/the-flip-flop"
+        }
+      ]
+    },
+    {
+      "category": "Everyday Assortments",
+      "tag": "donuts",
+      "description": "Make every day great with a dozen of our Fan Favorites, creative combinations and warm, delicious donuts that are made to order!",
+      "items": [
+        {
+          "name": "Breakfast Box",
+          "endpoint": "/menu/donuts/breakfast-box",
+          "yearRound": true,
+          "description": "All of your breakfast favorites in one box. Perfect for “breakfast in bed” and “breakfast for dinner” too!",
+          "ingredients": [
+            {
+              "name": "French Toast",
+              "description": "Maple Icing with Cinnamon Sugar & Powdered Sugar"
+            },
+            {
+              "name": "Blueberry Pancake",
+              "description": "Blueberry Icing with Maple Drizzle & Powdered Sugar"
+            },
+            {
+              "name": "Maple Bacon",
+              "description": "Maple Icing with Chopped Bacon"
+            },
+            {
+              "name": "Bacon in the Sun",
+              "description": "Maple Icing with Chopped Bacon & Salted Caramel Drizzle"
+            },
+            {
+              "name": "Cinnamon Bun",
+              "description": "Cinnamon Sugar w/ Vanilla Drizzle"
+            },
+            {
+              "name": "Chocolate Covered Strawberry",
+              "description": "Strawberry Icing with Chocolate Drizzle"
+            },
+            {
+              "name": "Coffee Cake",
+              "description": "Glazed with Streusel & Powdered Sugar"
+            },
+            {
+              "name": "Cookies & Cream",
+              "description": "Vanilla Icing with OREO® Cookie Pieces & Hot Fudge Drizzle"
+            },
+            {
+              "name": "Cinnamon Sugar",
+              "description": ""
+            },
+            {
+              "name": "Peanut Butter Fluff",
+              "description": "Peanut Butter Icing with Marshmallow Drizzle"
+            },
+            {
+              "name": "Blueberry Streusel",
+              "description": "Blueberry Icing with Streusel"
+            },
+            {
+              "name": "Glazed",
+              "description": ""
+            }
+          ],
+          "image": "/assets/images/MenuImages/EverydayAssortmentsImages/BreakfastBox.jpg"
+        },
+        {
+          "name": "Duck Dozen",
+          "endpoint": "/menu/donuts/duck-dozen",
+          "yearRound": true,
+          "description": "Indulge in a dozen filled with creative combinations inspired by our hometown of Duck, NC! This one is sure to light up those tastebuds!",
+          "ingredients": [
+            {
+              "name": "Blueberry Sugar",
+              "description": "Blueberry Icing with Powdered Sugar"
+            },
+            {
+              "name": "Sunrise",
+              "description": "Lemon Icing with Raspberry Drizzle"
+            },
+            {
+              "name": "Peanut Butter Paradise",
+              "description": "Peanut Butter Icing with Chocolate Drizzle"
+            },
+            {
+              "name": "The Flip Flop",
+              "description": "Chocolate icing with Vanilla Drizzle"
+            },
+            {
+              "name": "Maple Bacon",
+              "description": "Maple Icing with Chopped Bacon"
+            },
+            {
+              "name": "Chocolate Confetti",
+              "description": "Chocolate Icing with Rainbow Sprinkles"
+            },
+            {
+              "name": "Powdered Sugar",
+              "description": ""
+            },
+            {
+              "name": "Strawberry Sugar",
+              "description": "Strawberry Icing with Powdered Sugar"
+            },
+            {
+              "name": "Cinnamon Bun",
+              "description": "Cinnamon Sugar with Vanilla Icing"
+            },
+            {
+              "name": "Cookie Crumble",
+              "description": "Vanilla Icing with Oreo® Cookie Pieces"
+            },
+            {
+              "name": "Smore's",
+              "description": "Chocolate Icing with Graham Cracker Crumbs & Marshmallow Drizzle"
+            },
+            {
+              "name": "Vanilla Chocolate Swirl",
+              "description": "Vanilla Icing with Hot Fudge Drizzle"
+            }
+          ],
+          "image": "/assets/images/MenuImages/EverydayAssortmentsImages/DuckDozen.jpg"
+        },
+        {
+          "name": "Signature Assortment",
+          "endpoint": "/menu/donuts/signature-assortment",
+          "yearRound": true,
+          "description": "Enjoy some of our fan favorites all in one box! Our signature assortment includes a dozen warm, delicious and made to order donuts in our favorite flavors!",
+          "ingredients": [
+            {
+              "name": "Bacon in the Sun",
+              "description": "Maple Icing with Chopped Bacon and Caramel Drizzle"
+            },
+            {
+              "name": "Beach Ball",
+              "description": "Vanilla Icing with Chocolate Drizzle and Rainbow Sprinkles"
+            },
+            {
+              "name": "Peanut Butter Paradise",
+              "description": "Peanut Butter Icing with Chocolate Drizzle"
+            },
+            {
+              "name": "Blueberry Pancake",
+              "description": "Blueberry Icing with Maple Drizzle and Powdered Sugar"
+            },
+            {
+              "name": "The Boardwalk",
+              "description": "Glazed with Oreo crumbles, Powdered Sugar, and Vanilla Drizzle"
+            },
+            {
+              "name": "Sunrise",
+              "description": "Lemon Icing with Raspberry Drizzle"
+            },
+            {
+              "name": "French Toast",
+              "description": "Maple Icing with Cinnamon Sugar and Powdered Sugar"
+            },
+            {
+              "name": "Smore's",
+              "description": "Chocolate Icing with Marshmallow Drizzle and Graham Cracker Crumbs"
+            },
+            {
+              "name": "Sand Dollar",
+              "description": "Vanilla Icing with Shredded Coconut and Powdered Sugar"
+            },
+            {
+              "name": "The Beach",
+              "description": "Vanilla Icing and Cinnamon Sugar"
+            },
+            {
+              "name": "The Flip Flop",
+              "description": "Chocolate Icing with Vanilla Drizzle"
+            },
+            {
+              "name": "Coconut Island Bliss",
+              "description": "Chocolate Icing with Peanuts and Shredded Coconut"
+            }
+          ],
+          "image": "/assets/images/MenuImages/EverydayAssortmentsImages/SignatureAssortment.jpg"
+        },
+        {
+          "name": "Party Box",
+          "endpoint": "/menu/donuts/party-box",
+          "yearRound": true,
+          "description": "Be the Most Valuable Person at your next party or event when you show up with the Party Box! Assortment includes:",
+          "ingredients": [
+            {
+              "name": "Chocolate Confetti",
+              "description": "Chocolate Icing w/ Rainbow Sprinkles (x2)"
+            },
+            {
+              "name": "Vanilla Confetti",
+              "description": "Vanilla Icing w/ Rainbow Sprinkles (x2)"
+            },
+            {
+              "name": "Glazed Confetti",
+              "description": "Glazed w/ Rainbow Sprinkles"
+            },
+            {
+              "name": "Strawberry Confetti",
+              "description": "Strawberry Icing w/ Rainbow Sprinkles (x2)"
+            },
+            {
+              "name": "Vanilla Iced",
+              "description": ""
+            },
+            {
+              "name": "Strawberry Iced",
+              "description": ""
+            },
+            {
+              "name": "Chocolate Iced",
+              "description": ""
+            },
+            {
+              "name": "Cinnamon Sugar",
+              "description": ""
+            },
+            {
+              "name": "Glazed",
+              "description": ""
+            }
+          ],
+          "image": "/assets/images/MenuImages/EverydayAssortmentsImages/PartyBox.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Sandwiches",
+      "description": "Get your favorite breakfast combinations on a donut. Our Donut Breakfast Sandwich starts with a warm, delicious sliced donut. Make it your own with your choice of protein: egg, cheese, sausage or bacon, and don't forget to top it with maple drizzle and chopped bacon!",
+      "items": [
+        {
+          "name": "Maple Drizzle, Chopped Bacon, Sausage, Egg & Cheese Breakfast Sandwich",
+          "description": "Get the works with this flavorful breakfast sandwich with egg, sausage, and cheese on a donut topped with maple icing and chopped bacon.",
+          "yearRound": true,
+          "image": "/assets/images/MenuImages/SandwichesImages/MapleDrizzleAndChoppedBacon.png",
+          "endpoint": "/menu/sandwiches/sausage-egg-and-cheese-with-chopped-bacon"
+        },
+        {
+          "name": "Bacon, Egg, and Cheese Breakfast Sandwich",
+          "description": "Everybody loves bacon and donuts - paired with egg and cheese, they make one delicious breakfast sandwich!",
+          "yearRound": true,
+          "image": "/assets/images/MenuImages/SandwichesImages/BaconEggAndCheeseBreakfastSandwich.png",
+          "endpoint": "/menu/sandwiches/bacon-egg-and-cheese-breakfast-sandwich"
+        },
+        {
+          "name": "Sausage, Egg, and Cheese Breakfast Sandwich",
+          "description": "Escape your breakfast rut and thrill your taste buds with our sausage, egg, and cheese breakfast sandwich.",
+          "yearRound": true,
+          "image": "/assets/images/MenuImages/SandwichesImages/SausageEggAndCheeseBreakfastSandwich.png",
+          "endpoint": "/menu/sandwiches/sausage-egg-and-cheese-breakfast-sandwich"
+        },
+        {
+          "name": "Egg & Cheese Breakfast Sandwich",
+          "description": "Enjoy an every day classic with a twist!",
+          "yearRound": true,
+          "image": "/assets/images/MenuImages/SandwichesImages/EggAndCheeseBreakfastSandwich.png",
+          "endpoint": "/menu/sandwiches/egg-cheese-breakfast-sandwich"
+        }
+      ]
+    },
+    {
+      "category": "Coffee, Espresso & More",
+      "endpoint": "/menu/coffee-espresso-more",
+      "featuredItems": [
+        {
+          "name": "Pumpkin Macchiato",
+          "image": "/assets/images/MenuImages/SeasonalImages/FallImages/PumpkinMacchiato.jpg",
+          "description": "Crisp leaves in the air, Pumpkin Macchiatos in hand - Fall is officially here. Our Pumpkin Macchiato can be order hot or iced and is perfectly spiced, oh so nice!",
+          "endpoint": "/menu/coffee-espresso-more/pumpkin-macchiato"
+        }
+      ],
+      "items": [
+        {
+          "name": "Cold Brew Coffee",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/ColdBrewCoffee.png",
+          "description": "A tailor-roasted blend, slow-steeped in cold water for 12-16 hours, without touching heat, and poured over ice to order.",
+          "endpoint": "/menu/coffee-espresso-more/cold-brew-coffee"
+        },
+        {
+          "name": "Americano",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Americano.png",
+          "description": "Freshly brewed espresso shots combined with water, available hot or iced.",
+          "endpoint": "/menu/coffee-espresso-more/americano"
+        },
+        {
+          "name": "Cappuccino",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Cappuccino.png",
+          "description": "Freshly brewed espresso topped with a milk foam handcrafted by frothing the milk. Cappuccinos are only served hot.",
+          "endpoint": "/menu/coffee-espresso-more/cappuccino"
+        },
+        {
+          "name": "Lattes",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Lattes.png",
+          "description": "Available with custom flavors such as caramel and vanilla, a hot latte is freshly brewed espresso and steamed milk with a thin layer of foam on the top and an iced latte is freshly brewed espresso, cold milk, and ice.",
+          "endpoint": "/menu/coffee-espresso-more/lattes"
+        },
+        {
+          "name": "Caramel Macchiatos",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelMacchiatos.png",
+          "description": "Available hot or iced, a caramel macchiato is freshly brewed espresso poured over milk and flavored with vanilla and drizzled with caramel.",
+          "endpoint": "/menu/coffee-espresso-more/caramel-macchiatos"
+        },
+        {
+          "name": "Mochas",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Mochas.png",
+          "description": "Available hot or iced, a mocha is freshly brewed espresso poured over milk and flavored with either white or dark chocolate.",
+          "endpoint": "/menu/coffee-espresso-more/mochas"
+        },
+        {
+          "name": "Espresso",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/Espresso.png",
+          "description": "Freshly brewed double shot of espresso available hot or iced.",
+          "endpoint": "/menu/coffee-espresso-more/espresso"
+        },
+        {
+          "name": "Hot Chocolate",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/HotChocolate.png",
+          "description": "Handcrafted fresh to order with steamed milk, dark chocolate, and vanilla. Topped with whipped cream.",
+          "endpoint": "/menu/coffee-espresso-more/hot-chocolate"
+        },
+        {
+          "name": "Coffee Frappe",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CoffeeFrappe.png",
+          "description": "A frozen coffee beverage blended with milk and ice.",
+          "endpoint": "/menu/coffee-espresso-more/coffee-frappe"
+        },
+        {
+          "name": "Mocha Frappe",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/MochaFrappe.png",
+          "description": "A frozen coffee beverage blended with chocolate.",
+          "endpoint": "/menu/coffee-espresso-more/mocha-frappe"
+        },
+        {
+          "name": "Caramel Frappe",
+          "image": "/assets/images/MenuImages/CoffeeEspressoAndMoreImages/CaramelFrappe.png",
+          "description": "A frozen coffee beverage blended with sweet caramel sauce.",
+          "endpoint": "/menu/coffee-espresso-more/caramel-frappe"
+        }
+      ]
+    },
+    {
+      "category": "Ice Cream",
+      "endpoint": "/menu/ice-cream",
+      "featuredItems": [
+        {
+          "name": "Bourbon Caramel Apple Pie Milkshake",
+          "image": "/assets/images/MenuImages/SeasonalImages/FallImages/BourbonCaramelApplePieMilkshake.jpg",
+          "description": "We combined the best fall flavors into one irresistibly indulgent milkshake. Try a Bourbon Caramel Apple Pie milkshake today!",
+          "endpoint": "/menu/ice-cream/bourbon-caramel-apple-pie-milkshake",
+          "availability": "September 4 - December 1"
+        }
+      ],
+      "items": [
+        {
+          "name": "Classic Donut Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/ClassicDonutSundae.png",
+          "description": "Peanuts, sprinkles, and fudge piled high atop a warm, freshly made donut. Yes, it is as good as it looks.",
+          "endpoint": "/menu/ice-cream/classic-donut-sundae"
+        },
+        {
+          "name": "Salted Caramel Donut Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelDonutSundae.png",
+          "description": "Salty + Sweet = Pure Perfection! A warm cinnamon sugar donut topped with vanilla ice cream and salted caramel drizzle.",
+          "endpoint": "/menu/ice-cream/salted-caramel-donut-sundae"
+        },
+        {
+          "name": "S'mores Donut Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/S'moresDonutSundae.png",
+          "description": "We're taking S'mores to a whole new level! A warm, vanilla cake donut coated with chocolate icing and topped with ice cream, marshmallow drizzle, hot fudge and graham cracker crumbs!",
+          "endpoint": "/menu/ice-cream/smores-donut-sundae"
+        },
+        {
+          "name": "Cookies & Cream Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamSundae.png",
+          "description": "One of our best sellers, this donut sundae starts with a warm, vanilla cake donut coated with vanilla icing and topped with vanilla ice cream, hot fudge and of course, OREO® Cookies Pieces!",
+          "endpoint": "/menu/ice-cream/cookies-cream-sundae"
+        },
+        {
+          "name": "Chocolate Madness Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMadnessSundae.png",
+          "description": "Calling all chocolate lovers! A warm, vanilla cake donut topped coated in chocolate icing, topped with vanilla ice cream and topped with all MORE chocolate - hot fudge, OREO(R) Cookie Crumbles and chocolate sprinkles!",
+          "endpoint": "/menu/ice-cream/chocolate-madness-sundae"
+        },
+        {
+          "name": "Confetti Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/ConfettiSundae.png",
+          "description": "What better way to celebrate than with donuts, ice cream and sprinkles! A warm, vanilla cake donut coated with vanilla icing and topped with vanilla ice cream, raspberry drizzle and rainbow sprinkles!",
+          "endpoint": "/menu/ice-cream/confetti-sundae"
+        },
+        {
+          "name": "Peanut Butter Crunch Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/PeanutButterCrunchSundae.png",
+          "description": "Perfect for peanut butter lovers! A warm, vanilla cake donut coated with peanut butter icing, topped with vanilla ice cream and peanuts, and drizzled with marshmallow.",
+          "endpoint": "/menu/ice-cream/peanut-butter-crunch-sundae"
+        },
+        {
+          "name": "Strawberry Shortcake Sundae",
+          "image": "/assets/images/MenuImages/IceCreamImages/StrawberryShortcakeSundae.png",
+          "description": "A twist on a classic, this sundae starts with a warm, vanilla cake donut coated with strawberry icing, is topped with vanilla ice cream, and finished with graham cracker crumbs!",
+          "endpoint": "/menu/ice-cream/strawberry-shortcake-sundae"
+        },
+        {
+          "name": "Birthday Cake Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/BirthdayCakeMilkshake.png",
+          "description": "Vanilla ice cream blended with white chocolate and cupcake flavors and topped with whipped cream and rainbow sprinkles!",
+          "endpoint": "/menu/ice-cream/birthday-cake-milkshake"
+        },
+        {
+          "name": "Blueberry Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/BlueberryMilkshake.png",
+          "description": "Vanilla ice cream blended with bits of blueberry and topped with whipped cream!Vanilla ice cream blended with bits of blueberry and topped with whipped cream!",
+          "endpoint": "/menu/ice-cream/blueberry-milkshake"
+        },
+        {
+          "name": "Chocolate Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/ChocolateMilkshake.png",
+          "description": "A classic hand-dipped chocolate shake topped with whipped cream and chocolate drizzle!",
+          "endpoint": "/menu/ice-cream/chocolate-milkshake"
+        },
+        {
+          "name": "Cookies & Cream Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/CookiesAndCreamMilkshake.png",
+          "description": "Vanilla ice cream blended with OREO® Cookie pieces and topped with whipped cream!",
+          "endpoint": "/menu/ice-cream/cookies-cream-milkshake"
+        },
+        {
+          "name": "Maple Bacon Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/MapleBaconMilkshake.png",
+          "description": "A twist on our fan favorite Maple Bacon donut, this hand-dipped milkshake boasts all the flavors you would expect - vanilla ice cream, maple and bacon!",
+          "endpoint": "/menu/ice-cream/maple-bacon-milkshake"
+        },
+        {
+          "name": "Salted Caramel Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/SaltedCaramelMilkshake.png",
+          "description": "Vanilla ice cream blended and drizzled with salted caramel!",
+          "endpoint": "/menu/ice-cream/salted-caramel-milkshake"
+        },
+        {
+          "name": "S'mores Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/S'moresMilkshake.png",
+          "description": "A twist on our fan favore S'mores donut, this milkshake blends vanilla ice cream with dark chocolate sauce, toasted marshmallow and topped whipped cream, chocolate and graham cracker!",
+          "endpoint": "/menu/ice-cream/smores-milkshake"
+        },
+        {
+          "name": "Strawberry Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/StrawberryMilkshake.png",
+          "description": "Vanilla ice cream blended with bits of strawberry and topped with whipped cream!",
+          "endpoint": "/menu/ice-cream/strawberry-milkshake"
+        },
+        {
+          "name": "Vanilla Milkshake",
+          "image": "/assets/images/MenuImages/IceCreamImages/VanillaMilkshake.png",
+          "description": "Hand-dipped vanilla ice cream topped with whipped cream!",
+          "endpoint": "/menu/ice-cream/vanilla-milkshake"
+        },
+        {
+          "name": "Donut Ice Cream Sandwiches",
+          "description": "Introducing our BRAND-NEW Donut Ice Cream Sandwiches made to order with creamy vanilla ice cream sandwiched between a classic vanilla cake donut. Top it off with Rainbow Sprinkles or OREO® Cookie Pieces for an extra treat!",
+          "image": "/assets/images/MenuImages/IceCreamImages/DonutIceCreamSandwiches.jpg",
+          "endpoint": "/menu/ice-cream/donut-ice-cream-sandwiches"
+        }
+      ]
+    },
+    {
+      "category": "Lemonade & Refreshers",
+      "endpoint": "/menu/lemonade-refreshers",
+      "items": [
+        {
+          "name": "Original Lemonade",
+          "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/OriginalLemonade.jpg",
+          "description": "Enjoy a taste of sunshine all year long with our old-fashioned original lemonade.",
+          "endpoint": "/menu/lemonade-refreshers/original-lemonade"
+        },
+        {
+          "name": "Strawberry Lemonade",
+          "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/StrawberryLemonade.jpg",
+          "description": "Squeeze the day with our strawberry lemonade, made with our old-fashioned lemonade and strawberry fruit bits.",
+          "endpoint": "/menu/lemonade-refreshers/strawberry-lemonade"
+        },
+        {
+          "name": "Raspberry Dragonfruit Lemonade Refresher",
+          "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/RaspberryDragonfruitLemonadeRefresher.jpg",
+          "description": "Get a gentle boost from our Raspberry Dragonfruit Lemonade Refresher that’s infused with natural energy.",
+          "ingredients": "Each fl. oz. of Maui® Refresher contains 60mg of caffeine from green coffee extract and whole coffee fruit extract.",
+          "endpoint": "/menu/lemonade-refreshers/raspberry-dragonfruit-lemonade-refresher"
+        },
+        {
+          "name": "Citrus Mango Pineapple Lemonade Refresher",
+          "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/CitrusMangoPineappleLemonadeRefresher.jpg",
+          "description": "Bursting with flavor and infused with natural energy, our Citrus Mango Pineapple Lemonade Refresher is sure to quench your thirst!",
+          "ingredients": "Each fl. oz. of Maui® Refresher contains 60mg of caffeine from green coffee extract and whole coffee fruit extract.",
+          "endpoint": "/menu/lemonade-refreshers/citrus-mango-pineapple-lemonade-refresher"
+        },
+        {
+          "name": "Blueberry Popping Bubbles",
+          "image": "/assets/images/MenuImages/LemonadeAndRefreshersImages/BlueberryPoppingBubbles.jpg",
+          "description": "Want to add a fun twist to your Lemonade or Lemonade Refresher? Add a scoop of our new Blueberry Popping Bubbles! These delightfully flavorful orbs add a playful twist to any drink.",
+          "endpoint": "/menu/lemonade-refreshers/blueberry-popping-bubbles"
+        }
+      ]
+    }
+  ]
+  

@@ -100,11 +100,11 @@ const Home = () => {
                 <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
                   Order Online
                 </button>
-                <Link to="/menu/seasonal">
+                {/* <Link to="/menu/seasonal">
                   <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
                     Seasonal Flavors
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -134,11 +134,11 @@ const Home = () => {
           <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500 mb-4">
             Order Online
           </button>
-          <Link to="/menu/seasonal">
+          {/* <Link to="/menu/seasonal">
             <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500">
               Seasonal Flavors
             </button>
-          </Link>
+          </Link> */}
         </div>
       </section>
       <section className="flex sm:hidden items-center justify-center px-4 py-8">
@@ -320,7 +320,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section
+      {/* <section
         id="SeasonalContentv1"
         className="h-auto lg:h-[65%] py-10 px-6 lg:py-20 lg:pl-5 2xl:pl-[20%]"
       >
@@ -354,13 +354,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section
+      </section> */}
+      {/* <section
         id="SeasonalContentv1"
         className="bg-orange-400 md:h-[90%] lg:h-[53%] 2xl:h-[61%]"
-      >
+      > */}
         {/* <div className="h-[385px]">hello world</div> */}
-      </section>
+      {/* </section> */}
       <section
         id="SeasonalContentv1"
         className="h-auto flex items-center justify-center py-16 px-10 sm:px-8 lg:px-28 xl:px-28"
@@ -368,8 +368,8 @@ const Home = () => {
         <div className="flex items-center justify-center h-full w-full max-w-[70rem]">
           <div className="h-1 w-1/4 md:w-1/5 xl:w-1/6 bg-sky-500"></div>
           <div className="uppercase text-sm sm:text-sm md:text-lg lg:text-xl xl:text-3xl flex flex-col sm:flex-row text-sky-500 font-bold w-full text-center sm:text-left justify-center items-center">
-            FOLLOW US ON INSTAGRAM
-            <p
+            FOLLOW US ON FACEBOOK
+            <a
               className="ml-2 text-[#E6427A] cursor-pointer relative"
               onMouseEnter={() => {
                 setDuckDonutsInstagramHovered(true);
@@ -377,8 +377,10 @@ const Home = () => {
               onMouseLeave={() => {
                 setDuckDonutsInstagramHovered(false);
               }}
+              href="https://www.facebook.com/profile.php?id=61570416715879"
+              target="_blank"
             >
-              @DUCKDONUTSBELFAST
+              @DuckDonutsNI
               <span
                 className={`absolute left-0 bottom-0 w-full h-[3px] bg-current transition-opacity duration-700 ease-in-out ${
                   duckDonutsInstagramHovered ? "opacity-100" : "opacity-0"
@@ -396,7 +398,7 @@ const Home = () => {
                 }`}
                 icon={faHeart}
               />
-            </p>
+            </a>
           </div>
           <div className="h-1 w-1/4 md:w-1/5 xl:w-1/6 bg-sky-500"></div>
         </div>

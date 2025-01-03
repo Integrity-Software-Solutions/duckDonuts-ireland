@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MenuDropdown = (props) => {
   const menuCategories = [
-    {category: "seasonal", endpoint: "seasonal"},
+    // {category: "seasonal", endpoint: "seasonal"},
     {category: "fan favorites", endpoint: "fan-favorites"},
     {category: "everyday assortments" , endpoint: "everyday-assortments"},
     {category: "coffee, espresso, & more", endpoint: "coffee-espresso-more"},

@@ -92,16 +92,16 @@ const Contact = () => {
               </div>
               <div className="flex items-center space-x-4 text-white font-bold text-xl pb-[10px]">
                 <FontAwesomeIcon icon={faPhone} />
-                <p className="text-nowrap">(123)-456-7899</p>
+                <a href="tel:+447384855061" className="text-nowrap">+44 7384 855061</a>
               </div>
               <div className="flex space-x-5 text-white font-bold text-xl">
                 <div className="ml-[3px]">
                   <FontAwesomeIcon icon={faLocationDot} />
                 </div>
                 <div className="text-sm font-normal text-nowrap">
-                  <p>1215 Manor Drive</p>
-                  <p>Suite 206</p>
-                  <p>Mechanicsburg, PA 17055</p>
+                  <p>304 Ormeau Road</p>
+                  {/* <p>Suite 206</p> */}
+                  <p>Belfast, United Kingdom</p>
                   <p
                     className="cursor-pointer uppercase font-bold text-base mt-2 relative transition ease-in-out duration-7000 w-max"
                     onMouseEnter={() => {
@@ -109,6 +109,10 @@ const Contact = () => {
                     }}
                     onMouseLeave={() => {
                       setDirectionsHovered(false);
+                    }}
+                    onClick={() => {
+                      const mapsUrl = "https://www.google.com/maps/search/?api=1&query=304+Ormeau+Road,Belfast,United+Kingdom";
+                      window.open(mapsUrl, "_blank", "noopener noreferrer");
                     }}
                   >
                     Get Directions

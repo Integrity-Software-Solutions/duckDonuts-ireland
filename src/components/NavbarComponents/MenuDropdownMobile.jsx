@@ -57,7 +57,7 @@ const MenuDropdownMobile = (props) => {
           }`}
         >
           <ul className="w-full">
-            <Link to="/menu/seasonal">
+            {/* <Link to="/menu/seasonal">
               <li className="py-2 pl-10 border-b-[1px] border-b-white border-opacity-50">
                 <p
                   className="w-min text-nowrap"
@@ -68,7 +68,7 @@ const MenuDropdownMobile = (props) => {
                   seasonal
                 </p>
               </li>
-            </Link>
+            </Link> */}
             <Link to="/menu/fan-favorites">
               <li className="py-2 pl-10 border-b-[1px] border-b-white border-opacity-50">
                 <p

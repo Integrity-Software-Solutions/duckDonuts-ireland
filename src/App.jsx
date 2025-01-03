@@ -150,10 +150,10 @@ function App() {
                   path="/menu/donuts"
                   element={<Donuts season={season} />}
                 />
-                <Route
+                {/* <Route
                   path="/menu/seasonal"
                   element={<Seasonal season={season} />}
-                />
+                /> */}
                 <Route path="/menu/ice-cream" element={<IceCream />} />
                 <Route path="/menu/sandwiches" element={<Sandwiches />} />
                 <Route path="/menu/fan-favorites" element={<FanFavorites />} />
