@@ -17,7 +17,7 @@ const JobsEntry = () => {
 
   const ApplyNowButton = (endpoint) => {
     return (
-      <Link to={`/jobs/job-application/?job=${endpoint.endpoint}`}>
+      <Link to={`/jobs/job-application/${endpoint.endpoint}`}>
         <button
           id="learn-more-button"
           className="block bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-[#FFE87C] text-white"
@@ -47,7 +47,7 @@ const JobsEntry = () => {
           className="uppercase absolute bottom-[3rem] left-[8%] lg:bottom-[7rem] lg:left-[22%] text-4xl md:text-5xl lg:text-6xl font-bold text-white font-boogaloo"
           style={{ textShadow: "6px 6px 12px rgba(0, 0, 0, 0.7)" }}
         >
-          {job ? job.title : "Job Not Found"}
+          Job Application
         </div>
       </div>
 

@@ -91,6 +91,7 @@ import SignatureAssortment from "./pages/MenuPages/MenuItems/EverydayAssortments
 import PartyBox from "./pages/MenuPages/MenuItems/EverydayAssortments/PartyBox";
 import FallFavoritesDozen from "./pages/MenuPages/MenuItems/Seasonal/FallFavoritesDozen";
 import FallFavoritesHalfDozen from "./pages/MenuPages/MenuItems/Seasonal/FallFavoritesHalfDozen";
+import JobApplication from "./pages/JobApplication";
 
 function App() {
   const determineSeason = () => {
@@ -115,14 +116,14 @@ function App() {
 
   const [mobileNavbarOpen, setMobileNavbarOpen] = useState(false);
 
-    // Add/remove 'overflow-hidden' class on the body
-    useEffect(() => {
-      if (mobileNavbarOpen) {
-        document.body.classList.add("overflow-hidden");
-      } else {
-        document.body.classList.remove("overflow-hidden");
-      }
-    }, [mobileNavbarOpen]);
+  // Add/remove 'overflow-hidden' class on the body
+  useEffect(() => {
+    if (mobileNavbarOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [mobileNavbarOpen]);
 
   return (
     <div className="flex flex-col min-h-screen items-center">
@@ -143,6 +144,10 @@ function App() {
                 <Route path="/contact-us" element={<Contact />} />
                 <Route path="/jobs" element={<Jobs />} />
                 <Route path="/jobs/jobs-entry/:id" element={<JobsEntry />} />
+                <Route
+                  path="/jobs/job-application/:id"
+                  element={<JobApplication />}
+                />
                 <Route path="/menu" element={<Menu season={season} />} />
                 <Route
                   path="/about-us/food-allergy-information"
