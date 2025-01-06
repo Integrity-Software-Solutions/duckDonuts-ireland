@@ -68,6 +68,12 @@ const Home = () => {
         <div className="ml-auto mr-auto w-full max-w-[60rem] font-extrabold italic uppercase relative z-10">
           <div className="text-center">
             <div className="flex flex-col">
+              <div
+                className="text-5xl font-boogaloo"
+                style={{ textShadow: "4px 4px 8px rgba(0,0,0,0.5" }}
+              >
+                Coming Soon!
+              </div>
               <span
                 className="py-2 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
                 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
@@ -359,7 +365,7 @@ const Home = () => {
         id="SeasonalContentv1"
         className="bg-orange-400 md:h-[90%] lg:h-[53%] 2xl:h-[61%]"
       > */}
-        {/* <div className="h-[385px]">hello world</div> */}
+      {/* <div className="h-[385px]">hello world</div> */}
       {/* </section> */}
       <section
         id="SeasonalContentv1"

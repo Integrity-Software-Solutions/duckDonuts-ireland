@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import JobsImage from "/assets/images/JobPageImages/JobsImage.jpg";
 import purpleWave from "/assets/images/ContactPageImages/ContactPagePurpleWave.png";
 import { Link } from "react-router-dom";
+import jobOpenings from "../data/job_openings.json";
 
 const Jobs = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -14,31 +15,12 @@ const Jobs = () => {
     }, 1000);
   }, []);
 
-  const allPositions = [
-    {
-      jobId: 1,
-      title: "Barista",
-      location: "Duck Donuts Northern Ireland",
-      description:
-        "We are looking for a Barista to prepare and serve hot and cold beverages, including various types of coffee and tea. Barista responsibilities include educating customers on our drinks menu, making recommendations based on their preferences, up-selling special items and taking orders. To be successful in this role, you should have customer service skills and knowledge of how brewing equipment operates. You should also be able to work various shifts. Note: This position is for our Belfast, Ireland location.",
-      jobDetails: [""],
-    },
-    {
-      jobId: 2,
-      title: "Kitchen Staff",
-      location: "Duck Donuts NorthernIreland",
-      description:
-        "We are looking for a Kitchen Staff member to prepare all the food items as per our standard recipes. Kitchen Staff responsibilities include preparing food items, cleaning the kitchen, and maintaining the kitchen equipment. To be successful in this role, you should have knowledge of how kitchen equipment operates. You should also be able to work various shifts. Note: This position is for our Belfast, Ireland location.",
-      jobDetails: [""],
-    },
-  ];
-
-  const [filteredPositions, setFilteredPositions] = useState(allPositions);
+  const [filteredPositions, setFilteredPositions] = useState(jobOpenings);
 
   const filterJobs = () => {
-    let filtered = allPositions;
+    let filtered = jobOpenings;
 
-    if (locationValue) {
+    if (locationValue && locationValue !== "All Locations") {
       filtered = filtered.filter(
         (position) => position.location === locationValue
       );

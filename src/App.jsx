@@ -64,6 +64,7 @@ import PumpkinMacchiato from "./pages/MenuPages/MenuItems/CoffeeEspressoAndMore/
 import FoodAllergyInfo from "./pages/FoodAllergyInfo";
 import Contact from "./pages/Contact";
 import Jobs from "./pages/Jobs";
+import JobsEntry from "./pages/JobsEntry";
 import MenuDropdownMobile from "./components/NavbarComponents/MenuDropdownMobile";
 import ClassicDonutSundae from "./pages/MenuPages/MenuItems/IceCream/ClassicDonutSundae";
 import SaltedCaramelDonutSundae from "./pages/MenuPages/MenuItems/IceCream/SaltedCaramelDonutSundae";
@@ -141,6 +142,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/contact-us" element={<Contact />} />
                 <Route path="/jobs" element={<Jobs />} />
+                <Route path="/jobs/jobs-entry/:id" element={<JobsEntry />} />
                 <Route path="/menu" element={<Menu season={season} />} />
                 <Route
                   path="/about-us/food-allergy-information"
