@@ -118,7 +118,7 @@ const Jobs = () => {
                       Select a Location
                     </option>
                     <option>All Locations</option>
-                    <option>Duck Donuts Northern Ireland</option>
+                    <option>Duck Donuts Belfast</option>
                   </select>
                 </label>
                 <label className="form-control w-full max-w-xs">

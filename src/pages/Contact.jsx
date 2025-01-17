@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faLocationDot,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import purpleWave from "/assets/images/ContactPageImages/ContactPagePurpleWave.png";
 
 const Contact = () => {
@@ -96,6 +100,16 @@ const Contact = () => {
                   +44 7384 855061
                 </a>
               </div>
+              <div className="flex items-center space-x-4 text-white font-bold text-xl pb-[10px]">
+                <FontAwesomeIcon icon={faEnvelope} />
+                <a
+                  href="mailto:contact@duckdonuts.co.uk"
+                  className="text-nowrap text-sm font-normal"
+                >
+                  contact@duckdonuts.co.uk
+                </a>
+              </div>
+
               <div className="flex space-x-5 text-white font-bold text-xl">
                 <div className="ml-[3px]">
                   <FontAwesomeIcon icon={faLocationDot} />
@@ -129,7 +143,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full">
-              <form
+              {/* <form
                 onSubmit={handleSubmit}
                 className="flex flex-col md:flex-row md:flex-wrap justify-between gap-4 text-white"
               >
@@ -359,7 +373,16 @@ const Contact = () => {
                 >
                   Submit
                 </button>
-              </form>
+              </form> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.5676182853394!2d-5.9198820233014375!3d54.57637177267149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486108e0417eb61b%3A0xc03cc0efaf70a1da!2s304%20Ormeau%20Rd%2C%20Ormeau%2C%20Belfast%20BT7%202GY%2C%20UK!5e0!3m2!1sen!2sus!4v1737147824379!5m2!1sen!2sus"
+                // width="400"
+                // height="300"
+                style={{ border: 0, width: "100%", height: "100%" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>

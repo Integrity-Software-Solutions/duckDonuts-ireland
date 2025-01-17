@@ -16,8 +16,10 @@ const JobsEntry = () => {
   const job = jobOpenings.find((position) => position.jobId === Number(id));
 
   const ApplyNowButton = (endpoint) => {
+    console.log(endpoint)
     return (
-      <Link to={`/jobs/job-application/${endpoint.endpoint}`}>
+      <Link to={`https://data.integrityprodserver.com/CombinedDuckDonutsApplication.pdf`} target="_blank">
+      {/* <Link to={`/jobs/job-application/${endpoint.endpoint}`}> */}
         <button
           id="learn-more-button"
           className="block bg-[#E6427A] text-base font-[650] p-3 rounded-full w-40 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-[#FFE87C] text-white"
@@ -79,6 +81,14 @@ const JobsEntry = () => {
               </ul>
             </>
           )}
+          <div className="mt-6 text-sm">
+            *Once you've completed this form, please send it to{" "}
+                <a className="hover:text-[#23A3DD] hover:underline font-bold" href="mailto:contact@duckdonuts.co.uk?subject=Duck Donuts Job Application">
+              contact@duckdonuts.co.uk
+            </a>
+            .
+          </div>
+
           <div className="mt-6">
             <ApplyNowButton endpoint={job.jobId} />
           </div>

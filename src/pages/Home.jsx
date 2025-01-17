@@ -69,11 +69,12 @@ const Home = () => {
           <div className="text-center">
             <div className="flex flex-col">
               <div
-                className="text-5xl font-boogaloo"
-                style={{ textShadow: "4px 4px 8px rgba(0,0,0,0.5" }}
+                className="text-5xl font-boogaloo bg-[#E6427A] inline-flex justify-center items-center p-6 rounded-full self-center"
+                style={{ textShadow: "4px 4px 8px rgba(0,0,0,0.5)" }}
               >
                 Coming Soon!
               </div>
+
               <span
                 className="py-2 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
                 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
