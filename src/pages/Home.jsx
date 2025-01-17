@@ -399,7 +399,7 @@ const Home = () => {
                 icon={faMessage}
               />
               <FontAwesomeIcon
-                className={`absolute hidden md:flex sm:-top-[13px] sm:left-[47.45%] xl:-top-[18px] xl:left-[45.6%] text-white sm:w-[9px] sm:h-[9px] xl:w-3 xl:h-3 transition-opacity duration-500 ease-in-out ${
+                className={`absolute hidden md:flex sm:-top-[13px] sm:left-[48%] xl:-top-[18px] xl:left-[46.2%] text-white sm:w-[9px] sm:h-[9px] xl:w-3 xl:h-3 transition-opacity duration-500 ease-in-out ${
                   duckDonutsInstagramHovered ? "opacity-100" : "opacity-0"
                 }`}
                 icon={faHeart}
