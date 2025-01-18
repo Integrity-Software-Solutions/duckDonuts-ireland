@@ -121,6 +121,12 @@ const Home = () => {
       <section className="flex flex-col sm:hidden bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 items-center justify-center px-4 h-screen -mt-[6.46rem]">
         <div className="h-auto w-full flex flex-col items-center text-white uppercase">
           <div
+            className="mb-10 text-3xl font-boogaloo bg-[#E6427A] inline-flex justify-center items-center p-4 rounded-full self-center"
+            style={{ textShadow: "4px 4px 8px rgba(0,0,0,0.5)" }}
+          >
+            Coming Soon!
+          </div>
+          <div
             style={{ textShadow: "3px 3px 6px rgb(0, 0, 0.1)" }}
             className="font-boogaloo text-4xl"
           >

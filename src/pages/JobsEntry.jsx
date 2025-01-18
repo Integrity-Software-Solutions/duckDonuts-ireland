@@ -31,7 +31,7 @@ const JobsEntry = () => {
   };
 
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full z-50">
       <div className="bg-fuchsia-900 relative">
         <img
           alt="Jobs Entry Image"
