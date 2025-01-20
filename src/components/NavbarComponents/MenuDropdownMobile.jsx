@@ -180,9 +180,9 @@ const MenuDropdownMobile = (props) => {
           </li>
         </Link>
       </ul>
-      <button className="text-lg bg-[#E6427A] py-2 px-7 mt-7 rounded-full shadow-xl">
+      {/* <button className="text-lg bg-[#E6427A] py-2 px-7 mt-7 rounded-full shadow-xl">
         Order Online!
-      </button>
+      </button> */}
     </div>
   );
 };

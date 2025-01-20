@@ -99,7 +99,7 @@ const Navbar = (props) => {
             </Link>
           </div>
         </div>
-        <OrderOnlineButton />
+        {/* <OrderOnlineButton /> */}
       </header>
       {/* mobile header/navbar */}
       <header className="flex overflow-hidden justify-between items-center md:hidden navbar w-full bg-sky-50 h-[4.5rem] sticky top-0 z-30 shadow-lg shadow-slate-500">
