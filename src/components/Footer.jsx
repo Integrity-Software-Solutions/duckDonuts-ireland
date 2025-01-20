@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import DuckDonutsLogo from "/assets/images/NavbarImages/DuckDonutsLogo.png";
 
-const Footer = () => {
+const Footer = (props) => {
   const [hovered, setHovered] = useState("");
   const footerOptions = [
     { name: "menu", link: "/menu" },
@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full -mt-16 lg:-mt-0 z-10">
+    <footer className={`${props.orderOnline && "bg-yellow-100"} w-full -mt-16 lg:-mt-0 z-10`}>
       <section className="flex relative">
         <div className="flex flex-col items-center justify-center px-8 lg:px-20 py-10 mt-24 bg-sky-500 w-full lg:pb-10">
           <div className="flex flex-col lg:flex-row w-full h-full max-w-[76.05em]">

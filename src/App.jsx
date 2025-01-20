@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Seasonal from "./pages/MenuPages/MenuCategories/Seasonal";
@@ -92,6 +92,7 @@ import PartyBox from "./pages/MenuPages/MenuItems/EverydayAssortments/PartyBox";
 import FallFavoritesDozen from "./pages/MenuPages/MenuItems/Seasonal/FallFavoritesDozen";
 import FallFavoritesHalfDozen from "./pages/MenuPages/MenuItems/Seasonal/FallFavoritesHalfDozen";
 import JobApplication from "./pages/JobApplication";
+import OrderOnline from "./pages/OrderOnline";
 
 function App() {
   const determineSeason = () => {
@@ -125,9 +126,12 @@ function App() {
     }
   }, [mobileNavbarOpen]);
 
+  const location = useLocation();
+  const orderOnline = location.pathname === "/order-online";
+
   return (
     <div className="flex flex-col min-h-screen items-center">
-      <Router>
+      {/* <Router> */}
         <div className="w-full flex flex-col min-h-screen relative">
           <Navbar
             mobileNavbarOpen={mobileNavbarOpen}
@@ -137,11 +141,12 @@ function App() {
             mobileNavbarOpen={mobileNavbarOpen}
             setMobileNavbarOpen={setMobileNavbarOpen}
           />
-          <main className="flex-grow mx-auto max-w-[2055px] w-full">
+          <main className={`flex-grow mx-auto ${orderOnline ? "max-w-none bg-yellow-100 z-20" : "max-w-[2055px]"} max-w-[2055px] w-full`}>
             <ScrollToTop>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact-us" element={<Contact />} />
+                <Route path="/order-online" element={<OrderOnline />} />
                 <Route path="/jobs" element={<Jobs />} />
                 <Route path="/jobs/jobs-entry/:id" element={<JobsEntry />} />
                 <Route
@@ -467,9 +472,9 @@ function App() {
               </Routes>
             </ScrollToTop>
           </main>
-          <Footer />
+          <Footer orderOnline={orderOnline} />
         </div>
-      </Router>
+      {/* </Router> */}
     </div>
   );
 }
