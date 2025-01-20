@@ -77,7 +77,7 @@ const Footer = () => {
             @ {new Date().getFullYear()} All rights reserved.
           </p>
 
-          <nav class="flex justify-start text-nowrap">
+          {/* <nav class="flex justify-start text-nowrap">
             <a className="pr-6 underline hover:no-underline" href="/site-map/">
               Site Map
             </a>
@@ -93,7 +93,7 @@ const Footer = () => {
             >
               Privacy Policy
             </a>
-          </nav>
+          </nav> */}
         </small>
         {/* <a
           href="https://www.scorpion.co/franchises/"

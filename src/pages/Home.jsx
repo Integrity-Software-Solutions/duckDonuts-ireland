@@ -74,7 +74,6 @@ const Home = () => {
               >
                 Coming Soon!
               </div>
-
               <span
                 className="py-2 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
                 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
