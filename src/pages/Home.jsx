@@ -68,12 +68,12 @@ const Home = () => {
         <div className="ml-auto mr-auto w-full max-w-[60rem] font-extrabold italic uppercase relative z-10">
           <div className="text-center">
             <div className="flex flex-col">
-              <div
+              {/* <div
                 className="mt-10 text-5xl font-boogaloo bg-[#E6427A] inline-flex justify-center items-center p-6 rounded-full self-center"
                 style={{ textShadow: "4px 4px 8px rgba(0,0,0,0.5)" }}
               >
                 Coming Soon!
-              </div>
+              </div> */}
               <span
                 className="py-2 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-boogaloo"
                 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5" }}
@@ -119,12 +119,12 @@ const Home = () => {
       {/* mobile section */}
       <section className="flex flex-col sm:hidden bg-gradient-to-b from-sky-500 via-sky-400 to-sky-500 items-center justify-center px-4 h-screen -mt-[6.46rem]">
         <div className="h-auto w-full flex flex-col items-center text-white uppercase">
-          <div
+          {/* <div
             className="mb-10 text-3xl font-boogaloo bg-[#E6427A] inline-flex justify-center items-center p-4 rounded-full self-center"
             style={{ textShadow: "4px 4px 8px rgba(0,0,0,0.5)" }}
           >
             Coming Soon!
-          </div>
+          </div> */}
           <div
             style={{ textShadow: "3px 3px 6px rgb(0, 0, 0.1)" }}
             className="font-boogaloo text-4xl"
