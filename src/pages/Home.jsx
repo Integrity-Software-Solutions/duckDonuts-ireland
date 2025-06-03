@@ -103,9 +103,9 @@ const Home = () => {
                 ></div>
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 mt-10">
-                <Link to="/order-online" className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-[#FFE87C]">
+                {/* <Link to="/order-online" className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-[#FFE87C]">
                   Order Online
-                </Link>
+                </Link> */}
                 {/* <Link to="/menu/seasonal">
                   <button className="bg-[#E6427A] text-base xl:text-lg font-[650] p-4 rounded-full w-60 transition ease-in-out duration-500 shadow-2xl hover:cursor-pointer hover:bg-sky-400">
                     Seasonal Flavors
@@ -143,9 +143,9 @@ const Home = () => {
             <div>Customized</div>
             <div>Before your eyes!</div>
           </div>
-          <Link to="/order-online" className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500 mb-4">
+          {/* <Link to="/order-online" className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500 mb-4">
             Order Online
-          </Link>
+          </Link> */}
           {/* <Link to="/menu/seasonal">
             <button className="w-60 font-semibold bg-[#E6427A] px-14 py-2 rounded-full shadow-lg shadow-gray-500">
               Seasonal Flavors

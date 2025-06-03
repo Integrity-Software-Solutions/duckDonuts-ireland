@@ -180,7 +180,7 @@ const MenuDropdownMobile = (props) => {
           </li>
         </Link>
       </ul>
-      <Link
+      {/* <Link
         onClick={() => {
           props.setMobileNavbarOpen(false);
         }}
@@ -188,7 +188,7 @@ const MenuDropdownMobile = (props) => {
         className="text-lg bg-[#E6427A] py-2 px-7 mt-7 rounded-full shadow-xl"
       >
         Order Online!
-      </Link>
+      </Link> */}
     </div>
   );
 };
