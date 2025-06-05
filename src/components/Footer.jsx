@@ -58,7 +58,7 @@ const Footer = (props) => {
             <div className="w-[18%]"></div>
           </div>
         </div>
-        <picture
+        {/* <picture
           role="presentation"
           class="footer-duck"
           className="hidden lg:block absolute bottom-0 right-[40%] sm:right-[43%] w-[125px] lg:right-[2%] lg:w-[10%] h-full"
@@ -68,7 +68,7 @@ const Footer = (props) => {
             alt=""
             className="absolute w-full h-full object-contain object-bottom bg-contain bg-bottom bg-no-repeat"
           />
-        </picture>
+        </picture> */}
       </section>
       <section className="bg-black px-10 py-6 flex justify-between text-white items-center">
         <small>
