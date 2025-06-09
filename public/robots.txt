@@ -1,2 +1,2 @@
 User-agent: *
-Allow: /
+Disallow: /documents/Nutrition-Allergy-Info.pdf
